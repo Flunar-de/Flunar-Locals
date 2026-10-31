@@ -1,0 +1,15 @@
+# Editor und Betriebssystem
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporäre Dateien und Logs
+*.swp
+*.swo
+*.tmp
+*.log
+*~
+
+# Locale-Dateien, fallback/, profiles/ und manifest.yml werden absichtlich
+# nicht ignoriert und sollen versioniert werden.
