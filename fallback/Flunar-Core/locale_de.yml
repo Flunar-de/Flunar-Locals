@@ -1,0 +1,433 @@
+noperms: "<red>Dazu hast du keine Berechtigung."
+
+only-player: "Nur Spieler können diesen Befehl ausführen."
+
+commandusemessage: "<red>Benutze: "
+
+unknownsubcommand: "<red>Unbekannter Unterbefehl."
+
+player-not-found: "<red>Spieler nicht gefunden oder nicht online."
+
+# Gemeinsame Messages die ALLE Plugins nutzen können
+common:
+  noperms: "<red>Dazu hast du keine Rechte!"
+  only-player: "<red>Dieser Befehl ist nur für Spieler!"
+  player-not-found: "<red>Spieler nicht gefunden!"
+  cooldown: "<red>Bitte warte noch %seconds% Sekunden!"
+
+# Unknown command message
+unknown-command: "<red>Unbekannter Befehl: <yellow>%command%<red>. Tippe /help für Hilfe."
+
+# manager Help Command
+manager-help-1: "<gold>-------- Help: /manager --------"
+manager-help-2: "<yellow>/manager itemclear <gray>- Führt ein ItemClear aus"
+manager-help-3: "<yellow>/manager server-restart <gray>- Führt einen Server Restart aus"
+manager-help-4: "<gold>-------- Help: /manager --------"
+
+
+# Join Listener
+join-message: "<dark_gray>[<green>+<dark_gray>] <gray>%player%"
+quit-message: "<dark_gray>[<red>-<dark_gray>] <gray>%player%"
+
+# IP Command
+player-no-perms-other-ip: "<red>Du darfst dir nicht die IP von anderen Spielern ansehen."
+player-ip-show: "<gray>Die IP-Adresse von <green><player> <gray>ist: <yellow><ip>"
+
+# Teleport Command
+tp-to-player: "<green>Du wurdest zu <yellow>{target} <green>teleportiert."
+tp-other: "<yellow>{from} <green>wurde zu <yellow>{to} <green>teleportiert."
+tp-all-to: "<green>Alle Spieler wurden zu <yellow>{to} <green>teleportiert."
+tp-player-to-all: "<green>{from} wurde zu allen Spielern teleportiert."
+tp-usage: "<red>/tp <Zielspieler>"
+tp-self: "<red>Du kannst dich nicht zu dir selbst teleportieren."
+tp-coords: "<green>Du wurdest zu den Koordinaten <yellow>X: {x} Y: {y} Z: {z} <green>teleportiert."
+tp-invalid-coords: "<red>Ungültige Koordinaten. Bitte gib drei gültige Zahlen an."
+tp-other-self: "<red>Ein Spieler kann nicht zu sich selbst teleportiert werden."
+console-needs-two-players: "<red>Die Konsole muss zwei Spielernamen angeben."
+
+
+# Item-Clear System
+itemclear:
+  disabled: "<gray>Item-Clear ist <red>deaktiviert<gray>."
+  auto-start: "<yellow>Items am Boden werden wegen hoher Last in <red>1 Minute <yellow>entfernt."
+  manual-start: "<yellow>Manueller Item-Clear startet in <red>1 Minute<yellow>!"
+  already-running: "<red>Ein Item-Clear läuft bereits."
+  countdown: "<yellow>Item-Clear in <red><seconds> <yellow>Sekunde<n>."
+  finished: "<green>✔ <yellow><amount> <gray>Items wurden entfernt!"
+
+bewerben-header: "<dark_gray><strikethrough>---------------- <reset><green><bold>BEWERBUNG <reset><dark_gray><strikethrough>----------------"
+bewerben-text: "<gray>Du möchtest Teil unseres <green>Teams <gray>werden?\n<gray>Dann bewirb dich jetzt ganz einfach auf unserem Discord!"
+bewerben-button-text: "<green><bold>                 [Hier klicken]                 "
+bewerben-link: "https://dc.flunar.de"
+bewerben-hover: "Klicke hier, um dich zu bewerben!"
+bewerben-success: "Viel Erfolg bei deiner Bewerbung!"
+bewerben-footer: "<dark_gray><strikethrough>-----------------------------------------------"
+
+discord-header: "<dark_gray><strikethrough>---------------- <reset><green><bold>DISCORD <reset><dark_gray><strikethrough>----------------"
+discord-text: "<gray>Werden Sie Teil der Community <gray>?\n<gray>und trete unserem Discord bei!"
+discord-button-text: "<green><bold>                 [Hier klicken]                 "
+discord-link: "https://dc.flunar.de"
+discord-footer: "<dark_gray><strikethrough>-----------------------------------------------"
+discord-hover: "Klicken Sie hier, um unserem Discord beizutreten!"
+
+
+restart:
+  title: "<red>SERVER RESTART"
+  subtitle: "<yellow>%seconds% Sekunden"
+  warning: "<red>Der Server startet in <yellow>%minutes% Minuten <red>neu! <gray>(%time% Uhr)"
+  countdown: "<red><bold>SERVER RESTART IN %seconds% SEKUNDEN!"
+  now: "<red>Der Server wird jetzt neugestartet!"
+  manual: "<gray>Ein Administrator hat einen Server-Restart in <yellow>%seconds% Sekunden <gray>angesetzt!"
+  kick: |
+    <red><bold>Server Restart
+    
+    <gray>Der Server wird gerade neugestartet.
+    <gray>Bitte versuche es in wenigen Momenten erneut!
+  help:
+    title: "Restart"
+    commands-label: "Verfügbare Befehle:"
+    now: "• <red>/core restart now"
+    now-desc: "<dark_gray>» Sofortiger Restart in 10 Sekunden"
+    schedule: "• <aqua>/core restart schedule <gray><HH:mm>"
+    schedule-desc: "<dark_gray>» Plant einen Restart zu einer bestimmten Uhrzeit"
+    cancel: "• <yellow>/core restart cancel"
+    cancel-desc: "<dark_gray>» Bricht einen geplanten manuellen Restart ab"
+    list: "• <green>/core restart list"
+    list-desc: "<dark_gray>» Zeigt alle geplanten Restarts an"
+
+# Chat Management Messages
+chat:
+  global-muted: "<red>Der globale Chat ist derzeit deaktiviert."
+  player-muted: "<red>Du wurdest vom Chat ausgeschlossen."
+  cooldown: "<red>Bitte warte noch <yellow>%seconds% <red>Sekunden, bevor du erneut schreibst."
+  blacklisted-word: "<red>Deine Nachricht enthält ein verbotenes Wort."
+  blocked-url: "<red>Du darfst keine URLs im Chat senden."
+  unsupported-characters: "<red>Deine Nachricht enthält Zeichen, die auf einer deutschen QWERTZ-Tastatur nicht verfügbar sind."
+  spam-detected: "<red>Deine Nachricht wurde als Spam erkannt."
+  luckperms-not-found: "<red>LuckPerms nicht gefunden! Chat-Formatierung deaktiviert."
+
+# Security Messages
+security:
+  book-too-many-pages: "<red>Dieses Buch hat zu viele Seiten! (Max: %max%)"
+  book-page-too-long: "<red>Eine Buchseite ist zu lang!"
+  book-title-too-long: "<red>Der Buchtitel ist zu lang!"
+  sign-too-many-lines: "<red>Zu viele Zeilen auf dem Schild!"
+  sign-line-too-long: "<red>Eine Zeile auf dem Schild ist zu lang!"
+
+# Rate Limiter Messages
+ratelimit:
+  exceeded: "<red>Du sendest zu viele Befehle! (Max: %max% pro Sekunde)"
+
+# IP Limit Messages
+iplimit:
+  kick-message: |
+    <red><bold>Zu viele Accounts
+    
+    <gray>Es sind bereits <yellow>%current% <gray>Accounts von deiner IP
+    <gray>auf dem Server. Maximum: <yellow>%max%
+    
+    <gray>Bitte wende dich an das Team, wenn dies
+    <gray>ein Fehler ist.
+
+# Language System Messages
+language:
+  current: "<gray>Deine aktuelle Sprache: <yellow>%language%"
+  available: "<gray>Verfügbare Sprachen: <yellow>%languages%"
+  usage: "<gray>Nutze: <yellow>/language <sprache>"
+  changed: "<green>Deine Sprache wurde auf <yellow>%language% <green>geändert!"
+  not-available: "<red>Die Sprache <yellow>%language% <red>ist nicht verfügbar."
+
+# ChatFilter Messages
+chatfilter:
+  usage-add: "Verwende: /core chatfilter add <word/allowword/url> <Wert> [exact/compound/fuzzy]"
+  usage-remove: "Verwende: /core chatfilter remove <word/allowword/url> <Wert>"
+  usage-list: "Verwende: /core chatfilter list <word/allowword/url>"
+  usage-test: "Verwende: /core chatfilter test <Nachricht>"
+  word-added: "Wort '%word%' im Modus %mode% zur Blacklist hinzugefügt!"
+  word-removed: "Wort '%word%' von der Blacklist entfernt!"
+  word-not-found: "Wort nicht gefunden!"
+  allowword-added: "Wort '%word%' zur Wort-Whitelist hinzugefügt!"
+  allowword-removed: "Wort '%word%' von der Wort-Whitelist entfernt!"
+  allowword-not-found: "Wort nicht in der Wort-Whitelist gefunden!"
+  url-added: "URL '%url%' zur Whitelist hinzugefügt!"
+  url-removed: "URL '%url%' von der Whitelist entfernt!"
+  url-not-found: "URL nicht gefunden!"
+  error-adding: "Fehler beim Hinzufügen!"
+  type-must-be: "Typ muss 'word', 'allowword' oder 'url' sein!"
+  invalid-mode: "Modus muss 'exact', 'compound' oder 'fuzzy' sein!"
+  blacklist-header: "Blacklist (%count% Wörter):"
+  allowword-header: "Wort-Whitelist (%count% Wörter):"
+  whitelist-header: "URL Whitelist (%count% URLs):"
+  no-words: "Keine Wörter in der Blacklist"
+  no-allowwords: "Keine Wörter in der Wort-Whitelist"
+  no-urls: "Keine URLs in der Whitelist"
+  reloaded: "Chat-Filter neu geladen!"
+  test-header: "Chatfilter-Test:"
+  test-message-label: "Geprüfter Satz:"
+  test-allowed: "Die Nachricht würde erlaubt."
+  test-disabled: "Der Chatfilter ist deaktiviert; die Nachricht würde erlaubt."
+  test-blocked: "Die Nachricht würde blockiert."
+  test-reason: "Grund: %reason%"
+  test-entry: "Blacklist-Eintrag: %entry%"
+  test-configured-mode: "Konfigurierter Modus: %mode%"
+  test-matched-word: "Betroffenes Wort: %word%"
+  test-match-type: "Match-Typ: %type%"
+  test-normalized: "Normalisierte Form: %normalized%"
+  test-reasons:
+    allowed: "Erlaubt"
+    blacklist: "Verbotenes Wort"
+    url: "Blockierte URL oder IP"
+    caps: "Zu viele Großbuchstaben"
+    repeated: "Zu viele wiederholte Zeichen"
+    characters: "Nicht erlaubte Zeichen"
+  help:
+    title: "ChatFilter"
+    commands-label: "Verfügbare Befehle:"
+    add-word: "• <aqua>/core chatfilter add word <gray><Wort> [exact/compound/fuzzy]"
+    add-word-desc: "<dark_gray>» Fügt ein Wort mit Match-Modus hinzu (Standard: exact)"
+    add-allowword: "• <aqua>/core chatfilter add allowword <gray><Wort>"
+    add-allowword-desc: "<dark_gray>» Erlaubt ein harmloses Wort ausdrücklich"
+    add-url: "• <aqua>/core chatfilter add url <gray><URL>"
+    add-url-desc: "<dark_gray>» Fügt eine URL zur Whitelist hinzu"
+    remove-word: "• <yellow>/core chatfilter remove word <gray><Wort>"
+    remove-word-desc: "<dark_gray>» Entfernt ein Wort von der Blacklist"
+    remove-allowword: "• <yellow>/core chatfilter remove allowword <gray><Wort>"
+    remove-allowword-desc: "<dark_gray>» Entfernt ein Wort von der Wort-Whitelist"
+    remove-url: "• <yellow>/core chatfilter remove url <gray><URL>"
+    remove-url-desc: "<dark_gray>» Entfernt eine URL von der Whitelist"
+    list-word: "• <green>/core chatfilter list word"
+    list-word-desc: "<dark_gray>» Zeigt alle blockierten Wörter mit Modus an"
+    list-allowword: "• <green>/core chatfilter list allowword"
+    list-allowword-desc: "<dark_gray>» Zeigt alle ausdrücklich erlaubten Wörter an"
+    list-url: "• <green>/core chatfilter list url"
+    list-url-desc: "<dark_gray>» Zeigt alle erlaubten URLs an"
+    test: "• <light_purple>/core chatfilter test <gray><Nachricht>"
+    test-desc: "<dark_gray>» Erklärt, ob und warum eine Nachricht blockiert würde"
+    reload: "• <gold>/core chatfilter reload"
+    reload-desc: "<dark_gray>» Lädt den ChatFilter neu"
+
+# Announce Messages
+announce:
+  from: "Von:"
+  time: "Zeit:"
+  help:
+    title: "Announce"
+    commands-label: "Verfügbare Befehle:"
+    default: "• <red>/announce <gray><Nachricht>"
+    default-desc: "<dark_gray>» Sendet eine Standard-Ankündigung"
+    info: "• <aqua>/announce info <gray><Nachricht>"
+    info-desc: "<dark_gray>» Sendet eine Information"
+    warning: "• <yellow>/announce warnung <gray><Nachricht>"
+    warning-desc: "<dark_gray>» Sendet eine Warnung"
+    important: "• <dark_red>/announce wichtig <gray><Nachricht>"
+    important-desc: "<dark_gray>» Sendet eine wichtige Nachricht"
+    event: "• <gold>/announce event <gray><Nachricht>"
+    event-desc: "<dark_gray>» Sendet eine Event-Ankündigung"
+
+services:
+  help-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Verfügbare Befehle:"
+  help-list: "<dark_gray>➥ <gray>/core services list <dark_gray>- <gray>Zeigt alle Services"
+  help-start: "<dark_gray>➥ <gray>/core services start <name> <dark_gray>- <gray>Startet einen Service"
+  help-stop: "<dark_gray>➥ <gray>/core services stop <name> <dark_gray>- <gray>Stoppt einen Service"
+  help-reload: "<dark_gray>➥ <gray>/core services reload <name> <dark_gray>- <gray>Lädt einen Service neu"
+  list-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Registrierte Services:"
+  list-entry: "<dark_gray>➥ <gray>%service% <dark_gray>- %status%"
+  usage-start: "<red>Verwendung: <gray>/core services start <name>"
+  usage-stop: "<red>Verwendung: <gray>/core services stop <name>"
+  usage-reload: "<red>Verwendung: <gray>/core services reload <name>"
+  not-found: "<red>Service <yellow>%service% <red>wurde nicht gefunden!"
+  already-running: "<red>Service <yellow>%service% <red>läuft bereits!"
+  already-stopped: "<red>Service <yellow>%service% <red>ist bereits gestoppt!"
+  started: "<green>Service <yellow>%service% <green>wurde gestartet!"
+  stopped: "<red>Service <yellow>%service% <red>wurde gestoppt!"
+  reloaded: "<green>Service <yellow>%service% <green>wurde neu geladen!"
+
+# Teleport API Messages
+teleport:
+  bossbar:
+    title: "Teleport..."
+    countdown: "Teleport in %seconds% Sekunden..."
+  subtitle:
+    countdown: "<yellow>%seconds%s"
+    cancelled: "<red>Abgebrochen"
+    success: "<green>✓"
+  title:
+    countdown: "<gold>Teleport"
+    cancelled: "<red>Teleport"
+    success: "<green>Teleport"
+
+gamemode:
+  invalid:       "<red>Ungültiger Spielmodus: <yellow>%input%"
+  changed-self:  "<gray>Spielmodus auf <yellow>%gamemode% <gray>gesetzt."
+  changed-other: "<gray>Spielmodus von <yellow>%player% <gray>auf <yellow>%gamemode% <gray>gesetzt."
+  changed-by-other: "<gray>Dein Spielmodus wurde auf <yellow>%gamemode% <gray>gesetzt."
+
+  name:
+    survival:  "<green>Survival"
+    creative:  "<aqua>Kreativ"
+    adventure: "<yellow>Abenteuer"
+    spectator: "<gray>Zuschauer"
+
+fly:
+  enabled:               "<green>Flugmodus <dark_green>aktiviert<green>."
+  disabled:              "<red>Flugmodus <dark_red>deaktiviert<red>."
+  enabled-other-sender:  "<green>Flugmodus für <yellow>%player% <green>aktiviert."
+  disabled-other-sender: "<red>Flugmodus für <yellow>%player% <red>deaktiviert."
+  enabled-other-target:  "<green>Dein Flugmodus wurde <dark_green>aktiviert<green>."
+  disabled-other-target: "<red>Dein Flugmodus wurde <dark_red>deaktiviert<red>."
+
+core-reload-success: "<green>Core-Systeme wurden neu geladen."
+core-doctor-header: "<dark_gray><strikethrough>---------- <reset><aqua><bold>Flunar Doctor <reset><dark_gray><strikethrough>----------"
+command-blocked: "<red>Du bist eingefroren und kannst keine Befehle nutzen!"
+
+dialogs:
+  common:
+    back: "<red>Zurück"
+    cancel: "<red>Abbrechen"
+    close: "<white>Schließen"
+    confirm: "<green>Bestätigen"
+    confirm-tooltip: "Führt die Aktion aus"
+    remove: "<red>Entfernen"
+    save: "<green>Speichern"
+    value-required: "Bitte gib einen Wert ein."
+    yes: "Ja"
+    no: "Nein"
+  panel:
+    title: "<#1FADFF><bold>Flunar <reset><dark_aqua>Panel"
+    body: "<white>Zentrale Verwaltung der Flunar-Core."
+    itemclear: "<gold>ItemClear"
+    itemclear-tooltip: "Gedroppte Items manuell entfernen"
+    restart: "<red>Restarts"
+    restart-tooltip: "Server-Restarts verwalten"
+    chatfilter: "<light_purple>Chatfilter"
+    chatfilter-tooltip: "Chatfilter-Einträge verwalten und testen"
+    doctor: "<aqua>Doctor"
+    doctor-tooltip: "Core-Systeme diagnostizieren"
+    services: "<yellow>Services"
+    services-tooltip: "Services ansehen und verwalten"
+    lifecycle: "<green>Lifecycle"
+    lifecycle-tooltip: "Join- und Quit-Pipelines anzeigen"
+    player: "<light_purple>Spieler-Kontext"
+    player-tooltip: "Deinen aktuellen Core-Zustand anzeigen"
+    scoreboard: "<blue>Scoreboard zurücksetzen"
+    scoreboard-tooltip: "Aktives Scoreboard entfernen und Default verwenden"
+    scoreboard-unavailable: "Das Scoreboard-System ist nicht verfügbar."
+    scoreboard-reset: "Das Scoreboard wurde auf Default zurückgesetzt."
+    tablist: "<dark_purple>Tablist aktualisieren"
+    tablist-tooltip: "Tablist für alle Spieler neu aufbauen"
+    tablist-unavailable: "Das Tablist-System ist nicht verfügbar."
+    tablist-refreshed: "Die Tablist wurde aktualisiert."
+    reload: "<red>Core neu laden"
+    reload-tooltip: "Config, Locale und laufende Systeme neu laden"
+    links: "<dark_aqua>Server-Links"
+    links-tooltip: "Discord und Bewerbung öffnen"
+    language: "<aqua>Sprache"
+    language-tooltip: "Deine Sprache auswählen"
+  language:
+    title: "<aqua>Sprache auswählen"
+    body: "<white>Aktuelle Sprache: <yellow>%language%"
+    input: "Sprache"
+    save-tooltip: "Ausgewählte Sprache speichern"
+  links:
+    discord: "Flunar Discord"
+    application: "Bei Flunar bewerben"
+    invalid: "Ein Server-Link ist ungültig konfiguriert."
+  restart:
+    title: "<red>Server-Restarts"
+    body: "<white>Plane, prüfe oder storniere Server-Restarts."
+    now: "<red>Jetzt neustarten"
+    now-tooltip: "Startet einen Restart in 10 Sekunden"
+    schedule: "<yellow>Restart planen"
+    schedule-tooltip: "Plant einen Restart zu einer Uhrzeit"
+    cancel: "<gold>Restart abbrechen"
+    cancel-tooltip: "Bricht den manuellen Restart ab"
+    list: "<green>Geplante Restarts"
+    list-tooltip: "Zeigt alle geplanten Restarts"
+    schedule-title: "<yellow>Restart planen"
+    schedule-body: "<white>Gib die Uhrzeit im Format <white>HH:mm <white>ein."
+    time: "Uhrzeit"
+    plan: "<green>Planen"
+    plan-tooltip: "Restart zu dieser Uhrzeit planen"
+    invalid-time: "Ungültige Uhrzeit. Verwende HH:mm, zum Beispiel 19:00."
+    confirm-now-title: "<red>Restart bestätigen"
+    confirm-now-body: "<red>Der Server startet in 10 Sekunden neu. <white>Alle Spieler werden getrennt."
+    confirm-schedule-title: "<yellow>Restart planen"
+    confirm-schedule-body: "<white>Soll der Restart wirklich für <yellow>%time% Uhr <white>geplant werden?"
+    confirm-cancel-title: "<gold>Restart abbrechen"
+    confirm-cancel-body: "<white>Soll der manuell geplante Restart wirklich abgebrochen werden?"
+    started: "Der Server-Restart wurde gestartet."
+    scheduled: "Der Restart wurde für %time% Uhr geplant."
+    cancelled: "Der manuelle Restart wurde abgebrochen."
+    none: "Es ist kein manueller Restart geplant."
+    past: "Die angegebene Uhrzeit liegt in der Vergangenheit."
+    list-title: "<green>Geplante Restarts"
+  services:
+    title: "<yellow>Core-Services"
+    body: "<white>Registrierte Services: <yellow>%count%"
+    detail: "<white>Status: <yellow>%status%"
+    start: "<green>Starten"
+    stop: "<red>Stoppen"
+    reload: "<yellow>Neu laden"
+    reload-all: "<gold>Alle neu laden"
+    reload-all-tooltip: "Alle registrierten Services neu laden"
+    confirm-title: "<yellow>Service-Aktion bestätigen"
+    confirm-body: "<white>Aktion <yellow>%action% <white>für Service <yellow>%service% <white>ausführen?"
+    confirm-all-title: "<gold>Alle Services neu laden"
+    confirm-all-body: "<white>Sollen wirklich alle registrierten Services neu geladen werden?"
+    reloaded-all: "Alle Services wurden neu geladen."
+    invalid-action: "Unbekannte Service-Aktion."
+    failed: "Aktion für Service %service% fehlgeschlagen."
+  doctor:
+    title: "<aqua>Flunar Doctor"
+    not-ready: "Nicht bereit"
+  lifecycle:
+    title: "<green>Player Lifecycle"
+    join: "Letzter Join-Trace"
+    quit: "Letzter Quit-Trace"
+    none: "Noch keine Daten vorhanden."
+  player:
+    title: "<light_purple>Spieler-Kontext"
+    name: "Name"
+    uuid: "UUID"
+    world: "Welt"
+    language: "Sprache"
+    scoreboard: "Scoreboard"
+    glowing: "Leuchteffekt"
+  reload:
+    title: "<red>Core neu laden"
+    body: "<white>Config, Locale, Scoreboard, Tablist, Security und weitere laufende Systeme werden neu geladen."
+  itemclear:
+    title: "<red>Items entfernen"
+    body: "<white>Sollen alle betroffenen gedroppten Items jetzt entfernt werden?"
+  chatfilter:
+    title: "<aqua>Chatfilter"
+    body: "<white>Verwalte Blacklist, Ausnahmen, URLs und Filtertests."
+    add: "<green>Eintrag hinzufügen"
+    add-tooltip: "Wort, Ausnahme oder URL hinzufügen"
+    remove: "<red>Eintrag entfernen"
+    remove-tooltip: "Wort, Ausnahme oder URL entfernen"
+    list: "<yellow>Einträge anzeigen"
+    list-tooltip: "Gespeicherte Filtereinträge anzeigen"
+    test: "<light_purple>Nachricht testen"
+    test-tooltip: "Eine Nachricht gegen den Filter testen"
+    reload: "<gold>Filter neu laden"
+    reload-tooltip: "Chatfilter aus Config und Datenbank neu laden"
+    reload-title: "<gold>Chatfilter neu laden"
+    reload-body: "<white>Soll der Chatfilter wirklich neu geladen werden?"
+    add-title: "<green>Filtereintrag hinzufügen"
+    add-body: "<white>Wähle Typ, Wert und Match-Modus. Der Modus gilt nur für Blacklist-Wörter."
+    remove-title: "<red>Filtereintrag entfernen"
+    remove-body: "<white>Wähle Typ und den exakt zu entfernenden Wert."
+    list-title: "<yellow>Filtereinträge"
+    list-body: "<white>Wähle die Liste aus."
+    empty: "Keine Einträge vorhanden."
+    test-title: "<light_purple>Nachricht testen"
+    test-body: "<white>Die Nachricht wird nur analysiert und nicht gesendet."
+    test-result-title: "<light_purple>Filterergebnis"
+    type: "Typ"
+    value: "Wert"
+    mode: "Match-Modus"
+    message: "Nachricht"
+    word: "Blacklist-Wort"
+    allowword: "Erlaubtes Wort"
+    url: "Erlaubte URL"

@@ -1,0 +1,29 @@
+schema-version: 1
+
+profiles:
+  fallback:
+    files:
+      - plugin: Flunar-Core
+        language: default
+        path: fallback/Flunar-Core/locale.yml
+        sha256: d3493de225700bb39751f1aafab9b0d0ef0c84bcd4a39ea780563b206bc996dc
+      - plugin: Flunar-Core
+        language: de
+        path: fallback/Flunar-Core/locale_de.yml
+        sha256: f0d847db6873732ee1dc761273ed42b128ed0f9a29fdc28b49ecb02105260db4
+      - plugin: Flunar-Core
+        language: en
+        path: fallback/Flunar-Core/locale_en.yml
+        sha256: 234fa6357b7c5b84540d94e4df7b97cb4662f3b1fc353db2c08c00d5ad673e9e
+
+  lobby:
+    extends: fallback
+    files:
+      - plugin: Flunar-LobbySystem
+        language: de
+        path: profiles/lobby/Flunar-LobbySystem/locale_de.yml
+        sha256: 7cad45f1c049807206c2e6e60a485e9f875b262522f61b489421247d153a9121
+      - plugin: Flunar-LobbySystem
+        language: en
+        path: profiles/lobby/Flunar-LobbySystem/locale_en.yml
+        sha256: a9c05d2ef9e2d02de850576fc2bcbd5a4e111910bf3bb709658f45dac70caad4

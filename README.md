@@ -2,7 +2,7 @@
 
 Dieses Repository ist die gemeinsame Quelle für Sprachdateien der Flunar-Plugins. Die Flunar-Core wählt pro Server ein Profil aus und stellt die Texte über ihre Locale-API bereit. Jedes Plugin liefert seine eigenen Nachrichtenschlüssel und unterstützten Sprachen.
 
-**Stand dieses Repositorys:** Die Ordner `fallback/` und `profiles/` sowie `manifest.yml` sind vorbereitet. Locale-Dateien sind noch nicht angelegt. Dieses Dokument beschreibt die geplante Struktur und legt keine Locale-Dateien an.
+**Aktueller Stand:** Die drei Core-Dateien `locale.yml`, `locale_de.yml` und `locale_en.yml` liegen unter `fallback/Flunar-Core/`. Die deutschen und englischen Lobby-System-Dateien wurden aus dem Plugin-Projekt in `profiles/lobby/Flunar-LobbySystem/` kopiert. Beide Quellprojekte bleiben unverändert. Die Lobby-Profil-Dateien sind zunächst vollständige Kopien; ein allgemeiner Lobby-System-Fallback und weitere Profile fehlen noch.
 
 ## Aufbau
 
@@ -11,28 +11,25 @@ Flunar-Locals/
 ├── manifest.yml
 ├── fallback/
 │   ├── Flunar-Core/
+│   │   ├── locale.yml
 │   │   ├── locale_de.yml
 │   │   └── locale_en.yml
-│   └── Flunar-LobbySystem/
-│       ├── locale_de.yml
-│       └── locale_en.yml
 └── profiles/
     ├── lobby/
     │   └── Flunar-LobbySystem/
-    │       └── locale_de.yml
-    └── survival/
-        └── Flunar-Claims/
-            └── locale_de.yml
+    │       ├── locale_de.yml
+    │       └── locale_en.yml
 ```
 
-Die gezeigten Locale-Dateien sind Beispiele für die spätere Struktur; sie sind aktuell nicht vorhanden.
+Für das Lobby-System sind aktuell nur die Lobby-Profil-Dateien vorhanden. Weitere Serverprofile und Plugin-Fallbacks werden ergänzt, wenn deren Dateien bereitgestellt werden.
 
 ### Fallback
 
-`fallback/` enthält die allgemeinen Texte. Für jedes Plugin und jede Sprache, die das Netzwerk anbietet, sollte dort eine vollständige Standarddatei liegen. Zum Beispiel:
+`fallback/` enthält die allgemeinen Texte. Für jedes Plugin und jede Sprache, die das Netzwerk anbietet, sollte dort eine vollständige Standarddatei liegen.
 
-- `fallback/Flunar-LobbySystem/locale_de.yml`
-- `fallback/Flunar-LobbySystem/locale_en.yml`
+Aktuell enthält dieser Ordner nur Flunar-Core. Das Lobby-System verwendet seine gebündelten Plugin-Ressourcen als allgemeinen Fallback, bis `fallback/Flunar-LobbySystem/` separat hinzugefügt wird.
+
+Für Flunar-Core gibt es zusätzlich `fallback/Flunar-Core/locale.yml`. Diese Datei ist nicht an eine bestimmte Sprache gebunden und wird im Manifest mit `language: default` als letzte Core-Fallback-Datei geführt.
 
 ### Serverprofile
 
@@ -52,14 +49,18 @@ schema-version: 1
 profiles:
   fallback:
     files:
-      - plugin: Flunar-LobbySystem
+      - plugin: Flunar-Core
+        language: default
+        path: fallback/Flunar-Core/locale.yml
+        sha256: d3493de225700bb39751f1aafab9b0d0ef0c84bcd4a39ea780563b206bc996dc
+      - plugin: Flunar-Core
         language: de
-        path: fallback/Flunar-LobbySystem/locale_de.yml
-        sha256: "<sha256>"
-      - plugin: Flunar-LobbySystem
+        path: fallback/Flunar-Core/locale_de.yml
+        sha256: f0d847db6873732ee1dc761273ed42b128ed0f9a29fdc28b49ecb02105260db4
+      - plugin: Flunar-Core
         language: en
-        path: fallback/Flunar-LobbySystem/locale_en.yml
-        sha256: "<sha256>"
+        path: fallback/Flunar-Core/locale_en.yml
+        sha256: 234fa6357b7c5b84540d94e4df7b97cb4662f3b1fc353db2c08c00d5ad673e9e
 
   lobby:
     extends: fallback
@@ -67,10 +68,14 @@ profiles:
       - plugin: Flunar-LobbySystem
         language: de
         path: profiles/lobby/Flunar-LobbySystem/locale_de.yml
-        sha256: "<sha256>"
+        sha256: 7cad45f1c049807206c2e6e60a485e9f875b262522f61b489421247d153a9121
+      - plugin: Flunar-LobbySystem
+        language: en
+        path: profiles/lobby/Flunar-LobbySystem/locale_en.yml
+        sha256: a9c05d2ef9e2d02de850576fc2bcbd5a4e111910bf3bb709658f45dac70caad4
 ```
 
-Das Manifest ist hier nur dokumentiert und bleibt vorerst leer. Wenn die Locale-Dateien später hinzugefügt werden, müssen auch die passenden Manifest-Einträge und SHA-256-Prüfsummen ergänzt werden. In der echten Fallback-Liste stehen alle verwendeten Plugins und alle für sie angebotenen Sprachen.
+Das aktuelle Manifest enthält die Core-Fallback-Dateien und die beiden kopierten Lobby-Profil-Dateien. Der allgemeine Lobby-System-Fallback unter `fallback/Flunar-LobbySystem/` fehlt noch. SHA-256-Werte müssen bei jeder Dateiänderung neu berechnet werden.
 
 ## Core pro Server einstellen
 
@@ -132,13 +137,14 @@ Das Lobby-System heißt in seiner Plugin-Beschreibung `Flunar-LobbySystem`, ben�
 
 Für die zentralen Locals bedeutet das:
 
-- Allgemeine Lobby-System-Texte liegen in `fallback/Flunar-LobbySystem/locale_de.yml` und `locale_en.yml`.
-- Lobby-spezifische Überschreibungen liegen in `profiles/lobby/Flunar-LobbySystem/`.
+- Die gebündelten Lobby-System-Dateien sind nach `profiles/lobby/Flunar-LobbySystem/` kopiert und dort unverändert.
+- Ein allgemeiner GitHub-Fallback unter `fallback/Flunar-LobbySystem/` fehlt noch. Bis er ergänzt ist, liefern die im Plugin-JAR enthaltenen Dateien die allgemeinen Texte für andere Profile.
+- Sobald der allgemeine Fallback hinzugefügt ist, sollten die Profil-Dateien nur die Lobby-spezifischen Abweichungen enthalten.
 - Die Lobby verwendet das in der Core eingestellte Profil. Eine zweite Einstellung in der Lobby-System-Config ist nicht erforderlich.
 - Die Core muss `de` und `en` unter `Language.AvailableLanguages` freigeben. Das Lobby-Sprachmenü bietet derzeit genau diese beiden Sprachen an.
 - Wird zum Beispiel Französisch ergänzt, müssen Core-Konfiguration, Lobby-Sprachmenü, `loadPluginLocales`-Sprachen, gebündelte Plugin-Datei und Fallback-Datei zusammen angepasst werden.
 
-Die Datei unter `fallback/` enthält den allgemeinen Schlüssel; eine Profil-Datei überschreibt ihn nur für diesen Servertyp:
+Zielbild nach Ergänzung des allgemeinen Fallbacks: Die Datei unter `fallback/` enthält den allgemeinen Schlüssel; eine Profil-Datei überschreibt ihn nur für diesen Servertyp. Die folgende Fallback-Datei ist noch nicht angelegt:
 
 ```yaml
 # fallback/Flunar-LobbySystem/locale_de.yml
@@ -182,4 +188,6 @@ Plugins greifen weiterhin über die Locale-API zu. Sie laden nicht selbst von Gi
 
 ## Aktueller Umsetzungsstand
 
-Dieses Repository enthält derzeit noch keine Locale-Dateien. Auch das Manifest ist noch leer. Die obigen Strukturen und Beispiele dokumentieren den Zielaufbau; sie sind keine bereits von Flunar-Core unterstützte GitHub-Synchronisierung. Die Core- und Plugin-Anpassungen müssen implementiert werden, bevor die Remote-Einstellungen wirksam sind.
+Das Repository enthält derzeit den Core-Fallback und die beiden deutschen und englischen Locale-Dateien im Lobby-Profil. Die Dateien sind im Manifest mit Prüfsummen eingetragen. Ein allgemeiner Lobby-System-Fallback sowie Locals weiterer Plugins fehlen noch.
+
+Die GitHub-Synchronisierung selbst ist noch nicht in Flunar-Core implementiert. Die Dateien und das Manifest sind vorbereitet, werden aber erst von Servern genutzt, wenn die Remote-Locale-Unterstützung in der Core ergänzt ist.
