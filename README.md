@@ -79,15 +79,13 @@ Das Serverprofil wird zentral in der Core gesetzt, zum Beispiel in `plugins/Flun
 ```yaml
 RemoteLocales:
   Enabled: true
-  Repository:
-    Owner: YOUR_GITHUB_ORG
-    Name: Flunar-Locals
-    Ref: main
-    Manifest: manifest.yml
+  ManifestUrl: "https://raw.githubusercontent.com/YOUR_GITHUB_ORG/Flunar-Locals/main/manifest.yml"
   Profile: lobby
 ```
 
-Owner und Ref sind Beispiele und müssen zum veröffentlichten GitHub-Repository passen. Für automatische Updates kann ein geschützter Branch wie `main` verfolgt werden. Für feste, kontrollierte Stände kann die Ref auf einen Release-Tag zeigen.
+Ersetze `YOUR_GITHUB_ORG` durch den GitHub-Benutzer oder die Organisation, unter der das Repository liegt. `ManifestUrl` muss direkt auf die Raw-Datei zeigen. Verwende daher `raw.githubusercontent.com` und keinen normalen GitHub-Weblink mit `/blob/`. In einem Link für einen festen Release wird `main` durch den Tag ersetzt, zum Beispiel `v1.2.0`.
+
+Die Core lädt das Manifest über diesen Link. Die Locale-Dateien werden anschließend über die relativen Pfade abgerufen, die im Manifest stehen, zum Beispiel `fallback/Flunar-LobbySystem/locale_de.yml` oder `profiles/lobby/Flunar-LobbySystem/locale_de.yml`.
 
 Die verfügbaren Spielersprachen stehen weiterhin in der `config.yml` der Core:
 
