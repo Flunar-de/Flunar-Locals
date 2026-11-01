@@ -287,3 +287,11 @@ profiles:
         language: en
         path: fallback/Flunar-BonkAndBoom/locale_en.yml
         sha256: a560cf6e056633b044401006d51eb3b2a93b2e7e5ab91dc1c952d949e06da916
+      - plugin: Flunar-PillarChaos
+        language: de
+        path: fallback/Flunar-PillarChaos/locale_de.yml
+        sha256: 9acfa3a5ae015a9294d7858d6858d83d539e7e39a036988598df3a68ba354d62
+      - plugin: Flunar-PillarChaos
+        language: en
+        path: fallback/Flunar-PillarChaos/locale_en.yml
+        sha256: 89ddd9c84c8363e42dcb8f356e442bfe31604fae02d2ef86851b0d4d036851e1
