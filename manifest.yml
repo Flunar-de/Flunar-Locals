@@ -203,3 +203,11 @@ profiles:
         language: en
         path: fallback/Flunar-Economy/locale_en.yml
         sha256: 7d013f7faa0791d1fd712addeafd9b2260e690886521f2ec6b14729c2ee27518
+      - plugin: Flunar-Essentails
+        language: de
+        path: fallback/Flunar-Essentails/locale_de.yml
+        sha256: 873fbf7015bba1ea97d71b1845be43812a3ba04d872e679e616a7b90ae907ccd
+      - plugin: Flunar-Essentails
+        language: en
+        path: fallback/Flunar-Essentails/locale_en.yml
+        sha256: 148eaab4783384de8c83b323acfe07dce9af416a16eb7d9dde0bec6010ffce87
