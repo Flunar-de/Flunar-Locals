@@ -63,3 +63,11 @@ profiles:
         language: en
         path: fallback/Flunar-Piano/locale_en.yml
         sha256: 462723599496b5af62430d3d897e8592ad8b59fa6dd403281ba8d4a27b097b01
+      - plugin: Flunar-Playtimesystem
+        language: de
+        path: fallback/Flunar-Playtimesystem/locale_de.yml
+        sha256: 04c64a4fc114f8c5fccd8c35440d4517526bb0a0466e2d75215ce02e05704079
+      - plugin: Flunar-Playtimesystem
+        language: en
+        path: fallback/Flunar-Playtimesystem/locale_en.yml
+        sha256: 504686c0db070df82ef40613aa883c88f1762de3c2bf0c8af38e99456936ed71
