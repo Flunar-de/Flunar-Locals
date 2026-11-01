@@ -15,6 +15,14 @@ profiles:
         language: en
         path: fallback/Flunar-Core/locale_en.yml
         sha256: b7199b1a2ff936078d41461d610f6a93a8dd4b3eb5aa71f914ec1dadfc0ebe70
+      - plugin: CoinsAPI
+        language: de
+        path: fallback/CoinsAPI/locale_de.yml
+        sha256: b16fe0838ee335e08841f879c3746ec441abd5e40bef7a9d87ab2dc137e48d53
+      - plugin: CoinsAPI
+        language: en
+        path: fallback/CoinsAPI/locale_en.yml
+        sha256: 15bd4ec1990d9c537f4af582a4965f1b22d4680755d448e8aa532073d5e9ad59
       - plugin: Flunar-LobbySystem
         language: de
         path: fallback/Flunar-LobbySystem/locale_de.yml

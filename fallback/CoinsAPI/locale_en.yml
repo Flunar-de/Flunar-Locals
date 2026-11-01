@@ -1,0 +1,40 @@
+config-reloaded: "<!bold><#86efac>Config successfully reloaded.</#86efac>"
+coins-your: "<!bold><gray>You have</gray> <#ffd166>%coins%</#ffd166> <gray>coins.</gray>"
+coins-other: "<!bold><#38bdf8>%player%</#38bdf8> <gray>has</gray> <#ffd166>%coins%</#ffd166> <gray>coins.</gray>"
+player-not-found: "<!bold><#fb7185>Player</#fb7185> <#ffd166>%player%</#ffd166> <#fb7185>is not registered in the coins database.</#fb7185>"
+database-error: "<!bold><#fb7185>The coin action could not be completed because of a database error.</#fb7185>"
+
+reset-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/ca player reset [Player|UUID] [Reason]</#38bdf8>"
+reset-success: "<!bold><gray>The coins of</gray> <#38bdf8>%player%</#38bdf8> <gray>have been reset to</gray> <#ffd166>%coins%</#ffd166><gray>.</gray>"
+coins-reset-by-admin: "<!bold><gray>Your coins were reset to</gray> <#ffd166>%coins%</#ffd166> <gray>by</gray> <#38bdf8>%admin%</#38bdf8><gray>.</gray>"
+
+not-enough-coins-remove: "<!bold><#38bdf8>%player%</#38bdf8> <#fb7185>does not have enough coins.</#fb7185> <gray>Current:</gray> <#ffd166>%coins%</#ffd166>"
+remove-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/ca player remove [Player|UUID] [Coins] [Reason]</#38bdf8>"
+coins-removed: "<!bold><gray>You removed</gray> <#ffd166>%coins%</#ffd166> <gray>coins from</gray> <#38bdf8>%player%</#38bdf8><gray>.</gray>"
+coins-removed-by-admin: "<!bold><#ffd166>%coins%</#ffd166> <gray>coins were removed by</gray> <#38bdf8>%admin%</#38bdf8><gray>.</gray>"
+
+add-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/ca player add [Player|UUID] [Coins] [Reason]</#38bdf8>"
+coins-added: "<!bold><gray>You added</gray> <#ffd166>%coins%</#ffd166> <gray>coins to</gray> <#38bdf8>%player%</#38bdf8><gray>.</gray>"
+coins-added-by-admin: "<!bold><#ffd166>%coins%</#ffd166> <gray>coins were added by</gray> <#38bdf8>%admin%</#38bdf8><gray>.</gray>"
+
+set-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/ca player set [Player|UUID] [Coins] [Reason]</#38bdf8>"
+invalid-number: "<!bold><#fb7185>Invalid number:</#fb7185> <#ffd166>%input%</#ffd166>"
+coins-set: "<!bold><gray>You set the coins of</gray> <#38bdf8>%player%</#38bdf8> <gray>to</gray> <#ffd166>%coins%</#ffd166><gray>.</gray>"
+coins-set-by-admin: "<!bold><gray>Your coins were set to</gray> <#ffd166>%coins%</#ffd166> <gray>by</gray> <#38bdf8>%admin%</#38bdf8><gray>.</gray>"
+
+top-title: "<#facc15>Coins Top List</#facc15>"
+top-rank: "<#facc15>#%rank%</#facc15> <#f8fafc>%player%</#f8fafc>"
+top-coins: "<gray>Coins:</gray> <#ffd166>%coins%</#ffd166>"
+top-no-data: "<!bold><gray>No entries available.</gray>"
+
+reward-create-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/ca reward create [code|random] [coins] [uses] [dd.MM.yyyy]</#38bdf8>"
+reward-code-exists: "<!bold><#fb7185>Reward code</#fb7185> <#facc15>%code%</#facc15> <#fb7185>already exists.</#fb7185>"
+reward-created: "<!bold><gray>Reward code</gray> <#facc15>%code%</#facc15> <gray>created:</gray> <#ffd166>%coins%</#ffd166> <gray>coins,</gray> <#ffd166>%max%x</#ffd166> <gray>uses.</gray>"
+invalid-date: "<!bold><#fb7185>'%input%' is not a valid date.</#fb7185> <gray>Use</gray> <#facc15>dd.MM.yyyy</#facc15><gray>.</gray>"
+reward-use-usage: "<!bold><gray>Usage:</gray> <#38bdf8>/code [Code]</#38bdf8> <dark_gray>-</dark_gray> <gray>Redeem a reward code.</gray>"
+reward-code-not-found: "<!bold><#fb7185>The entered reward code was not found.</#fb7185>"
+reward-code-expired: "<!bold><#fb7185>The entered reward code has expired.</#fb7185>"
+reward-code-maxed: "<!bold><#fb7185>This reward code has been redeemed the maximum number of times.</#fb7185>"
+reward-code-already-claimed: "<!bold><#fb7185>You have already redeemed this reward code.</#fb7185>"
+reward-claimed: "<!bold><gray>You received</gray> <#ffd166>%coins%</#ffd166> <gray>coins from code</gray> <#facc15>%code%</#facc15><gray>.</gray>"
+
