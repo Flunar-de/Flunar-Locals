@@ -39,6 +39,7 @@ protect:
   alert-valuable: "<red>Wertblock-Warnung:</red> <white>%player%</white> <gray>hat innerhalb von %seconds% Sekunden %count% konfigurierte Wertblöcke entfernt. Letzte Position: %x% %y% %z%.</gray>"
   alert-entities: "<red>Entity-Warnung:</red> <white>%player%</white> <gray>hat innerhalb von %seconds% Sekunden %count% geschützte Entities entfernt. Letzte Position: %x% %y% %z%.</gray>"
   alert-tnt: "<red>TNT-Warnung:</red> <white>%player%</white> <gray>hat innerhalb von %seconds% Sekunden %count% TNT gezündet. Letzte Position: %x% %y% %z%.</gray>"
+  alert-tnt-blocked: "<red>TNT-Schutz:</red> <gray>Eine Explosion wurde in Welt <white>%world%</white> bei <white>%x% %y% %z%</white> (Chunk <white>%chunk_x% %chunk_z%</white>) abgebrochen. Limit: <white>%maximum%</white> Explosionen in <white>%seconds%</white> Sekunde(n).</gray>"
   alerts-enabled: "<green>Aktivitätswarnungen wurden für dich aktiviert.</green>"
   alerts-disabled: "<yellow>Aktivitätswarnungen wurden für dich deaktiviert.</yellow>"
   alerts-unavailable: "<yellow>Aktivitätswarnungen sind serverweit deaktiviert.</yellow>"

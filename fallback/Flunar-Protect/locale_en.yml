@@ -39,6 +39,7 @@ protect:
   alert-valuable: "<red>Valuable-block alert:</red> <white>%player%</white> <gray>removed %count% configured valuable blocks within %seconds% seconds. Last position: %x% %y% %z%.</gray>"
   alert-entities: "<red>Entity alert:</red> <white>%player%</white> <gray>removed %count% protected entities within %seconds% seconds. Last position: %x% %y% %z%.</gray>"
   alert-tnt: "<red>TNT alert:</red> <white>%player%</white> <gray>ignited %count% TNT within %seconds% seconds. Last position: %x% %y% %z%.</gray>"
+  alert-tnt-blocked: "<red>TNT protection:</red> <gray>An explosion was cancelled in world <white>%world%</white> at <white>%x% %y% %z%</white> (chunk <white>%chunk_x% %chunk_z%</white>). Limit: <white>%maximum%</white> explosions in <white>%seconds%</white> second(s).</gray>"
   alerts-enabled: "<green>Activity alerts have been enabled for you.</green>"
   alerts-disabled: "<yellow>Activity alerts have been disabled for you.</yellow>"
   alerts-unavailable: "<yellow>Activity alerts are disabled server-wide.</yellow>"
