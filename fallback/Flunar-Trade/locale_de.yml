@@ -6,7 +6,7 @@ trade:
   placeholder-hologram-trade-line: "%rank_color%#%position% <white>%name% <dark_gray>• <green>%amount% Abschlüsse"
   placeholder-hologram-trade-footer: "<gradient:#a855f7:#22d3ee>╰──────────────────────────────╯</gradient>"
   no-permission: "<red>Dazu hast du keine Berechtigung."
-  bedrock-ui-unavailable: "<red>Die Bedrock-Oberfläche konnte gerade nicht geöffnet werden. Versuche es gleich erneut."
+  bedrock-ui-unavailable: "<red>Die Bedrock-Oberfläche konnte gerade nicht geöffnet werden. Versuche es gleich erneut!"
   settings-title: "<dark_gray>Trade-Einstellungen"
   settings-description: "<gray>Lege fest, welche Trade-Benachrichtigungen und Sounds du erhalten möchtest."
   settings-allow-requests: "Handelsanfragen erlauben"

@@ -6,7 +6,7 @@ trade:
   placeholder-hologram-trade-line: "%rank_color%#%position% <white>%name% <dark_gray>• <green>%amount% completions"
   placeholder-hologram-trade-footer: "<gradient:#a855f7:#22d3ee>╰──────────────────────────────╯</gradient>"
   no-permission: "<red>You do not have permission to do that."
-  bedrock-ui-unavailable: "<red>The Bedrock interface could not be opened right now. Please try again shortly."
+  bedrock-ui-unavailable: "<red>The Bedrock interface could not be opened right now. Please try again shortly!"
   settings-title: "<dark_gray>Trade settings"
   settings-description: "<gray>Choose which trade notifications and sounds you want to receive."
   settings-allow-requests: "Allow trade requests"
