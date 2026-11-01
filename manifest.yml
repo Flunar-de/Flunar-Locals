@@ -15,15 +15,11 @@ profiles:
         language: en
         path: fallback/Flunar-Core/locale_en.yml
         sha256: b7199b1a2ff936078d41461d610f6a93a8dd4b3eb5aa71f914ec1dadfc0ebe70
-
-  lobby:
-    extends: fallback
-    files:
       - plugin: Flunar-LobbySystem
         language: de
-        path: profiles/lobby/Flunar-LobbySystem/locale_de.yml
+        path: fallback/Flunar-LobbySystem/locale_de.yml
         sha256: 7cad45f1c049807206c2e6e60a485e9f875b262522f61b489421247d153a9121
       - plugin: Flunar-LobbySystem
         language: en
-        path: profiles/lobby/Flunar-LobbySystem/locale_en.yml
+        path: fallback/Flunar-LobbySystem/locale_en.yml
         sha256: a9c05d2ef9e2d02de850576fc2bcbd5a4e111910bf3bb709658f45dac70caad4
