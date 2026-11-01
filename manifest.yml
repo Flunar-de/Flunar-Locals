@@ -15,6 +15,14 @@ profiles:
         language: en
         path: fallback/Flunar-Core/locale_en.yml
         sha256: b7199b1a2ff936078d41461d610f6a93a8dd4b3eb5aa71f914ec1dadfc0ebe70
+      - plugin: Flunar-Shop
+        language: de
+        path: fallback/Flunar-Shop/locale_de.yml
+        sha256: 745acef437e4fc3fab3f505275c6a337d10b760247522791fb0cf3ef73aec44a
+      - plugin: Flunar-Shop
+        language: en
+        path: fallback/Flunar-Shop/locale_en.yml
+        sha256: 780755f62c230e3b5fbeda9c58820e35698c83a2d9ae5d96d480171cc036c428
       - plugin: CoinsAPI
         language: de
         path: fallback/CoinsAPI/locale_de.yml
@@ -47,6 +55,14 @@ profiles:
         language: en
         path: fallback/Flunar-Wedding/locale_en.yml
         sha256: 7c42a5e526b5a9d0c3b15f1361935ee88e0345c5cf42f222e5251ce012b5f3ae
+      - plugin: Flunar-Protect
+        language: de
+        path: fallback/Flunar-Protect/locale_de.yml
+        sha256: 95d44d88aeb67015f3815f28bf302de0341e48ac88cf074a95801aaac462e9ba
+      - plugin: Flunar-Protect
+        language: en
+        path: fallback/Flunar-Protect/locale_en.yml
+        sha256: c2e8f1e2e7d9758b3fb81f857157732912ed525162590f27b632dfcea8ee41e9
       - plugin: Flunar-Moderation
         language: de
         path: fallback/Flunar-Moderation/locale_de.yml
@@ -179,6 +195,54 @@ profiles:
         language: en
         path: fallback/Flunar-Worldmanager/locale_en.yml
         sha256: 5eb0d7497175911439986e8a82719a84101868c21ce63f40eb73da4313471581
+      - plugin: Flunar-Spawner
+        language: de
+        path: fallback/Flunar-Spawner/locale_de.yml
+        sha256: 053c1cddf1105638cfe992a15ee8533f9fbab41d8581a4f35dbb930e3e87c449
+      - plugin: Flunar-Spawner
+        language: en
+        path: fallback/Flunar-Spawner/locale_en.yml
+        sha256: 582d2d78301663102edc4956919ae21cf7e5da1f659ee79ed8317d62c90a16a1
+      - plugin: Flunar-Spawner
+        language: en_us
+        path: fallback/Flunar-Spawner/locale_en_us.yml
+        sha256: 582d2d78301663102edc4956919ae21cf7e5da1f659ee79ed8317d62c90a16a1
+      - plugin: Flunar-Spawner
+        language: vi_vn
+        path: fallback/Flunar-Spawner/locale_vi_vn.yml
+        sha256: dfcecbac9f68048deb3ac87b029ff7d4861388cabd666bc9667f1c0075aba163
+      - plugin: Flunar-Reward
+        language: de
+        path: fallback/Flunar-Reward/locale_de.yml
+        sha256: e380650475249744da6e8c1ab633bf7a9d27640487f4b5d38c3d8b1f5c8b5d02
+      - plugin: Flunar-Reward
+        language: en
+        path: fallback/Flunar-Reward/locale_en.yml
+        sha256: ecc485f11d4acd2c3e9816c6c38744d7176b60ccadd3756f8c66cfcfcd488a57
+      - plugin: Flunar-Jobs
+        language: de
+        path: fallback/Flunar-Jobs/locale_de.yml
+        sha256: c54ca045f3673df187405169b1f2fa7ff4e6f23fe28b075ae7e36662e00b80aa
+      - plugin: Flunar-Jobs
+        language: en
+        path: fallback/Flunar-Jobs/locale_en.yml
+        sha256: 0b295286fa9b0b8217ad6d42f54530fef29841d3ebbfe3af0cc4e10b745c2f1a
+      - plugin: Flunar-Trade
+        language: de
+        path: fallback/Flunar-Trade/locale_de.yml
+        sha256: b3a5496d81e4cef19717b2cf2f9a8bbad5ccbfba6fb72b7852caf3281d45b390
+      - plugin: Flunar-Trade
+        language: en
+        path: fallback/Flunar-Trade/locale_en.yml
+        sha256: 1f028564bc778667fc16f84983559c14e19facdd4aad1b35d5d68e13f037594e
+      - plugin: Flunar-Crate
+        language: de
+        path: fallback/Flunar-Crate/locale_de.yml
+        sha256: 01d3eb2607a6da5d113b84493e3feb2c95cd42dcf3a4055a5a3fc97bd6363adc
+      - plugin: Flunar-Crate
+        language: en
+        path: fallback/Flunar-Crate/locale_en.yml
+        sha256: 00345380824598fb1a9c7a8f43995d686b872e545aa1dcb61a26e00fa559b8bc
       - plugin: Flunar-Social
         language: de
         path: fallback/Flunar-Social/locale_de.yml
@@ -211,6 +275,12 @@ profiles:
         language: en
         path: fallback/Flunar-Essentails/locale_en.yml
         sha256: 148eaab4783384de8c83b323acfe07dce9af416a16eb7d9dde0bec6010ffce87
+  smp:
+    extends: fallback
+    files: []
+  citybuild:
+    extends: fallback
+    files: []
       - plugin: Flunar-BonkAndBoom
         language: de
         path: fallback/Flunar-BonkAndBoom/locale_de.yml
