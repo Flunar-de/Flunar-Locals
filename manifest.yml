@@ -280,7 +280,7 @@ profiles:
     files: []
   citybuild:
     extends: fallback
-    files: []
+    files:
       - plugin: Flunar-BonkAndBoom
         language: de
         path: fallback/Flunar-BonkAndBoom/locale_de.yml
