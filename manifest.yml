@@ -148,6 +148,10 @@ profiles:
         path: fallback/Flunar-AGB/locale_nl_be.yml
         sha256: 3aab4971ed33dc275ccfaaecc0cbb8de21750f7ea6701a267ce660c29ad465bf
       - plugin: Flunar-AGB
+        language: "no"
+        path: fallback/Flunar-AGB/locale_no.yml
+        sha256: b2f8e306e397685e4583827a3bcb126b8354bd36faca3b2db0d46798f4b3d087
+      - plugin: Flunar-AGB
         language: pl
         path: fallback/Flunar-AGB/locale_pl.yml
         sha256: 2b8e8806fbee8cd51f8c592af2a54367438d4fd16b387cc292e7ac40cbe840ad
