@@ -32,10 +32,6 @@ profiles:
         path: fallback/Flunar-LobbySystem/locale_en.yml
         sha256: a9c05d2ef9e2d02de850576fc2bcbd5a4e111910bf3bb709658f45dac70caad4
       - plugin: Flunar-ClanSystem
-        language: default
-        path: fallback/Flunar-ClanSystem/locale.yml
-        sha256: 1a8682e84c1d83d6751229bcd36259f9fac8c85a3736104a111332b3c2e97475
-      - plugin: Flunar-ClanSystem
         language: de
         path: fallback/Flunar-ClanSystem/locale_de.yml
         sha256: 465e8bb135cac56e6eef2d65fc93b60be85f78bca90a20d204f6608e06dc8bac
