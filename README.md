@@ -10,7 +10,7 @@ Der Ordner `fallback/` enthält die allgemeinen Übersetzungen eines Plugins. Si
 
 Ein Profil ist nur nötig, wenn ein Servertyp eigene Formulierungen braucht. Solche Abweichungen liegen unter `profiles/<Profil>/<Plugin-ID>/`. Ein Profil muss nicht alle Texte enthalten: Nicht angegebene Dateien und Nachrichtenschlüssel werden aus dem Fallback übernommen. Wenn ein Profil keine eigenen Übersetzungen braucht, verwendet das Plugin direkt `fallback/`.
 
-Jedes Plugin hat einen eigenen Ordner. Aktuell liegen die Core-Dateien unter `fallback/Flunar-Core/` und die Lobby-System-Dateien unter `fallback/Flunar-LobbySystem/`. Für beide Plugins sind derzeit Deutsch und Englisch vorhanden. Die Lobby verwendet ihre Fallback-Dateien; eigene Lobby-Profilübersetzungen gibt es aktuell nicht.
+Jedes Plugin hat einen eigenen Ordner. Aktuell liegen die Core-Dateien unter `fallback/Flunar-Core/` und die Lobby-System-Dateien unter `fallback/Flunar-LobbySystem/`. Für beide Plugins sind derzeit Deutsch und Englisch vorhanden. Die Lobby verwendet ihre Fallback-Dateien; eigene Lobby-Profilübersetzungen gibt es aktuell nicht. Für Flunar-Claims liegen deutsche und englische Fallback-Übersetzungen unter `fallback/Flunar-Claims/`; ein eigenes Serverprofil gibt es dafür nicht.
 
 ## Eine allgemeine Sprache hinzufügen
 
