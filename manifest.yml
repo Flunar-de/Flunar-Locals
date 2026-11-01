@@ -179,3 +179,11 @@ profiles:
         language: en
         path: fallback/Flunar-Worldmanager/locale_en.yml
         sha256: 5eb0d7497175911439986e8a82719a84101868c21ce63f40eb73da4313471581
+      - plugin: Flunar-Social
+        language: de
+        path: fallback/Flunar-Social/locale_de.yml
+        sha256: 6a63156d03eed91a2c357a2856a8af5c644b5b7d27f2ed10d68c40dc30730229
+      - plugin: Flunar-Social
+        language: en
+        path: fallback/Flunar-Social/locale_en.yml
+        sha256: b9416ea55c57c1d8639d665d44aff79644b1be41de67a19e09c313b71d3e09de
