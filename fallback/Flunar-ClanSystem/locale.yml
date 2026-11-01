@@ -1,0 +1,128 @@
+noperms: "<red>Dazu hast du keine Berechtigung."
+
+only-player: "Nur Spieler können diesen Befehl ausführen."
+
+commandusemessage: "Benutze: "
+unknownsubcommand: "Unbekannter Unterbefehl."
+
+clan-db-error: "<red>Fehler bei der Verbindung zur Datenbank."
+
+
+# Clan Create Command
+clan.create.invalid-name: "<red>Der Clanname muss zwischen 3 und 10 Buchstaben (A-Z) enthalten."
+clan.create.invalid-tag: "<red>Der Clantag muss zwischen 2 und 5 Buchstaben (A-Z) enthalten."
+clan.create.db-error: "<red>Fehler bei der Verbindung zur Datenbank."
+clan.create.already-in-clan: "<red>Du bist bereits in einem Clan und kannst keinen neuen erstellen."
+clan.create.name-exists: "<red>Ein Clan mit diesem Namen existiert bereits."
+clan.create.tag-exists: "<red>Ein Clan mit diesem Tag existiert bereits."
+clan.create.success: "<green>Der Clan wurde erfolgreich erstellt!"
+clan.create.sql-error: "<red>Fehler beim Erstellen des Clans."
+
+# Clan Color Command
+clan.color.invalid: "<red>Ungültige Farbe. Verfügbare Farben: %colors%"
+clan.color.not-in-clan: "<red>Du bist in keinem Clan."
+clan.color.not-owner: "<red>Nur der Clan-Besitzer kann die Farbe ändern."
+clan.color.success: "<green>Die Clanfarbe wurde erfolgreich geändert zu %color%%color_name%"
+clan.color.error: "<red>Ein Fehler ist aufgetreten beim Speichern der Farbe."
+
+# Clan Accept Command
+no-invite: "<red>Du hast keine gültige Einladung."
+already-in-clan: "<red>Du bist bereits in einem Clan."
+inviter-no-longer-in-clan: "<red>Der Einladende ist nicht mehr in einem Clan."
+join-success: "<green>Du bist dem Clan erfolgreich beigetreten."
+database-error: "<red>Ein Fehler ist aufgetreten beim Speichern der Daten."
+connection-error: "<red>Fehler bei der Verbindung zur Datenbank."
+clan-join-broadcast: "<gold>%player% <green>ist dem Clan beigetreten!"
+
+# Clan Invite Command
+invite-cooldown: "<red>Warte <gold>%time% <red>Sekunden, bevor du erneut einlädst."
+player-not-online: "<red>Dieser Spieler ist nicht online."
+db-connection-error: "<red>Fehler bei der Verbindung zur Datenbank."
+not-in-clan: "<red>Du bist in keinem Clan."
+target-already-in-clan: "<red>Der Spieler ist bereits in einem Clan."
+invite-sent: "<green>Einladung wurde an <gold>%target% <green>gesendet."
+invite-received: "<yellow>Du wurdest von <gold>%inviter% <yellow>zu einem Clan eingeladen."
+invite-accept-info: "<gray>Benutze <green>/clan accept <gray>innerhalb von <gold>30 <gray>Sekunden, um beizutreten."
+generic-error: "<red>Ein Fehler ist aufgetreten."
+
+# Clan Delete Command
+clan-delete-db-error: "<red>Fehler bei der Verbindung zur Datenbank."
+clan-not-in-clan: "<red>Du bist in keinem Clan."
+clan-not-owner: "<red>Nur der Clan-Besitzer kann den Clan löschen."
+clan-delete-success: "<green>Dein Clan wurde erfolgreich gelöscht."
+clan-delete-fail: "<red>Fehler beim Löschen des Clans."
+
+#Clan Leave Command
+owner-cannot-leave: "Der Clan-Owner kann den Clan nicht verlassen. Du musst den Clan zuerst löschen oder übertragen."
+left-clan-success: "Du hast den Clan erfolgreich verlassen."
+left-clan-error: "Fehler beim Verlassen des Clans."
+notify-left-clan: "hat den Clan verlassen."
+database-leave-error: "Datenbankfehler beim Verlassen des Clans."
+
+# Clan Kick Command
+clan.kick.usage: "<red>Benutzung: /clan kick <Spieler>"
+clan.kick.self: "<red>Du kannst dich nicht selbst aus deinem Clan entfernen. Verwende stattdessen /clan delete oder übertrage die Clanführung."
+clan.kick.no-owner: "<red>Nur Clan-Owner dürfen Mitglieder kicken."
+clan.kick.not-found: "<red>Spieler wurde nicht gefunden."
+clan.kick.not-in-clan: "<red>Der Spieler ist nicht in deinem Clan."
+clan.kick.success: "<green>Spieler erfolgreich aus dem Clan entfernt."
+clan.kick.error: "<red>Fehler beim Entfernen des Spielers."
+clan.kick.broadcast: "<gold>%target% <red>wurde von <green>%player% <red>aus dem Clan entfernt."
+clan.kick.kicked-message: "<red>Du wurdest von <gold>%player% <red>aus dem Clan entfernt."
+
+# Clan Info Command
+clan-info:
+  not-in-clan: "<red>Du bist in keinem Clan!"
+  not-found: "<red>Dieser Clan wurde nicht gefunden!"
+
+# Clan Promote Command
+clan.promote.not-online: "<red>Der angegebene Spieler ist nicht online."
+clan.promote.not-owner: "<red>Nur der Clan-Owner kann Mitglieder befördern."
+clan.promote.not-in-clan: "<red>Du bist in keinem Clan."
+clan.promote.db-error: "<red>Fehler beim Abrufen deiner Clan-Daten."
+clan.promote.update-error: "<red>Fehler beim Aktualisieren der Rolle."
+clan.promote.not-in-same-clan: "<red>Der Spieler ist nicht in deinem Clan"
+clan.promote.success: "<gold>%target% <green>wurde erfolgreich zum Moderator befördert."
+clan.promote.received: "<green>Du wurdest im Clan zum Moderator befördert."
+clan.promote.already-promoted: "<red>Dieser Spieler ist bereits Moderator!"
+clan.promote.target-not-in-clan: "<red>Der angegebene Spieler ist in keinem Clan!"
+
+# Clan Demote COmmand
+clan.demote.not-online: "<red>Der angegebene Spieler ist nicht online."
+clan.demote.not-owner: "<red>Nur der Clan-Owner kann Mitglieder degradieren."
+clan.demote.not-in-clan: "<red>Du bist in keinem Clan."
+clan.demote.db-error: "<red>Fehler beim Abrufen deiner Clan-Daten."
+clan.demote.update-error: "<red>Fehler beim Aktualisieren der Rolle."
+clan.demote.not-in-same-clan: "<red>Der Spieler ist nicht in deinem Clan."
+clan.demote.success: "<gold>%target% <green>wurde erfolgreich zum Mitglied degradiert."
+clan.demote.received: "<green>Du wurdest im Clan zum Mitglied degradiert."
+clan.demote.already-demoted: "<red>Dieser Spieler ist bereits ein Mitglied!"
+clan.demote.target-not-in-clan: "<red>Der angegebene Spieler ist in keinem Clan!"
+
+
+
+# Clan Help Command
+clan.help.title: "Clan"
+clan.help.commands-label: "Verfügbare Befehle:"
+clan.help.create: "• <aqua>/clan create <Name> <Tag>"
+clan.help.create-desc: "<dark_gray>» Erstellt einen neuen Clan"
+clan.help.invite: "• <aqua>/clan invite <Spieler>"
+clan.help.invite-desc: "<dark_gray>» Lädt einen Spieler in deinen Clan ein"
+clan.help.accept: "• <aqua>/clan accept"
+clan.help.accept-desc: "<dark_gray>» Nimmt eine Clan-Einladung an"
+clan.help.leave: "• <yellow>/clan leave"
+clan.help.leave-desc: "<dark_gray>» Verlässt deinen aktuellen Clan"
+clan.help.color: "• <aqua>/clan color <Farbe>"
+clan.help.color-desc: "<dark_gray>» Ändert die Clanfarbe"
+clan.help.kick: "• <yellow>/clan kick <Spieler>"
+clan.help.kick-desc: "<dark_gray>» Entfernt einen Spieler aus dem Clan"
+clan.help.promote: "• <green>/clan promote <Spieler>"
+clan.help.promote-desc: "<dark_gray>» Befördert ein Mitglied zum Moderator"
+clan.help.demote: "• <yellow>/clan demote <Spieler>"
+clan.help.demote-desc: "<dark_gray>» Degradiert einen Moderator zum Mitglied"
+clan.help.delete: "• <red>/clan delete"
+clan.help.delete-desc: "<dark_gray>» Löscht deinen Clan"
+clan.help.info: "• <green>/clan info <Name>"
+clan.help.info-desc: "<dark_gray>» Zeigt Informationen über einen Clan an"
+clan.help.chat: "• <aqua>/clan chat <Nachricht>"
+clan.help.chat-desc: "<dark_gray>» Schreibt eine Nachricht in den Clan-Chat"
