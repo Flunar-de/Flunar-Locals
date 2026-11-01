@@ -63,6 +63,106 @@ profiles:
         language: en
         path: fallback/Flunar-Piano/locale_en.yml
         sha256: 462723599496b5af62430d3d897e8592ad8b59fa6dd403281ba8d4a27b097b01
+      - plugin: Flunar-AGB
+        language: cs
+        path: fallback/Flunar-AGB/locale_cs.yml
+        sha256: e20acd5b814cb738be57ec0b0a755fbe072cb249b993d5c4337461d02cf80d2e
+      - plugin: Flunar-AGB
+        language: da
+        path: fallback/Flunar-AGB/locale_da.yml
+        sha256: e8f5d9b2ebd96fe9887d7a946c927c37ec4405a427bb1cbcbd67f6cd753a2d3a
+      - plugin: Flunar-AGB
+        language: de
+        path: fallback/Flunar-AGB/locale_de.yml
+        sha256: 1abd7801fd5f88b665bf0d10cd3b067a5621ec3adeaa7b363fd37f37cd7af5fa
+      - plugin: Flunar-AGB
+        language: de_at
+        path: fallback/Flunar-AGB/locale_de_at.yml
+        sha256: e3952e21766933bb9c170db8f02c07e7ac7cc504a54c30fabaf2cdb79a9c9740
+      - plugin: Flunar-AGB
+        language: de_ch
+        path: fallback/Flunar-AGB/locale_de_ch.yml
+        sha256: 2911a6cac2aef0fab91f14c1ebdaed06e72e358c7327a7fd95982ff1ca18b0bf
+      - plugin: Flunar-AGB
+        language: el
+        path: fallback/Flunar-AGB/locale_el.yml
+        sha256: d19d88d81254eacbbbe75c3843233baf0d078c083045ec5cc457b5c95a8f15e5
+      - plugin: Flunar-AGB
+        language: en
+        path: fallback/Flunar-AGB/locale_en.yml
+        sha256: 04a309e15fa00b3c4d5f2288966b4d0f54124c8ed6d2421e2b270e9324774381
+      - plugin: Flunar-AGB
+        language: en_us
+        path: fallback/Flunar-AGB/locale_en_us.yml
+        sha256: d4aceb911c47e9b0ab5609bea106389e9c61222133aa6a8c28bfcc4611c4601e
+      - plugin: Flunar-AGB
+        language: es
+        path: fallback/Flunar-AGB/locale_es.yml
+        sha256: 305a29a301fdb1fb1ed72519f7ec2e86b9bfe84614e65c72b70c87d36658f050
+      - plugin: Flunar-AGB
+        language: fi
+        path: fallback/Flunar-AGB/locale_fi.yml
+        sha256: a2384fbda8c592b251bfb0982a738350dace83037029088df77cbdc73960d077
+      - plugin: Flunar-AGB
+        language: fr
+        path: fallback/Flunar-AGB/locale_fr.yml
+        sha256: c528fbe97178db0f7407a42c177dfd8e941dae3598583ec29295d0e85b36f21f
+      - plugin: Flunar-AGB
+        language: hu
+        path: fallback/Flunar-AGB/locale_hu.yml
+        sha256: 21a445979c805d5bf17637150b8db4527a4ff93e12475668baddb6e3ae4ee752
+      - plugin: Flunar-AGB
+        language: it
+        path: fallback/Flunar-AGB/locale_it.yml
+        sha256: 868d75facbe3caa4a70bf37ead80834999e77fc02da5295387ae29d4d59f3711
+      - plugin: Flunar-AGB
+        language: ja
+        path: fallback/Flunar-AGB/locale_ja.yml
+        sha256: 6e41fd0320ba106cbd7075bd427ea47cc6aeb49f2959a2772009e6414304e084
+      - plugin: Flunar-AGB
+        language: lb
+        path: fallback/Flunar-AGB/locale_lb.yml
+        sha256: cec22d87dbc8a1b0e2ab6f80bcc8d5a42160c94ce44cbf2a6f10f37ef2490bc6
+      - plugin: Flunar-AGB
+        language: nl
+        path: fallback/Flunar-AGB/locale_nl.yml
+        sha256: ae19ede28d1cfb073d8026392c60e474829d808aa2689a9121c36e02b963a50b
+      - plugin: Flunar-AGB
+        language: nl_be
+        path: fallback/Flunar-AGB/locale_nl_be.yml
+        sha256: 3aab4971ed33dc275ccfaaecc0cbb8de21750f7ea6701a267ce660c29ad465bf
+      - plugin: Flunar-AGB
+        language: pl
+        path: fallback/Flunar-AGB/locale_pl.yml
+        sha256: 2b8e8806fbee8cd51f8c592af2a54367438d4fd16b387cc292e7ac40cbe840ad
+      - plugin: Flunar-AGB
+        language: pt
+        path: fallback/Flunar-AGB/locale_pt.yml
+        sha256: 9dbeb29691bb7df932f9942a19334ee99ff765cc3dfff48c7e7ab08ddc2250f4
+      - plugin: Flunar-AGB
+        language: ro
+        path: fallback/Flunar-AGB/locale_ro.yml
+        sha256: 10899a8c02f25b7d7bc8634f15ef44f18a376bc790f3f62260c8e04947b32654
+      - plugin: Flunar-AGB
+        language: ru
+        path: fallback/Flunar-AGB/locale_ru.yml
+        sha256: f39478b2a38bbee03a150dc40f3c97ae3d92c3a052239487afc3e6a2c2bbcb08
+      - plugin: Flunar-AGB
+        language: sk
+        path: fallback/Flunar-AGB/locale_sk.yml
+        sha256: 214c3ee48294cd92bf40753e2f9114537f4d7f0707a58ca9a292c46379b6983c
+      - plugin: Flunar-AGB
+        language: sv
+        path: fallback/Flunar-AGB/locale_sv.yml
+        sha256: e2a34d5ab6ac893700e3d723034e6b1881fa8009ff4cd41863158f8ba2797182
+      - plugin: Flunar-AGB
+        language: uk
+        path: fallback/Flunar-AGB/locale_uk.yml
+        sha256: d8b55a247f34ade36c60de06b999ca30e9941d0fdcda1f5adb654bb5d651ceda
+      - plugin: Flunar-AGB
+        language: zh_cn
+        path: fallback/Flunar-AGB/locale_zh_cn.yml
+        sha256: 4826def5f75602fa0de45a40886304799965aee0a21069221e854193b03c87a6
       - plugin: Flunar-Playtimesystem
         language: de
         path: fallback/Flunar-Playtimesystem/locale_de.yml

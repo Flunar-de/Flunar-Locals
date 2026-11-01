@@ -1,0 +1,84 @@
+agreement:
+  menu-title: "<dark_gray>Terms & Server Rules"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMATION</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Flunar.de Terms</gradient>"
+  information-lore-1: "<gray>To play on <white>Flunar.de<gray>, you must"
+  information-lore-2: "<gray>accept the current terms and conditions."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Website</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Version</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Please read the terms in full."
+  accept-name: "<green>✔ Accept terms"
+  accept-lore-1: "<gray>I have read the terms and agree"
+  accept-lore-2: "<gray>to the current version."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Click: <white>Save acceptance"
+  decline-name: "<red>✖ Decline terms"
+  decline-lore-1: "<gray>You cannot play on Flunar.de"
+  decline-lore-2: "<gray>without accepting the terms."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Click: <white>Disconnect"
+  bedrock-title: "<aqua>Terms & Server Rules"
+  bedrock-content: |-
+    <gray>To play on <white>Flunar.de<gray>, you must accept the current terms and conditions.
+
+    <gray>Full terms: <aqua>https://flunar.de/agb
+    <gray>Version: <white>%terms_version%
+
+    <yellow>Please make a binding choice now.
+  bedrock-accept: "<green>✔ Accept terms"
+  bedrock-decline: "<red>✖ Decline terms"
+  checking: "<gray>Checking your saved acceptance …"
+  saving: "<yellow>Your acceptance is being saved securely …"
+  accepted: "<green>Thank you! Your acceptance has been saved."
+  unavailable: "<red>The terms check is currently unavailable. Your connection is being denied as a safety measure."
+  save-failed: "<red>Your acceptance could not be saved. Your connection is being denied as a safety measure."
+  declined-kick: "<red>You declined the terms.<newline><gray>You cannot play on <white>Flunar.de <gray>without accepting them."
+  ui-unavailable-kick: "<red>The terms selection could not be opened.<newline><gray>Please reconnect or contact support."
+  status-title: "<aqua>Your Terms Acceptance"
+  status-accepted-at: "<green>Accepted at (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>No acceptance is stored for the current terms version."
+  status-close: "<red>Close"
+  status-loading: "<gray>Loading your saved acceptance …"
+  status-failed: "<red>Your acceptance status cannot be loaded right now."
+  standard-text: |-
+    <white>Flunar.de Terms and Conditions
+
+    <gray>To play on Flunar.de, you must accept the current terms and conditions.
+
+    <gray>You can find the complete terms at:
+    <aqua>https://flunar.de/agb
+
+    <gray>By selecting “Accept”, you confirm that you have read and agree to the terms.
+
+    <gray>If you do not agree, you cannot join the server.
+
+    <dark_gray>Version: %terms_version%
+
+command:
+  agbs-players-only: "<red>This command can only be used in game."
+  agbs-loading: "<gray>Loading your saved acceptance …"
+  agbs-failed: "<red>Your acceptance status cannot be loaded right now."
+
+export:
+  players-only: "<red>This command can only be used in game."
+  usage: "<yellow>Usage: <white>/daten export NAME/UUID [--all]"
+  no-permission: "<red>You do not have permission to do that."
+  unavailable: "<red>The administrative data export is currently unavailable."
+  started: "<gray>The requested data export is being created locally. This may take a few minutes …"
+  busy: "<yellow>All available export slots are currently occupied."
+  not-found: "<yellow>No unambiguous Minecraft account was found for %target%."
+  ambiguous: "<yellow>The name %target% is ambiguous. Use the UUID."
+  failed: "<red>The data export could not be created. Please try again later."
+  failure-limit: "<red>Reason: The configured safety limit for size or record count was reached."
+  failure-schema-changed: "<red>Reason: The database schema changed during the export. Please start the export again."
+  failure-timeout: "<red>Reason: A database query exceeded its time limit."
+  failure-database: "<red>Reason: A required database query failed."
+  failure-filesystem: "<red>Reason: The export file could not be written to the export directory."
+  failure-unexpected: "<red>Reason: An unexpected internal error occurred."
+  ready: "<green>Data export created: <white>%file%<gray> in directory <white>%directory%"
+
+export-view:
+  language: "en_us"

@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Όροι και κανόνες διακομιστή"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>ΠΛΗΡΟΦΟΡΙΕΣ</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Όροι Flunar.de</gradient>"
+  information-lore-1: "<gray>Για να παίξεις στο <white>Flunar.de<gray>, πρέπει"
+  information-lore-2: "<gray>να αποδεχτείς τους ισχύοντες όρους."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Ιστότοπος</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Έκδοση</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Διάβασε πλήρως τους όρους."
+  accept-name: "<green>✔ Αποδοχή όρων"
+  accept-lore-1: "<gray>Διάβασα τους όρους και αποδέχομαι"
+  accept-lore-2: "<gray>την ισχύουσα έκδοση."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Κλικ: <white>Αποθήκευση αποδοχής"
+  decline-name: "<red>✖ Απόρριψη όρων"
+  decline-lore-1: "<gray>Χωρίς αποδοχή δεν μπορείς"
+  decline-lore-2: "<gray>να παίξεις στο Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Κλικ: <white>Αποσύνδεση"
+  bedrock-title: "<aqua>Όροι και κανόνες διακομιστή"
+  bedrock-content: |-
+    <gray>Για να παίξεις στο <white>Flunar.de<gray>, πρέπει να αποδεχτείς τους ισχύοντες όρους.
+
+    <gray>Πλήρεις όροι: <aqua>https://flunar.de/agb
+    <gray>Έκδοση: <white>%terms_version%
+
+    <yellow>Κάνε τώρα μια δεσμευτική επιλογή.
+  bedrock-accept: "<green>✔ Αποδοχή όρων"
+  bedrock-decline: "<red>✖ Απόρριψη όρων"
+  checking: "<gray>Έλεγχος της αποθηκευμένης αποδοχής …"
+  saving: "<yellow>Ασφαλής αποθήκευση της αποδοχής …"
+  accepted: "<green>Ευχαριστούμε! Η αποδοχή αποθηκεύτηκε."
+  unavailable: "<red>Η αποδοχή δεν μπορεί να ελεγχθεί τώρα. Η σύνδεση θα απορριφθεί με ασφάλεια."
+  save-failed: "<red>Η αποδοχή δεν αποθηκεύτηκε. Η σύνδεση θα απορριφθεί με ασφάλεια."
+  declined-kick: "<red>Απέρριψες τους όρους.<newline><gray>Χωρίς αποδοχή δεν μπορείς να παίξεις στο <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>Η επιλογή δεν μπόρεσε να ανοίξει.<newline><gray>Συνδέσου ξανά ή επικοινώνησε με την υποστήριξη."
+  status-title: "<aqua>Η αποδοχή των όρων σου"
+  status-accepted-at: "<green>Αποδοχή στις (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Δεν υπάρχει αποθηκευμένη αποδοχή για την ισχύουσα έκδοση."
+  status-close: "<red>Κλείσιμο"
+  status-loading: "<gray>Φόρτωση της αποθηκευμένης αποδοχής …"
+  status-failed: "<red>Η κατάσταση αποδοχής δεν μπορεί να φορτωθεί τώρα."
+  standard-text: |-
+    <white>Όροι και προϋποθέσεις του Flunar.de
+
+    <gray>Για να παίξεις στο Flunar.de, πρέπει να αποδεχτείς τους ισχύοντες όρους.
+
+    <gray>Οι πλήρεις όροι βρίσκονται στη διεύθυνση:
+    <aqua>https://flunar.de/agb
+
+    <gray>Επιλέγοντας «Αποδοχή», επιβεβαιώνεις ότι τους διάβασες και τους αποδέχεσαι.
+
+    <gray>Αν δεν αποδεχτείς, δεν μπορείς να συνδεθείς στον διακομιστή.
+
+    <dark_gray>Έκδοση: %terms_version%
+
+command:
+  agbs-players-only: "<red>Αυτή η εντολή χρησιμοποιείται μόνο μέσα στο παιχνίδι."
+  agbs-loading: "<gray>Φόρτωση της κατάστασης αποδοχής …"
+  agbs-failed: "<red>Η κατάσταση αποδοχής δεν μπορεί να φορτωθεί τώρα."
+
+export:
+  players-only: "<red>Αυτή η εντολή χρησιμοποιείται μόνο μέσα στο παιχνίδι."
+  usage: "<yellow>Χρήση: <white>/daten export ΟΝΟΜΑ/UUID [--all]"
+  no-permission: "<red>Δεν έχεις άδεια για αυτή την ενέργεια."
+  unavailable: "<red>Η διαχειριστική εξαγωγή δεδομένων δεν είναι διαθέσιμη."
+  started: "<gray>Η ζητούμενη εξαγωγή δημιουργείται τοπικά. Μπορεί να διαρκέσει λίγα λεπτά …"
+  busy: "<yellow>Όλες οι θέσεις εξαγωγής είναι κατειλημμένες."
+  not-found: "<yellow>Δεν βρέθηκε μοναδικός λογαριασμός Minecraft για το %target%."
+  ambiguous: "<yellow>Το όνομα %target% είναι ασαφές. Χρησιμοποίησε το UUID."
+  failed: "<red>Η εξαγωγή δεδομένων απέτυχε. Δοκίμασε ξανά αργότερα."
+  failure-limit: "<red>Αιτία: επιτεύχθηκε το όριο ασφαλείας μεγέθους ή εγγραφών."
+  failure-schema-changed: "<red>Αιτία: το σχήμα της βάσης άλλαξε κατά την εξαγωγή. Ξεκίνησέ την ξανά."
+  failure-timeout: "<red>Αιτία: ένα ερώτημα βάσης δεδομένων ξεπέρασε το χρονικό όριο."
+  failure-database: "<red>Αιτία: απέτυχε ένα απαιτούμενο ερώτημα βάσης δεδομένων."
+  failure-filesystem: "<red>Αιτία: το αρχείο δεν μπόρεσε να γραφτεί στον φάκελο εξαγωγής."
+  failure-unexpected: "<red>Αιτία: προέκυψε απρόσμενο εσωτερικό σφάλμα."
+  ready: "<green>Η εξαγωγή δημιουργήθηκε: <white>%file%<gray> στον φάκελο <white>%directory%"

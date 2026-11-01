@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Termini e regole del server"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMAZIONI</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Termini di Flunar.de</gradient>"
+  information-lore-1: "<gray>Per giocare su <white>Flunar.de<gray>, devi"
+  information-lore-2: "<gray>accettare i termini attuali."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Sito web</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Versione</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Leggi integralmente i termini."
+  accept-name: "<green>✔ Accetta i termini"
+  accept-lore-1: "<gray>Ho letto i termini e accetto"
+  accept-lore-2: "<gray>la versione attuale."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Clic: <white>Salva accettazione"
+  decline-name: "<red>✖ Rifiuta i termini"
+  decline-lore-1: "<gray>Senza accettarli non puoi"
+  decline-lore-2: "<gray>giocare su Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Clic: <white>Disconnetti"
+  bedrock-title: "<aqua>Termini e regole del server"
+  bedrock-content: |-
+    <gray>Per giocare su <white>Flunar.de<gray>, devi accettare i termini attuali.
+
+    <gray>Termini completi: <aqua>https://flunar.de/agb
+    <gray>Versione: <white>%terms_version%
+
+    <yellow>Fai ora una scelta vincolante.
+  bedrock-accept: "<green>✔ Accetta i termini"
+  bedrock-decline: "<red>✖ Rifiuta i termini"
+  checking: "<gray>Verifica dell’accettazione salvata …"
+  saving: "<yellow>Salvataggio sicuro dell’accettazione …"
+  accepted: "<green>Grazie! L’accettazione è stata salvata."
+  unavailable: "<red>Impossibile verificare l’accettazione al momento. La connessione viene rifiutata in sicurezza."
+  save-failed: "<red>Impossibile salvare l’accettazione. La connessione viene rifiutata in sicurezza."
+  declined-kick: "<red>Hai rifiutato i termini.<newline><gray>Senza accettarli non puoi giocare su <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>Impossibile aprire la selezione.<newline><gray>Riconnettiti o contatta l’assistenza."
+  status-title: "<aqua>La tua accettazione dei termini"
+  status-accepted-at: "<green>Accettati il (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Nessuna accettazione salvata per la versione attuale."
+  status-close: "<red>Chiudi"
+  status-loading: "<gray>Caricamento dell’accettazione salvata …"
+  status-failed: "<red>Impossibile caricare ora lo stato dell’accettazione."
+  standard-text: |-
+    <white>Termini e condizioni di Flunar.de
+
+    <gray>Per giocare su Flunar.de, devi accettare i termini e le condizioni attuali.
+
+    <gray>I termini completi sono disponibili qui:
+    <aqua>https://flunar.de/agb
+
+    <gray>Selezionando «Accetta», confermi di averli letti e accettati.
+
+    <gray>Se non accetti, non puoi entrare nel server.
+
+    <dark_gray>Versione: %terms_version%
+
+command:
+  agbs-players-only: "<red>Questo comando può essere usato solo in gioco."
+  agbs-loading: "<gray>Caricamento dello stato dell’accettazione …"
+  agbs-failed: "<red>Impossibile caricare ora lo stato dell’accettazione."
+
+export:
+  players-only: "<red>Questo comando può essere usato solo in gioco."
+  usage: "<yellow>Uso: <white>/daten export NOME/UUID [--all]"
+  no-permission: "<red>Non hai il permesso di farlo."
+  unavailable: "<red>L’esportazione amministrativa dei dati non è disponibile."
+  started: "<gray>L’esportazione richiesta viene creata localmente. Potrebbero servire alcuni minuti …"
+  busy: "<yellow>Tutti gli slot di esportazione sono occupati."
+  not-found: "<yellow>Nessun account Minecraft univoco trovato per %target%."
+  ambiguous: "<yellow>Il nome %target% è ambiguo. Usa l’UUID."
+  failed: "<red>Impossibile creare l’esportazione. Riprova più tardi."
+  failure-limit: "<red>Motivo: raggiunto il limite di sicurezza per dimensione o record."
+  failure-schema-changed: "<red>Motivo: lo schema del database è cambiato durante l’esportazione. Riavviala."
+  failure-timeout: "<red>Motivo: una query del database ha superato il tempo limite."
+  failure-database: "<red>Motivo: una query del database necessaria non è riuscita."
+  failure-filesystem: "<red>Motivo: impossibile scrivere il file nella cartella di esportazione."
+  failure-unexpected: "<red>Motivo: si è verificato un errore interno imprevisto."
+  ready: "<green>Esportazione creata: <white>%file%<gray> nella cartella <white>%directory%"

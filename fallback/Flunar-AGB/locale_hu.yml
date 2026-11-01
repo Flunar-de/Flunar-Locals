@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Feltételek és szerverszabályok"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMÁCIÓ</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Flunar.de feltételek</gradient>"
+  information-lore-1: "<gray>A <white>Flunar.de<gray> szerveren való játékhoz"
+  information-lore-2: "<gray>el kell fogadnod az aktuális feltételeket."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Weboldal</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Verzió</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Olvasd el a teljes feltételeket."
+  accept-name: "<green>✔ Feltételek elfogadása"
+  accept-lore-1: "<gray>Elolvastam és elfogadom"
+  accept-lore-2: "<gray>az aktuális feltételeket."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Kattintás: <white>Elfogadás mentése"
+  decline-name: "<red>✖ Feltételek elutasítása"
+  decline-lore-1: "<gray>Elfogadás nélkül nem játszhatsz"
+  decline-lore-2: "<gray>a Flunar.de szerveren."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Kattintás: <white>Kapcsolat bontása"
+  bedrock-title: "<aqua>Feltételek és szerverszabályok"
+  bedrock-content: |-
+    <gray>A <white>Flunar.de<gray> szerveren való játékhoz el kell fogadnod az aktuális feltételeket.
+
+    <gray>Teljes feltételek: <aqua>https://flunar.de/agb
+    <gray>Verzió: <white>%terms_version%
+
+    <yellow>Most hozz kötelező érvényű döntést.
+  bedrock-accept: "<green>✔ Feltételek elfogadása"
+  bedrock-decline: "<red>✖ Feltételek elutasítása"
+  checking: "<gray>A mentett elfogadás ellenőrzése …"
+  saving: "<yellow>Az elfogadás biztonságos mentése …"
+  accepted: "<green>Köszönjük! Az elfogadást elmentettük."
+  unavailable: "<red>Az elfogadás most nem ellenőrizhető. A kapcsolat biztonságosan elutasításra kerül."
+  save-failed: "<red>Az elfogadás nem menthető. A kapcsolat biztonságosan elutasításra kerül."
+  declined-kick: "<red>Elutasítottad a feltételeket.<newline><gray>Elfogadás nélkül nem játszhatsz a <white>Flunar.de<gray> szerveren."
+  ui-unavailable-kick: "<red>A választófelület nem nyitható meg.<newline><gray>Csatlakozz újra, vagy keresd a támogatást."
+  status-title: "<aqua>A feltételek elfogadása"
+  status-accepted-at: "<green>Elfogadva (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Az aktuális verzióhoz nincs mentett elfogadás."
+  status-close: "<red>Bezárás"
+  status-loading: "<gray>A mentett elfogadás betöltése …"
+  status-failed: "<red>Az elfogadás állapota most nem tölthető be."
+  standard-text: |-
+    <white>A Flunar.de általános szerződési feltételei
+
+    <gray>A Flunar.de szerveren való játékhoz el kell fogadnod az aktuális feltételeket.
+
+    <gray>A teljes feltételek itt találhatók:
+    <aqua>https://flunar.de/agb
+
+    <gray>Az „Elfogadás” választásával megerősíted, hogy elolvastad és elfogadod őket.
+
+    <gray>Ha nem fogadod el, nem csatlakozhatsz a szerverhez.
+
+    <dark_gray>Verzió: %terms_version%
+
+command:
+  agbs-players-only: "<red>Ez a parancs csak a játékban használható."
+  agbs-loading: "<gray>Az elfogadás állapotának betöltése …"
+  agbs-failed: "<red>Az elfogadás állapota most nem tölthető be."
+
+export:
+  players-only: "<red>Ez a parancs csak a játékban használható."
+  usage: "<yellow>Használat: <white>/daten export NÉV/UUID [--all]"
+  no-permission: "<red>Nincs jogosultságod ehhez."
+  unavailable: "<red>Az adminisztratív adatexport jelenleg nem érhető el."
+  started: "<gray>A kért export helyben készül. Ez néhány percig tarthat …"
+  busy: "<yellow>Minden exporthely foglalt."
+  not-found: "<yellow>Nem található egyértelmű Minecraft-fiók ehhez: %target%."
+  ambiguous: "<yellow>A(z) %target% név nem egyértelmű. Használd az UUID-t."
+  failed: "<red>Az adatexport nem hozható létre. Próbáld újra később."
+  failure-limit: "<red>Ok: elértük a méretre vagy rekordszámra vonatkozó biztonsági korlátot."
+  failure-schema-changed: "<red>Ok: az adatbázisséma megváltozott az export során. Indítsd újra."
+  failure-timeout: "<red>Ok: egy adatbázis-lekérdezés túllépte az időkorlátot."
+  failure-database: "<red>Ok: egy szükséges adatbázis-lekérdezés sikertelen volt."
+  failure-filesystem: "<red>Ok: a fájl nem írható az exportmappába."
+  failure-unexpected: "<red>Ok: váratlan belső hiba történt."
+  ready: "<green>Export elkészült: <white>%file%<gray> a következő mappában: <white>%directory%"

@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Vilkår og serverregler"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMASJON</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Vilkår for Flunar.de</gradient>"
+  information-lore-1: "<gray>For å spille på <white>Flunar.de<gray> må du"
+  information-lore-2: "<gray>godta de gjeldende vilkårene."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Nettsted</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Versjon</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Les vilkårene i sin helhet."
+  accept-name: "<green>✔ Godta vilkårene"
+  accept-lore-1: "<gray>Jeg har lest vilkårene og godtar"
+  accept-lore-2: "<gray>den gjeldende versjonen."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Klikk: <white>Lagre samtykke"
+  decline-name: "<red>✖ Avslå vilkårene"
+  decline-lore-1: "<gray>Uten samtykke kan du ikke"
+  decline-lore-2: "<gray>spille på Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Klikk: <white>Koble fra"
+  bedrock-title: "<aqua>Vilkår og serverregler"
+  bedrock-content: |-
+    <gray>For å spille på <white>Flunar.de<gray> må du godta de gjeldende vilkårene.
+
+    <gray>Fullstendige vilkår: <aqua>https://flunar.de/agb
+    <gray>Versjon: <white>%terms_version%
+
+    <yellow>Gjør et bindende valg nå.
+  bedrock-accept: "<green>✔ Godta vilkårene"
+  bedrock-decline: "<red>✖ Avslå vilkårene"
+  checking: "<gray>Kontrollerer det lagrede samtykket …"
+  saving: "<yellow>Lagrer samtykket sikkert …"
+  accepted: "<green>Takk! Samtykket er lagret."
+  unavailable: "<red>Samtykket kan ikke kontrolleres nå. Tilkoblingen avvises på en sikker måte."
+  save-failed: "<red>Samtykket kunne ikke lagres. Tilkoblingen avvises på en sikker måte."
+  declined-kick: "<red>Du avslo vilkårene.<newline><gray>Uten samtykke kan du ikke spille på <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>Valget kunne ikke åpnes.<newline><gray>Koble til på nytt eller kontakt brukerstøtten."
+  status-title: "<aqua>Ditt samtykke til vilkårene"
+  status-accepted-at: "<green>Godtatt (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Det er ikke lagret noe samtykke for gjeldende versjon."
+  status-close: "<red>Lukk"
+  status-loading: "<gray>Laster det lagrede samtykket …"
+  status-failed: "<red>Samtykkestatusen kan ikke lastes nå."
+  standard-text: |-
+    <white>Vilkår og betingelser for Flunar.de
+
+    <gray>For å spille på Flunar.de må du godta de gjeldende vilkårene.
+
+    <gray>Du finner de fullstendige vilkårene her:
+    <aqua>https://flunar.de/agb
+
+    <gray>Ved å velge «Godta» bekrefter du at du har lest og godtatt dem.
+
+    <gray>Hvis du ikke godtar, kan du ikke koble til serveren.
+
+    <dark_gray>Versjon: %terms_version%
+
+command:
+  agbs-players-only: "<red>Denne kommandoen kan bare brukes i spillet."
+  agbs-loading: "<gray>Laster samtykkestatusen …"
+  agbs-failed: "<red>Samtykkestatusen kan ikke lastes nå."
+
+export:
+  players-only: "<red>Denne kommandoen kan bare brukes i spillet."
+  usage: "<yellow>Bruk: <white>/daten export NAVN/UUID [--all]"
+  no-permission: "<red>Du har ikke tillatelse til dette."
+  unavailable: "<red>Den administrative dataeksporten er ikke tilgjengelig."
+  started: "<gray>Den forespurte eksporten opprettes lokalt. Dette kan ta noen minutter …"
+  busy: "<yellow>Alle eksportplassene er opptatt."
+  not-found: "<yellow>Ingen entydig Minecraft-konto ble funnet for %target%."
+  ambiguous: "<yellow>Navnet %target% er tvetydig. Bruk UUID-en."
+  failed: "<red>Dataeksporten kunne ikke opprettes. Prøv igjen senere."
+  failure-limit: "<red>Årsak: sikkerhetsgrensen for størrelse eller antall oppføringer ble nådd."
+  failure-schema-changed: "<red>Årsak: databaseskjemaet endret seg under eksporten. Start den på nytt."
+  failure-timeout: "<red>Årsak: en databaseforespørsel overskred tidsgrensen."
+  failure-database: "<red>Årsak: en nødvendig databaseforespørsel mislyktes."
+  failure-filesystem: "<red>Årsak: filen kunne ikke skrives til eksportmappen."
+  failure-unexpected: "<red>Årsak: det oppstod en uventet intern feil."
+  ready: "<green>Eksport opprettet: <white>%file%<gray> i mappen <white>%directory%"

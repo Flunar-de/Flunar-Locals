@@ -1,0 +1,84 @@
+agreement:
+  menu-title: "<dark_gray>AGB & Serverregeln"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMATION</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Flunar.de AGB</gradient>"
+  information-lore-1: "<gray>Um auf <white>Flunar.de <gray>spielen zu können,"
+  information-lore-2: "<gray>musst du den aktuellen AGB zustimmen."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Webseite</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Version</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Lies die AGB bitte vollständig."
+  accept-name: "<green>✔ AGB akzeptieren"
+  accept-lore-1: "<gray>Ich habe die AGB gelesen und stimme"
+  accept-lore-2: "<gray>der aktuellen Fassung verbindlich zu."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Klicken: <white>Zustimmung speichern"
+  decline-name: "<red>✖ AGB ablehnen"
+  decline-lore-1: "<gray>Ohne Zustimmung kannst du nicht"
+  decline-lore-2: "<gray>auf Flunar.de spielen."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Klicken: <white>Verbindung trennen"
+  bedrock-title: "<aqua>AGB & Serverregeln"
+  bedrock-content: |-
+    <gray>Um auf <white>Flunar.de <gray>spielen zu können, musst du den aktuellen AGB zustimmen.
+
+    <gray>Vollständige AGB: <aqua>https://flunar.de/agb
+    <gray>Version: <white>%terms_version%
+
+    <yellow>Bitte triff jetzt eine verbindliche Auswahl.
+  bedrock-accept: "<green>✔ AGB akzeptieren"
+  bedrock-decline: "<red>✖ AGB ablehnen"
+  checking: "<gray>Dein gespeicherter AGB-Status wird geprüft …"
+  saving: "<yellow>Deine AGB-Zustimmung wird sicher gespeichert …"
+  accepted: "<green>Vielen Dank! Deine Zustimmung wurde gespeichert."
+  unavailable: "<red>Die AGB-Prüfung ist momentan nicht verfügbar. Deine Verbindung wird sicherheitshalber abgewiesen."
+  save-failed: "<red>Deine Zustimmung konnte nicht gespeichert werden. Deine Verbindung wird sicherheitshalber abgewiesen."
+  declined-kick: "<red>Du hast die AGB abgelehnt.<newline><gray>Ohne Zustimmung kannst du nicht auf <white>Flunar.de <gray>spielen."
+  ui-unavailable-kick: "<red>Die AGB-Auswahl konnte nicht geöffnet werden.<newline><gray>Verbinde dich erneut oder melde dich beim Support."
+  status-title: "<aqua>Deine AGB-Zustimmung"
+  status-accepted-at: "<green>Akzeptiert am (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Für die aktuelle AGB-Version ist keine Zustimmung gespeichert."
+  status-close: "<red>Schliessen"
+  status-loading: "<gray>Deine gespeicherte Zustimmung wird geladen …"
+  status-failed: "<red>Dein AGB-Status kann momentan nicht geladen werden."
+  standard-text: |-
+    <white>Allgemeine Geschäftsbedingungen von Flunar.de
+
+    <gray>Um auf Flunar.de spielen zu können, musst du den aktuellen Allgemeinen Geschäftsbedingungen zustimmen.
+
+    <gray>Die vollständigen AGB findest du unter:
+    <aqua>https://flunar.de/agb
+
+    <gray>Mit «Akzeptieren» bestätigst du, dass du die AGB gelesen hast und ihnen zustimmst.
+
+    <gray>Wenn du nicht zustimmst, kannst du dem Server nicht beitreten.
+
+    <dark_gray>Version: %terms_version%
+
+command:
+  agbs-players-only: "<red>Dieser Befehl kann nur im Spiel verwendet werden."
+  agbs-loading: "<gray>Deine gespeicherte Zustimmung wird geladen …"
+  agbs-failed: "<red>Dein AGB-Status kann momentan nicht geladen werden."
+
+export:
+  players-only: "<red>Dieser Befehl kann nur im Spiel verwendet werden."
+  usage: "<yellow>Verwendung: <white>/daten export NAME/UUID [--all]"
+  no-permission: "<red>Dafür hast du keine Berechtigung."
+  unavailable: "<red>Die administrative Datenauskunft ist derzeit nicht verfügbar."
+  started: "<gray>Die angeforderte Datenauskunft wird lokal erstellt. Das kann einige Minuten dauern …"
+  busy: "<yellow>Die verfügbaren Exportplätze sind momentan belegt."
+  not-found: "<yellow>Es wurde kein eindeutiges Minecraft-Konto für %target% gefunden."
+  ambiguous: "<yellow>Der Name %target% ist mehrdeutig. Verwende die UUID."
+  failed: "<red>Die Datenauskunft konnte nicht erstellt werden. Bitte versuche es später erneut."
+  failure-limit: "<red>Grund: Das konfigurierte Schutzlimit für Grösse oder Anzahl der Datensätze wurde erreicht."
+  failure-schema-changed: "<red>Grund: Das Datenbankschema wurde während des Exports geändert. Bitte starte den Export erneut."
+  failure-timeout: "<red>Grund: Eine Datenbankabfrage hat das Zeitlimit überschritten."
+  failure-database: "<red>Grund: Eine benötigte Datenbankabfrage ist fehlgeschlagen."
+  failure-filesystem: "<red>Grund: Die Exportdatei konnte nicht im Exportordner geschrieben werden."
+  failure-unexpected: "<red>Grund: Es ist ein unerwarteter interner Fehler aufgetreten."
+  ready: "<green>Datenauskunft erstellt: <white>%file%<gray> im Ordner <white>%directory%"
+
+export-view:
+  language: "de_ch"

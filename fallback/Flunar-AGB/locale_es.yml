@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Términos y reglas del servidor"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMACIÓN</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Términos de Flunar.de</gradient>"
+  information-lore-1: "<gray>Para jugar en <white>Flunar.de<gray>, debes"
+  information-lore-2: "<gray>aceptar los términos vigentes."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Sitio web</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Versión</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Lee los términos completos."
+  accept-name: "<green>✔ Aceptar los términos"
+  accept-lore-1: "<gray>He leído los términos y acepto"
+  accept-lore-2: "<gray>la versión vigente."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Clic: <white>Guardar aceptación"
+  decline-name: "<red>✖ Rechazar los términos"
+  decline-lore-1: "<gray>Sin aceptarlos no puedes"
+  decline-lore-2: "<gray>jugar en Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Clic: <white>Desconectar"
+  bedrock-title: "<aqua>Términos y reglas del servidor"
+  bedrock-content: |-
+    <gray>Para jugar en <white>Flunar.de<gray>, debes aceptar los términos vigentes.
+
+    <gray>Términos completos: <aqua>https://flunar.de/agb
+    <gray>Versión: <white>%terms_version%
+
+    <yellow>Elige ahora una opción vinculante.
+  bedrock-accept: "<green>✔ Aceptar los términos"
+  bedrock-decline: "<red>✖ Rechazar los términos"
+  checking: "<gray>Comprobando tu aceptación guardada …"
+  saving: "<yellow>Guardando tu aceptación de forma segura …"
+  accepted: "<green>¡Gracias! Tu aceptación se ha guardado."
+  unavailable: "<red>No se puede comprobar tu aceptación en este momento. Se rechazará la conexión de forma segura."
+  save-failed: "<red>No se pudo guardar tu aceptación. Se rechazará la conexión de forma segura."
+  declined-kick: "<red>Has rechazado los términos.<newline><gray>Sin aceptarlos no puedes jugar en <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>No se pudo abrir la selección.<newline><gray>Vuelve a conectarte o contacta con soporte."
+  status-title: "<aqua>Tu aceptación de los términos"
+  status-accepted-at: "<green>Aceptados el (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>No hay una aceptación guardada para la versión vigente."
+  status-close: "<red>Cerrar"
+  status-loading: "<gray>Cargando tu aceptación guardada …"
+  status-failed: "<red>No se puede cargar el estado de tu aceptación en este momento."
+  standard-text: |-
+    <white>Términos y condiciones de Flunar.de
+
+    <gray>Para jugar en Flunar.de, debes aceptar los términos y condiciones vigentes.
+
+    <gray>Encontrarás los términos completos en:
+    <aqua>https://flunar.de/agb
+
+    <gray>Al elegir «Aceptar», confirmas que los has leído y aceptado.
+
+    <gray>Si no los aceptas, no podrás entrar al servidor.
+
+    <dark_gray>Versión: %terms_version%
+
+command:
+  agbs-players-only: "<red>Este comando solo se puede usar dentro del juego."
+  agbs-loading: "<gray>Cargando el estado de tu aceptación …"
+  agbs-failed: "<red>No se puede cargar el estado de tu aceptación en este momento."
+
+export:
+  players-only: "<red>Este comando solo se puede usar dentro del juego."
+  usage: "<yellow>Uso: <white>/daten export NOMBRE/UUID [--all]"
+  no-permission: "<red>No tienes permiso para hacerlo."
+  unavailable: "<red>La exportación administrativa de datos no está disponible."
+  started: "<gray>La exportación solicitada se está creando localmente. Puede tardar unos minutos …"
+  busy: "<yellow>Todos los espacios de exportación están ocupados."
+  not-found: "<yellow>No se encontró una cuenta de Minecraft inequívoca para %target%."
+  ambiguous: "<yellow>El nombre %target% es ambiguo. Usa la UUID."
+  failed: "<red>No se pudo crear la exportación de datos. Inténtalo más tarde."
+  failure-limit: "<red>Motivo: se alcanzó el límite de seguridad de tamaño o registros."
+  failure-schema-changed: "<red>Motivo: el esquema de la base de datos cambió durante la exportación. Iníciala de nuevo."
+  failure-timeout: "<red>Motivo: una consulta de base de datos superó el tiempo límite."
+  failure-database: "<red>Motivo: falló una consulta de base de datos necesaria."
+  failure-filesystem: "<red>Motivo: no se pudo escribir el archivo en la carpeta de exportación."
+  failure-unexpected: "<red>Motivo: se produjo un error interno inesperado."
+  ready: "<green>Exportación creada: <white>%file%<gray> en la carpeta <white>%directory%"

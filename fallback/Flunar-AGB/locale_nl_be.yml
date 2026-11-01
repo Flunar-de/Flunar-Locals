@@ -1,0 +1,84 @@
+agreement:
+  menu-title: "<dark_gray>Voorwaarden & Serverregels"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMATIE</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Flunar.de Voorwaarden</gradient>"
+  information-lore-1: "<gray>Om op <white>Flunar.de <gray>te spelen, moet je"
+  information-lore-2: "<gray>de huidige voorwaarden aanvaarden."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Website</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Versie</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Lees de voorwaarden volledig."
+  accept-name: "<green>✔ Voorwaarden aanvaarden"
+  accept-lore-1: "<gray>Ik heb de voorwaarden gelezen en ga"
+  accept-lore-2: "<gray>akkoord met de huidige versie."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Klik: <white>Akkoord opslaan"
+  decline-name: "<red>✖ Voorwaarden weigeren"
+  decline-lore-1: "<gray>Zonder akkoord kan je niet"
+  decline-lore-2: "<gray>op Flunar.de spelen."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Klik: <white>Verbinding verbreken"
+  bedrock-title: "<aqua>Voorwaarden & Serverregels"
+  bedrock-content: |-
+    <gray>Om op <white>Flunar.de <gray>te spelen, moet je de huidige voorwaarden aanvaarden.
+
+    <gray>Volledige voorwaarden: <aqua>https://flunar.de/agb
+    <gray>Versie: <white>%terms_version%
+
+    <yellow>Maak nu een bindende keuze.
+  bedrock-accept: "<green>✔ Voorwaarden aanvaarden"
+  bedrock-decline: "<red>✖ Voorwaarden weigeren"
+  checking: "<gray>Je opgeslagen akkoord wordt gecontroleerd …"
+  saving: "<yellow>Je akkoord wordt veilig opgeslagen …"
+  accepted: "<green>Bedankt! Je akkoord is opgeslagen."
+  unavailable: "<red>De controle is momenteel niet beschikbaar. Je verbinding wordt uit veiligheid geweigerd."
+  save-failed: "<red>Je akkoord kon niet worden opgeslagen. Je verbinding wordt uit veiligheid geweigerd."
+  declined-kick: "<red>Je hebt de voorwaarden geweigerd.<newline><gray>Zonder akkoord kan je niet op Flunar.de spelen."
+  ui-unavailable-kick: "<red>De keuze kon niet worden geopend.<newline><gray>Maak opnieuw verbinding of contacteer support."
+  status-title: "<aqua>Jouw akkoord met de voorwaarden"
+  status-accepted-at: "<green>Aanvaard op (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Voor de huidige versie is geen akkoord opgeslagen."
+  status-close: "<red>Sluiten"
+  status-loading: "<gray>Je opgeslagen akkoord wordt geladen …"
+  status-failed: "<red>Je akkoordstatus kan momenteel niet worden geladen."
+  standard-text: |-
+    <white>Algemene voorwaarden van Flunar.de
+
+    <gray>Om op Flunar.de te spelen, moet je de huidige algemene voorwaarden aanvaarden.
+
+    <gray>De volledige voorwaarden vind je op:
+    <aqua>https://flunar.de/agb
+
+    <gray>Met “Aanvaarden” bevestig je dat je de voorwaarden hebt gelezen en ermee akkoord gaat.
+
+    <gray>Als je niet akkoord gaat, kan je de server niet betreden.
+
+    <dark_gray>Versie: %terms_version%
+
+command:
+  agbs-players-only: "<red>Dit commando kan alleen in het spel worden gebruikt."
+  agbs-loading: "<gray>Je opgeslagen akkoord wordt geladen …"
+  agbs-failed: "<red>Je akkoordstatus kan momenteel niet worden geladen."
+
+export:
+  players-only: "<red>Dit commando kan alleen in het spel worden gebruikt."
+  usage: "<yellow>Gebruik: <white>/daten export NAAM/UUID [--all]"
+  no-permission: "<red>Je hebt hiervoor geen toestemming."
+  unavailable: "<red>De administratieve gegevensexport is momenteel niet beschikbaar."
+  started: "<gray>De aangevraagde gegevensexport wordt lokaal gemaakt. Dit kan enkele minuten duren …"
+  busy: "<yellow>Alle beschikbare exportplaatsen zijn momenteel bezet."
+  not-found: "<yellow>Er is geen eenduidig Minecraft-account gevonden voor %target%."
+  ambiguous: "<yellow>De naam %target% is niet eenduidig. Gebruik de UUID."
+  failed: "<red>De gegevensexport kon niet worden gemaakt. Probeer het later opnieuw."
+  failure-limit: "<red>Reden: De ingestelde veiligheidslimiet voor grootte of aantal records is bereikt."
+  failure-schema-changed: "<red>Reden: Het databaseschema is tijdens de export gewijzigd. Start de export opnieuw."
+  failure-timeout: "<red>Reden: Een databasequery heeft de tijdslimiet overschreden."
+  failure-database: "<red>Reden: Een vereiste databasequery is mislukt."
+  failure-filesystem: "<red>Reden: Het exportbestand kon niet naar de exportmap worden geschreven."
+  failure-unexpected: "<red>Reden: Er is een onverwachte interne fout opgetreden."
+  ready: "<green>Gegevensexport gemaakt: <white>%file%<gray> in map <white>%directory%"
+
+export-view:
+  language: "nl_be"

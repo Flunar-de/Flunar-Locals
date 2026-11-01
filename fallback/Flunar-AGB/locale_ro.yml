@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Termeni și reguli ale serverului"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMAȚII</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Termenii Flunar.de</gradient>"
+  information-lore-1: "<gray>Pentru a juca pe <white>Flunar.de<gray>, trebuie"
+  information-lore-2: "<gray>să accepți termenii actuali."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Site web</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Versiune</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Citește termenii integral."
+  accept-name: "<green>✔ Acceptă termenii"
+  accept-lore-1: "<gray>Am citit termenii și accept"
+  accept-lore-2: "<gray>versiunea actuală."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Clic: <white>Salvează acceptarea"
+  decline-name: "<red>✖ Refuză termenii"
+  decline-lore-1: "<gray>Fără acceptare nu poți"
+  decline-lore-2: "<gray>juca pe Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Clic: <white>Deconectare"
+  bedrock-title: "<aqua>Termeni și reguli ale serverului"
+  bedrock-content: |-
+    <gray>Pentru a juca pe <white>Flunar.de<gray>, trebuie să accepți termenii actuali.
+
+    <gray>Termeni compleți: <aqua>https://flunar.de/agb
+    <gray>Versiune: <white>%terms_version%
+
+    <yellow>Fă acum o alegere obligatorie.
+  bedrock-accept: "<green>✔ Acceptă termenii"
+  bedrock-decline: "<red>✖ Refuză termenii"
+  checking: "<gray>Se verifică acceptarea salvată …"
+  saving: "<yellow>Acceptarea este salvată în siguranță …"
+  accepted: "<green>Mulțumim! Acceptarea a fost salvată."
+  unavailable: "<red>Acceptarea nu poate fi verificată acum. Conexiunea va fi refuzată în siguranță."
+  save-failed: "<red>Acceptarea nu a putut fi salvată. Conexiunea va fi refuzată în siguranță."
+  declined-kick: "<red>Ai refuzat termenii.<newline><gray>Fără acceptare nu poți juca pe <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>Selecția nu a putut fi deschisă.<newline><gray>Reconectează-te sau contactează asistența."
+  status-title: "<aqua>Acceptarea termenilor"
+  status-accepted-at: "<green>Acceptat la (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Nu există o acceptare salvată pentru versiunea actuală."
+  status-close: "<red>Închide"
+  status-loading: "<gray>Se încarcă acceptarea salvată …"
+  status-failed: "<red>Starea acceptării nu poate fi încărcată acum."
+  standard-text: |-
+    <white>Termenii și condițiile Flunar.de
+
+    <gray>Pentru a juca pe Flunar.de, trebuie să accepți termenii și condițiile actuale.
+
+    <gray>Termenii compleți se găsesc la:
+    <aqua>https://flunar.de/agb
+
+    <gray>Alegând „Acceptă”, confirmi că i-ai citit și îi accepți.
+
+    <gray>Dacă nu accepți, nu te poți conecta la server.
+
+    <dark_gray>Versiune: %terms_version%
+
+command:
+  agbs-players-only: "<red>Această comandă poate fi folosită doar în joc."
+  agbs-loading: "<gray>Se încarcă starea acceptării …"
+  agbs-failed: "<red>Starea acceptării nu poate fi încărcată acum."
+
+export:
+  players-only: "<red>Această comandă poate fi folosită doar în joc."
+  usage: "<yellow>Utilizare: <white>/daten export NUME/UUID [--all]"
+  no-permission: "<red>Nu ai permisiunea necesară."
+  unavailable: "<red>Exportul administrativ de date nu este disponibil."
+  started: "<gray>Exportul solicitat este creat local. Poate dura câteva minute …"
+  busy: "<yellow>Toate sloturile de export sunt ocupate."
+  not-found: "<yellow>Nu a fost găsit un cont Minecraft neechivoc pentru %target%."
+  ambiguous: "<yellow>Numele %target% este ambiguu. Folosește UUID-ul."
+  failed: "<red>Exportul de date nu a putut fi creat. Încearcă din nou mai târziu."
+  failure-limit: "<red>Motiv: a fost atinsă limita de siguranță pentru dimensiune sau înregistrări."
+  failure-schema-changed: "<red>Motiv: schema bazei de date s-a schimbat în timpul exportului. Pornește-l din nou."
+  failure-timeout: "<red>Motiv: o interogare a depășit limita de timp."
+  failure-database: "<red>Motiv: o interogare necesară a bazei de date a eșuat."
+  failure-filesystem: "<red>Motiv: fișierul nu a putut fi scris în dosarul de export."
+  failure-unexpected: "<red>Motiv: a apărut o eroare internă neașteptată."
+  ready: "<green>Export creat: <white>%file%<gray> în dosarul <white>%directory%"

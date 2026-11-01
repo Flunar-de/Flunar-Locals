@@ -1,0 +1,81 @@
+agreement:
+  menu-title: "<dark_gray>Podmínky a pravidla serveru"
+  lore-header: "<dark_gray>╭──── <gradient:#c084fc:#60a5fa>INFORMACE</gradient> <dark_gray>────╮"
+  lore-footer: "<dark_gray>╰────────────────────╯"
+  information-name: "<gradient:#c084fc:#60a5fa>Podmínky Flunar.de</gradient>"
+  information-lore-1: "<gray>Abys mohl hrát na <white>Flunar.de<gray>, musíš"
+  information-lore-2: "<gray>přijmout aktuální podmínky."
+  information-lore-3: ""
+  information-lore-4: "<gradient:#c084fc:#60a5fa>Web</gradient> <dark_gray>• <aqua>https://flunar.de/agb"
+  information-lore-5: "<gradient:#c084fc:#60a5fa>Verze</gradient> <dark_gray>• <gray>%terms_version%"
+  information-lore-6: ""
+  information-lore-7: "<yellow>Přečti si celé podmínky."
+  accept-name: "<green>✔ Přijmout podmínky"
+  accept-lore-1: "<gray>Podmínky jsem přečetl a přijímám"
+  accept-lore-2: "<gray>jejich aktuální znění."
+  accept-lore-3: ""
+  accept-lore-4: "<green>Kliknutí: <white>Uložit souhlas"
+  decline-name: "<red>✖ Odmítnout podmínky"
+  decline-lore-1: "<gray>Bez souhlasu nemůžeš"
+  decline-lore-2: "<gray>hrát na Flunar.de."
+  decline-lore-3: ""
+  decline-lore-4: "<red>Kliknutí: <white>Odpojit"
+  bedrock-title: "<aqua>Podmínky a pravidla serveru"
+  bedrock-content: |-
+    <gray>Abys mohl hrát na <white>Flunar.de<gray>, musíš přijmout aktuální podmínky.
+
+    <gray>Úplné podmínky: <aqua>https://flunar.de/agb
+    <gray>Verze: <white>%terms_version%
+
+    <yellow>Nyní proveď závaznou volbu.
+  bedrock-accept: "<green>✔ Přijmout podmínky"
+  bedrock-decline: "<red>✖ Odmítnout podmínky"
+  checking: "<gray>Kontroluji uložený souhlas …"
+  saving: "<yellow>Bezpečně ukládám souhlas …"
+  accepted: "<green>Děkujeme! Souhlas byl uložen."
+  unavailable: "<red>Souhlas nyní nelze ověřit. Připojení bude bezpečně odmítnuto."
+  save-failed: "<red>Souhlas se nepodařilo uložit. Připojení bude bezpečně odmítnuto."
+  declined-kick: "<red>Odmítl jsi podmínky.<newline><gray>Bez souhlasu nemůžeš hrát na <white>Flunar.de<gray>."
+  ui-unavailable-kick: "<red>Výběr podmínek se nepodařilo otevřít.<newline><gray>Připoj se znovu nebo kontaktuj podporu."
+  status-title: "<aqua>Tvůj souhlas s podmínkami"
+  status-accepted-at: "<green>Přijato (UTC): <white>%accepted_at%"
+  status-not-accepted: "<yellow>Pro aktuální verzi není uložen žádný souhlas."
+  status-close: "<red>Zavřít"
+  status-loading: "<gray>Načítám uložený souhlas …"
+  status-failed: "<red>Stav souhlasu nyní nelze načíst."
+  standard-text: |-
+    <white>Obchodní podmínky Flunar.de
+
+    <gray>Pro hraní na Flunar.de musíš přijmout aktuální podmínky.
+
+    <gray>Úplné podmínky najdeš na:
+    <aqua>https://flunar.de/agb
+
+    <gray>Volbou „Přijmout“ potvrzuješ, že jsi je přečetl a souhlasíš s nimi.
+
+    <gray>Pokud nesouhlasíš, nemůžeš se připojit k serveru.
+
+    <dark_gray>Verze: %terms_version%
+
+command:
+  agbs-players-only: "<red>Tento příkaz lze použít pouze ve hře."
+  agbs-loading: "<gray>Načítám stav souhlasu …"
+  agbs-failed: "<red>Stav souhlasu nyní nelze načíst."
+
+export:
+  players-only: "<red>Tento příkaz lze použít pouze ve hře."
+  usage: "<yellow>Použití: <white>/daten export JMÉNO/UUID [--all]"
+  no-permission: "<red>K tomu nemáš oprávnění."
+  unavailable: "<red>Administrativní export dat nyní není dostupný."
+  started: "<gray>Požadovaný export se vytváří lokálně. Může to trvat několik minut …"
+  busy: "<yellow>Všechna místa pro export jsou obsazena."
+  not-found: "<yellow>Pro %target% nebyl nalezen jednoznačný účet Minecraft."
+  ambiguous: "<yellow>Jméno %target% je nejednoznačné. Použij UUID."
+  failed: "<red>Export dat se nepodařilo vytvořit. Zkus to později."
+  failure-limit: "<red>Důvod: byl dosažen bezpečnostní limit velikosti nebo počtu záznamů."
+  failure-schema-changed: "<red>Důvod: schéma databáze se během exportu změnilo. Spusť export znovu."
+  failure-timeout: "<red>Důvod: databázový dotaz překročil časový limit."
+  failure-database: "<red>Důvod: potřebný databázový dotaz selhal."
+  failure-filesystem: "<red>Důvod: soubor nelze zapsat do složky exportu."
+  failure-unexpected: "<red>Důvod: došlo k neočekávané interní chybě."
+  ready: "<green>Export vytvořen: <white>%file%<gray> ve složce <white>%directory%"
