@@ -275,12 +275,6 @@ profiles:
         language: en
         path: fallback/Flunar-Essentails/locale_en.yml
         sha256: 148eaab4783384de8c83b323acfe07dce9af416a16eb7d9dde0bec6010ffce87
-  smp:
-    extends: fallback
-    files: []
-  citybuild:
-    extends: fallback
-    files:
       - plugin: Flunar-BonkAndBoom
         language: de
         path: fallback/Flunar-BonkAndBoom/locale_de.yml
