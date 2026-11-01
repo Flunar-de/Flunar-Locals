@@ -1,0 +1,1494 @@
+# Lobby-spezifische Messages
+welcome:
+  join: "<green>Willkommen <yellow>%player%<green> auf dem Server!"
+  first-time: "<gold>Das ist dein erster Besuch!"
+  
+teleporter:
+  activated: "<gray>Teleporter aktiviert!"
+  cooldown: "<red>Bitte warte noch %seconds% Sekunden!"
+  
+items:
+  navigator:
+    name: "<gradient:#8AEAFF:#D88CFF>Navigator</gradient> <dark_gray>(<gray>Rechtsklick</gray>)"
+    description: "Öffne die Minigames-Übersicht und entdecke Minispiele"
+    lore-1: "<gray>Öffne die Minigames-Übersicht"
+    lore-2: "<gray>Nutze ihn, um Minispiele zu entdecken"
+  profile:
+    name: "<gradient:#B8FFC7:#8AEAFF>Dein Profil</gradient>"
+    lore-1: "<gray>Klicke um dein Profil zu öffnen"
+  gadgets:
+    name: "<gradient:#D88CFF:#FFD166>Gadgets</gradient> <dark_gray>(<gray>Rechtsklick</gray>)"
+    description: "Öffne das Gadget-Menü und wähle deine Gadgets aus"
+    lore-1: "<gray>Öffne das Gadget-Menü"
+    lore-2: "<gray>und wähle deine Gadgets aus!"
+  player-hider:
+    name: "<gradient:#FF6B6B:#FFD166>Spieler verstecken</gradient>"
+    description: "Klicke um zwischen Optionen zu wechseln"
+    lore-1: "<gray>Klicke zum Umschalten"
+    status-all: "<gray>Status: <green>Alle sichtbar"
+    status-vip: "<gray>Status: <light_purple>Nur VIPs sichtbar"
+    status-none: "<gray>Status: <red>Alle versteckt"
+  lobby-switcher:
+    name: "<gradient:#B8FFC7:#8AEAFF>Lobby wechseln</gradient> <dark_gray>(<gray>Rechtsklick</gray>)"
+    description: "Wechsle zwischen verschiedenen Lobbys und finde neue Spieler"
+    lore-1: "<gray>Wechsle zwischen verschiedenen Lobbys"
+    lore-2: "<gray>und finde neue Spieler."
+  no-gadget:
+    name: "<gradient:#FF6B6B:#FFD166>Kein Gadget ausgewählt</gradient>"
+    description: "Öffne das Gadget-Menü um ein Gadget auszuwählen"
+    lore-1: "<gray>Öffne das Gadget-Menü"
+    lore-2: "<gray>um ein Gadget auszuwählen!"
+  quick-menu:
+    name: "<gradient:#FFD166:#B8FFC7>Spielerprofil</gradient> <dark_gray>(<gray>Rechtsklick</gray>)"
+    lore-1: "<gray>Öffne dein Spielerprofil"
+    lore-2: "<gray>und passe deine Einstellungen an."
+
+quick-menu:
+  title: "<yellow><bold>Spielerprofil"
+  profile:
+    name: "<yellow>%player% <dark_gray>- <gray>Profil"
+    lore-1: "<dark_gray>» <gray>Sprache: <yellow>%language%"
+    lore-2: "<dark_gray>» <gray>Server: <aqua>%server%"
+    lore-3: "<dark_gray>» <gray>Sichtbarkeit: %visibility%"
+    lore-4: "<dark_gray>» <gray>Freischaltungen: <green>%unlocks%"
+    visibility:
+      all: "<green>Alle sichtbar"
+      vip_only: "<light_purple>Nur VIPs sichtbar"
+      none: "<red>Alle versteckt"
+  language:
+    de:
+      name: "<gold>Deutsch"
+      lore-1: "<gray>Setzt deine Sprache auf Deutsch."
+    en:
+      name: "<aqua>English"
+      lore-1: "<gray>Setzt deine Sprache auf Englisch."
+    selected: "<dark_gray>» <green>Aktuell ausgewählt"
+    click: "<dark_gray>» <yellow>Klicken zum Wechseln"
+    changed: "<green>Sprache wurde auf <yellow>%language% <green>umgestellt."
+    unavailable: "<red>Die Sprache <yellow>%language% <red>ist nicht verfügbar."
+  language-select:
+    name: "<gold>Sprache ändern"
+    lore-1: "<gray>Klicke, um deine Sprache zu ändern."
+    lore-2: "<dark_gray>» <yellow>Aktuell: <green>%language%"
+  language-menu:
+    title: "<yellow><bold>Sprache ändern"
+    current:
+      name: "<gray>Aktuelle Sprache: <yellow>%language%"
+      lore-1: "<gray>Wähle unten eine Sprache aus."
+  friends:
+    module: "Freunde"
+    name: "<green>Freunde"
+    lore-1: "<gray>Freundesliste und Online-Status."
+    lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  party:
+    module: "Party"
+    name: "<light_purple>Party"
+    lore-1: "<gray>Gemeinsam in Spielmodi starten."
+    lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  clan:
+    module: "Clan"
+    name: "<gold>Clan"
+    lore-1: "<gray>Clan-Verwaltung und Mitglieder."
+    lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  lobby-settings:
+    module: "Lobby-Einstellungen"
+    name: "<aqua>Lobby-Einstellungen"
+    lore-1: "<gray>Persönliche Lobby-Optionen."
+    lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  close:
+    name: "<red>Schließen"
+    lore-1: "<gray>Schließt dein Profil."
+  social-unavailable: "<red>Das Social-System ist derzeit nicht verfügbar."
+  friend-request-sent: "<green>Freundschaftsanfrage an <yellow>%player% <green>gesendet."
+  friend-request-accepted: "<green>Ihr seid jetzt mit <yellow>%player% <green>befreundet."
+  friend-request-already-friends: "<yellow>Ihr seid bereits befreundet."
+  friend-request-exists: "<yellow>Du hast <white>%player% <yellow>bereits eine Anfrage gesendet."
+  friend-request-disabled: "<red>%player% nimmt derzeit keine Freundschaftsanfragen an."
+  friend-request-limit: "<red>Deine Freundesliste ist voll."
+  friend-request-cooldown: "<yellow>Für diesen Spieler läuft bereits eine Anfrage."
+  friend-request-self: "<red>Du kannst dir nicht selbst eine Anfrage senden."
+  friend-request-error: "<red>Die Freundschaftsanfrage konnte nicht gesendet werden."
+  development-message: "<yellow>%module% <gray>ist aktuell noch in Entwicklung."
+
+# Lobby-Einstellungen (persönlich pro Spieler)
+lobby-settings:
+  title: "<gradient:#8AEAFF:#B8FFC7><bold>Lobby-Einstellungen</bold></gradient>"
+  state:
+    on: "<green>An"
+    off: "<red>Aus"
+  parkour:
+    name: "<gradient:#B8FFC7:#3DDC97>Parkour-Autostart</gradient>"
+    lore-1: "<gray>Startet den Parkour automatisch,"
+    lore-2: "<gray>sobald du die Startplatte betrittst."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Aktuell: %state%"
+    lore-5: "<dark_gray>» <yellow>Klicke zum Umschalten"
+  weather:
+    name: "<gradient:#8AEAFF:#5B8DEF>Persönliches Wetter</gradient>"
+    value:
+      clear: "<yellow>Sonne"
+      rain: "<blue>Regen"
+      thunder: "<dark_purple>Gewitter"
+    lore-1: "<gray>Nur für dich sichtbar."
+    lore-2: " "
+    lore-3: "<dark_gray>» <gray>Aktuell: %value%"
+    lore-4: "<dark_gray>» <yellow>Klicke zum Wechseln"
+  time:
+    name: "<gradient:#FFD98A:#FF9F1C>Persönliche Tageszeit</gradient>"
+    value:
+      default: "<gray>Standard"
+      day: "<yellow>Tag"
+      night: "<blue>Nacht"
+    lore-1: "<gray>Nur für dich sichtbar."
+    lore-2: " "
+    lore-3: "<dark_gray>» <gray>Aktuell: %value%"
+    lore-4: "<dark_gray>» <yellow>Klicke zum Wechseln"
+  other-pets:
+    name: "<gradient:#FFD166:#FF9F1C>Fremde Begleiter</gradient>"
+    lore-1: "<gray>Bestimmt, ob du die Begleiter"
+    lore-2: "<gray>anderer Spieler sehen möchtest."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Aktuell: %state%"
+    lore-5: "<dark_gray>» <yellow>Klicke zum Umschalten"
+  mine-players:
+    name: "<gradient:#8AEAFF:#5B8DEF>Spieler in der Mine</gradient>"
+    lore-1: "<gray>Bestimmt, ob du andere Spieler"
+    lore-2: "<gray>in der Lobby sehen möchtest."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Aktuell: %state%"
+    lore-5: "<dark_gray>» <yellow>Klicke zum Umschalten"
+  back:
+    name: "<red>Zurück"
+    lore-1: "<gray>Zurück zum Profil."
+
+# Pets / Begleiter
+pets:
+  gadget-lore: "<gray>Ein Begleiter, der dir folgt."
+  put-away: "<gray>Dein Begleiter wurde eingepackt."
+  no-pet: "<red>Du hast aktuell keinen Begleiter."
+  nametag: "%pet% <dark_gray>• <gray>Begleiter von %owner%"
+  menu:
+    individual-name: "<dark_gray>» <gray>Name: <yellow>%name%"
+    unnamed: "<dark_gray>Noch nicht benannt"
+  action:
+    title: "<gradient:#FFD166:#B8FFC7><bold>Begleiter</bold></gradient>"
+    rename:
+      name: "<yellow>Umbenennen"
+      lore-1: "<gray>Gib deinem Begleiter einen Namen."
+      token-status: "<dark_gray>» <gray>Umbenennungs-Tokens: <yellow>%tokens%"
+    sit:
+      name: "<gold>Hinsetzen"
+      name-standing: "<green>Aufstehen lassen"
+      lore-1: "<gray>Lässt deinen Begleiter sitzen bleiben."
+      state-sitting: "<dark_gray>» <gray>Status: <yellow>Sitzt"
+      state-standing: "<dark_gray>» <gray>Status: <green>Folgt dir"
+    ride:
+      name: "<aqua>Reiten"
+      lore-1: "<gray>Steig auf deinen Begleiter."
+      lore-2: "<dark_gray>» <gray>Schleichen zum Absteigen."
+      not-rideable: "<dark_gray>» <red>Nicht reitbar."
+      not-rideable-message: "<red>Dieser Begleiter ist nicht reitbar."
+    dismiss:
+      name: "<red>Begleiter einpacken"
+      lore-1: "<gray>Lässt deinen Begleiter verschwinden."
+  dialog:
+    external-title: "<gradient:#FFD166:#B8FFC7><bold>✦ Dein Begleiter</bold></gradient>"
+    item-description: "<gray>Aktiver Begleiter"
+    body: "<gradient:#FFD166:#B8FFC7><bold>%pet%</bold></gradient><newline><newline><gray>Besitzer <dark_gray>•</dark_gray> <white>%owner%</white><newline><gray>Umbenennungs-Tokens <dark_gray>•</dark_gray> <yellow>%tokens%</yellow><newline><gray>%rideable-label% <dark_gray>•</dark_gray> %rideable%"
+    rideable:
+      label: "Reitbar"
+      yes: "<green>Ja"
+      no: "<red>Nein"
+    actions:
+      rename: "<yellow>Umbenennen"
+      sit: "<gold>Hinsetzen"
+      stand: "<green>Aufstehen"
+      ride: "<aqua>Reiten"
+      dismiss: "<red>Begleiter einpacken"
+      close: "<gray>Schließen"
+    tooltips:
+      rename: "<gray>Verbraucht 1 Umbenennungs-Token"
+      sit: "<gray>Lässt deinen Begleiter sitzen bleiben"
+      stand: "<gray>Lässt deinen Begleiter dir wieder folgen"
+      ride: "<gray>Steig auf deinen Begleiter"
+      dismiss: "<gray>Packt deinen Begleiter ein"
+      close: "<gray>Dialog schließen"
+    rename:
+      title: "<gradient:#FFD166:#B8FFC7><bold>Begleiter umbenennen</bold></gradient>"
+      external-title: "<gradient:#FFD166:#B8FFC7><bold>Neuen Namen festlegen</bold></gradient>"
+      body: "<gray>Wähle einen neuen Namen für deinen Begleiter.<newline><newline><yellow>1 Token wird beim Bestätigen verbraucht.</yellow>"
+      label: "<white>Neuer Name"
+      confirm: "<green>✓ Bestätigen"
+      confirm-tooltip: "<gray>Umbenennen und 1 Token verbrauchen"
+      cancel: "<red>Abbrechen"
+      cancel-tooltip: "<gray>Zurück zum Begleiter-Menü"
+      invalid: "<red>Der Name darf nicht leer sein."
+  rename:
+    done: "<green>Dein Begleiter heißt jetzt <yellow>%name%<green>."
+    no-tokens: "<red>Du hast keinen Umbenennungs-Token. Kaufe einen im Lobby-Shop."
+
+rename-tokens:
+  shop-title: "<gradient:#FFD166:#FF9F1C><bold>Umbenennungs-Token-Shop</bold></gradient>"
+  unavailable: "<red>Die CoinsAPI ist aktuell nicht verfügbar."
+  pending: "<yellow>Dein Kauf wird bereits verarbeitet."
+  purchase-failed: "<red>Der Kauf konnte nicht abgeschlossen werden."
+  purchase-refunded: "<red>Der Kauf wurde abgebrochen. Deine Coins wurden erstattet. Kontostand: <gold>%balance% Coins<red>."
+  not-enough: "<red>Nicht genug Coins. Preis: <gold>%price%<red>, Kontostand: <yellow>%balance%<red>."
+  purchase-success: "<green>Du hast einen Umbenennungs-Token gekauft. Tokens: <yellow>%tokens%<green>. Kontostand: <gold>%balance% Coins<green>."
+  pet-purchase-reward: "<green>Du hast 1 Umbenennungs-Token für dein neues Pet erhalten. Tokens: <yellow>%tokens%<green>."
+  item:
+    name: "<yellow>Umbenennungs-Token"
+    lore-1: "<gray>Benutze diesen Token, um"
+    lore-2: "<gray>dein Pet umzubenennen."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Preis: <gold>%price% Coins"
+    lore-5: "<dark_gray>» <gray>Deine Tokens: <yellow>%tokens%"
+    lore-6: " "
+    lore-7: "<dark_gray>» <yellow>Klicken zum Kaufen"
+  back:
+    name: "<yellow>Zurück zum Lobby-Shop"
+    lore-1: "<gray>Zurück zur Shop-Auswahl."
+
+navigator:
+  title: "<gradient:#8AEAFF:#D88CFF><bold>Navigator</bold></gradient> <dark_gray>• <white>Reich des Fuchses"
+  loading: "<gray>Lädt..."
+  spawn:
+    name: "<gradient:#8AEAFF:#B8FFC7><bold>Spawn</bold></gradient> <dark_gray>• <#8AEAFF>Fuchsheim"
+    description: "Kehre zurück zum Spawn"
+    lore-1: "<dark_gray>» <gray>Kehre zurück zum Spawn."
+  lobby-games:
+    name: "<gradient:#3DDC97:#8AEAFF><bold>Lobby-Spiele</bold></gradient> <dark_gray>• <gray>Spiel in der Lobby"
+    title: "<gradient:#3DDC97:#8AEAFF><bold>Lobby-Spiele</bold></gradient>"
+    lore-1: "<dark_gray>» <gray>Kleine Spiele direkt in der Lobby."
+    lore-2: "<dark_gray>» <gray>Parkour, Cookie-Clicker und mehr."
+    lore-3: ""
+    lore-4: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  lobby-teleports:
+    name: "<gradient:#8AEAFF:#D88CFF><bold>Lobby-Orte</bold></gradient> <dark_gray>• <gray>Teleportiere dich"
+    title: "<gradient:#8AEAFF:#D88CFF><bold>Lobby-Orte</bold></gradient>"
+    lore-1: "<dark_gray>» <gray>Springe zu Orten in der Lobby."
+    lore-2: ""
+    lore-3: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  cat-parkour:
+    name: "<gradient:#B8FFC7:#3DDC97><bold>Parkour</bold></gradient> <dark_gray>• <gray>Spring dich hoch"
+    lore-1: "<dark_gray>» <gray>Teleportiere dich zum Parkour."
+    lore-2: ""
+    lore-3: "<dark_gray>» <yellow>Klicke zum Teleportieren"
+  cat-cookie-clicker:
+    name: "<gradient:#FFD98A:#FF9F1C><bold>Cookie-Clicker</bold></gradient> <dark_gray>• <gray>Klick den Keks"
+    lore-1: "<dark_gray>» <gray>Teleportiere dich zum Cookie-Clicker."
+    lore-2: ""
+    lore-3: "<dark_gray>» <yellow>Klicke zum Teleportieren"
+  cat-mining-cave:
+    name: "<gradient:#FFD166:#FF9F1C><bold>Mining-Höhle</bold></gradient> <dark_gray>• <gray>Beginne deine Schicht"
+    lore-1: "<dark_gray>» <gray>Teleportiere dich zur öffentlichen Mine."
+    lore-2: ""
+    lore-3: "<dark_gray>» <yellow>Klicke zum Teleportieren"
+  cat-marktplatz:
+    name: "<gradient:#B8FFC7:#FFD166><bold>Marktplatz</bold></gradient> <dark_gray>• <gray>Herz der Lobby"
+    lore-1: "<dark_gray>» <gray>Teleportiere dich zum Marktplatz."
+    lore-2: ""
+    lore-3: "<dark_gray>» <yellow>Klicke zum Teleportieren"
+  citybuild:
+    name: "<gradient:#B8FFC7:#FFD166><bold>Citybuild</bold></gradient> <dark_gray>• <gray>Baue dein Reich"
+    description: "Baue deine eigene Stadt, finde Ressourcen und erweitere dein Grundstück. Errichte mächtige Gebäude mit Freunden"
+    lore-1: "<dark_gray>» <gray>Baue deine eigene Stadt und werde reich!"
+    lore-2: "<dark_gray>» <gray>Finde Ressourcen und erweitere dein Grundstück."
+    lore-3: "<dark_gray>» <gray>Errichte mächtige Gebäude mit Freunden."
+    lore-4: "%online%"
+  smp:
+    name: "<gradient:#B8FFC7:#8AEAFF><bold>SMP</bold></gradient> <dark_gray>• <gray>Überlebe gemeinsam"
+    description: "Erkunde die offene Welt, gründe Basen mit Freunden und erlebe das klassische Survival-Abenteuer gemeinsam mit anderen Spielern."
+    lore-1: "<dark_gray>» <gray>Erkunde eine riesige offene Welt."
+    lore-2: "<dark_gray>» <gray>Baue Basen und spiele mit Freunden."
+    lore-3: "<dark_gray>» <gray>Erlebe klassisches Survival neu."
+    lore-4: "%online%"
+  pillar-chaos:
+    name: "<gradient:#D88CFF:#8AEAFF><bold>Pillar-Chaos</bold></gradient> <dark_gray>• <gray>Der letzte Überlebende gewinnt"
+    description: "Stelle dich in <bold>Pillar-Chaos</bold> deinen Gegnern! Jeder Spieler startet auf einer eigenen Säule und erhält regelmäßig zufällige Items. Nutze sie geschickt, um deine Gegner zu besiegen oder in die Tiefe zu stoßen. <bold>Der letzte Überlebende gewinnt!</bold>"
+    lore-1: "<dark_gray>» <gray>Stelle dich deinen Gegnern auf einer eigenen Säule."
+    lore-2: "<dark_gray>» <gray>Erhalte regelmäßig zufällige Items."
+    lore-3: "<dark_gray>» <gray>Besiege deine Gegner oder stoße sie in die Tiefe."
+    lore-4: "<dark_gray>» <gray>Der letzte Überlebende gewinnt!"
+    lore-5: "%online%"
+  coming-soon:
+    not-available: "<red>⚠ Dieser Modus ist noch nicht verfügbar!"
+    hint: "<dark_gray>» <red>⚠ In Entwicklung <dark_gray>- <gray>Bald verfügbar!"
+  beta:
+    hint: "<dark_gray>» <light_purple>BETA <dark_gray>- <gray>Früher Zugriff"
+  tags:
+    online: "<dark_gray>» <green>Online <dark_gray>- <gray>Beitretbar"
+    beta: "<dark_gray>» <light_purple>BETA <dark_gray>- <gray>Früher Zugriff"
+    offline: "<dark_gray>» <red>Offline <dark_gray>- <gray>Der Spielmodus ist nicht erreichbar"
+    maintenance: "<dark_gray>» <yellow>Wartung <dark_gray>- <gray>Gerade nicht beitretbar"
+    in-development: "<dark_gray>» <red>⚠ In Entwicklung <dark_gray>- <gray>Bald verfügbar!"
+  not-joinable:
+    offline: "<red>Dieser Spielmodus ist aktuell offline."
+    maintenance: "<red>Dieser Spielmodus ist aktuell in Wartung."
+    in-development: "<red>Dieser Spielmodus ist noch in Entwicklung."
+    online: "<red>Dieser Spielmodus ist aktuell nicht beitretbar."
+    beta: "<red>Dieser Beta-Spielmodus ist aktuell nicht beitretbar."
+  dynamic:
+    title: "<aqua>%mode%"
+    no-available: "<red>Kein Server frei"
+    no-available-lore: "<gray>Aktuell ist kein beitretbarer Server verfügbar."
+    server-name: "<green>%server%"
+    server-lore-1: "<dark_gray>» <gray>Spieler auf diesem Server: %player_color%%player_bar% <gray>%players%/%max%"
+    server-lore-2: ""
+    server-lore-3: "<dark_gray>» <yellow>Klicke zum Beitreten"
+    server-lore-players: "<dark_gray>» <gray>Spieler auf diesem Server: %player_color%%player_bar% <gray>%players%/%max%"
+  Bonk-and-Boom:
+    name: "<gradient:#FF6B6B:#FFD166><bold>Bonk-and-Boom</bold></gradient> <dark_gray>• <gray>Nicht der Letzte sein!"
+    lore-1: "<dark_gray>» <gray>Du hast den Mace? Dann renn!"
+    lore-2: "<dark_gray>» <gray>Schlag andere, um ihn loszuwerden."
+    lore-3: "<dark_gray>» <gray>Der Letzte mit dem Mace explodiert!"
+    lore-4: "<dark_gray>» <gray>Sei nicht der Pechvogel..."
+  cores:
+    name: "<gradient:#8AEAFF:#3DDC97><bold>Cores</bold></gradient> <dark_gray>• <gray>Zerstöre den Kern"
+    lore-1: "<dark_gray>» <gray>Finde und zerstöre den gegnerischen Kern."
+    lore-2: "<dark_gray>» <gray>Verteidige deinen eigenen Kern."
+    lore-3: "<dark_gray>» <gray>Strategie ist der Schlüssel zum Sieg."
+    lore-4: "%online%"
+  arena:
+    name: "<gradient:#D88CFF:#FF6B6B><bold>Arena</bold></gradient> <dark_gray>• <gray>PvP Kämpfe"
+    lore-1: "<dark_gray>» <gray>Kämpfe in der Arena gegen andere."
+    lore-2: "<dark_gray>» <gray>Zeige dein PvP-Können."
+    lore-3: "<dark_gray>» <gray>Werde der beste Kämpfer."
+    lore-4: "%online%"
+  mlg-rush:
+    name: "<gradient:#FFD166:#B8FFC7><bold>MLG-Rush</bold></gradient> <dark_gray>• <gray>Schnelle Brücken"
+    lore-1: "<dark_gray>» <gray>Baue schnell zum gegnerischen Bett."
+    lore-2: "<dark_gray>» <gray>Zerstöre es vor deinem Gegner."
+    lore-3: "<dark_gray>» <gray>Reaktionsschnelligkeit ist alles."
+    lore-4: "%online%"
+  player-count: "<gray>Spieler: <aqua>%current%<gray>/<aqua>%max%"
+  offline: "<gray>Spieler: <red>Offline"
+  online-info: "<gray>Spieler: %player_color%%player_bar% <gray>%online%/%max%"
+  offline-info: "<gray>Spieler: <red>Offline"
+  error-opening: "<red>Fehler beim Öffnen des Navigators!"
+  teleport:
+    success: "<gradient:#8AEAFF:#B8FFC7><bold>Teleport</bold></gradient> <dark_gray>• <#B8FFC7>%name%"
+    unavailable: "<red>Dieser Ort ist aktuell nicht verfügbar."
+  category:
+    empty: "<red>Diese Kategorie ist aktuell leer."
+
+gadgets:
+  activated: "<green>%gadget% <gray>aktiviert."
+  deactivated: "<red>Gadget deaktiviert!"
+  all-deactivated: "<red>Alle Gadgets deaktiviert!"
+  unknown-disc: "<red>Diese Schallplatte konnte nicht abgespielt werden."
+  music-deactivated: "<#8AEAFF>Die Musik wurde gestoppt."
+  music-none-active: "<gray>Aktuell läuft keine Musik-Disc."
+  actionbar:
+    activated: "<gradient:#8AEAFF:#D88CFF>%gadget%</gradient> <dark_gray>• <#B8FFC7>Aktiviert"
+    deactivated: "<gradient:#8AEAFF:#D88CFF>%gadget%</gradient> <dark_gray>• <#FFB4A8>Deaktiviert"
+    particle-limit: "<gradient:#FFA8E6:#D88CFF>Partikel</gradient> <dark_gray>• <#FFD166>Maximal %limit% gleichzeitig"
+    info: "<gradient:#8AEAFF:#D88CFF>Gadget</gradient> <dark_gray>• <#E7D7FF>%message%"
+    error: "<gradient:#FF6B6B:#FFD166>Gadget</gradient> <dark_gray>• <#FFB4A8>%message%"
+    all-deactivated: "<gradient:#FF6B6B:#FFD166>Gadgets</gradient> <dark_gray>• <#FFB4A8>Alle deaktiviert"
+    music-stopped: "<gradient:#8AEAFF:#D88CFF>Musik</gradient> <dark_gray>• <#B8FFC7>Disc gestoppt"
+    music-none: "<gradient:#8AEAFF:#D88CFF>Musik</gradient> <dark_gray>• <#FFD166>Keine Disc aktiv"
+    shop-success: "<gradient:#8AEAFF:#B8FFC7>Shop</gradient> <dark_gray>• <#B8FFC7>%message%"
+    shop-info: "<gradient:#8AEAFF:#D88CFF>Shop</gradient> <dark_gray>• <#E7D7FF>%message%"
+    shop-error: "<gradient:#FF6B6B:#FFD166>Shop</gradient> <dark_gray>• <#FFB4A8>%message%"
+  lore:
+    separator: "<dark_gray><strikethrough>----------------"
+    status-active: "<#8AEAFF>Status: <green>Aktiv"
+    status-owned: "<#8AEAFF>Status: <green>Gekauft"
+    status-locked: "<#8AEAFF>Status: <red>Gesperrt"
+    price: "<#FFD166>Preis: <gold>%price% Coins"
+    left-click-activate: "<dark_gray>» <#8AEAFF>Linksklick: <gray>Aktivieren"
+    left-click-deactivate: "<dark_gray>» <#FF6B6B>Linksklick: <gray>Deaktivieren"
+    left-click-putaway: "<dark_gray>» <#8AEAFF>Linksklick: <gray>Einpacken"
+    left-click-buy: "<dark_gray>» <#FFD166>Linksklick: <gray>Kaufen"
+  shop:
+    daily-title: "<gold><bold>Täglicher Gadget-Shop"
+    daily-date: "<dark_gray>» <gray>Angebot vom: <yellow>%date%"
+    daily-owned-click: "<dark_gray>» <#8AEAFF>Aktivierung: <gray>Nur im Gadget-Menü"
+    daily-buy-click: "<dark_gray>» <#FFD166>Klicken: <gray>Kaufen"
+    not-owned-open-shop: "<yellow>Dieses Gadget ist nicht gekauft. Nutze <gold>/gadgets shop<yellow>."
+    daily-info:
+      name: "<gradient:#8AEAFF:#FFD166>Tagesauswahl</gradient>"
+      lore-1: ""
+      lore-2: "<gray>Heute verfügbar: <yellow>%amount% Gadgets"
+      lore-3: "<gray>Datum: <aqua>%date%"
+      lore-4: ""
+      lore-5: "<gray>Nächster Reset: <aqua>%reset%"
+      lore-6: "<dark_gray>» <gray>Neue Auswahl nach Tageswechsel"
+      lore-7: ""
+    menu-button:
+      name: "<gradient:#FFD166:#B8FFC7>Täglicher Shop</gradient>"
+      lore-1: "<gray>Heute verfügbare Gadgets"
+      lore-2: "<gray>mit Coins kaufen."
+      lore-3: "<dark_gray>» <yellow>Klicken zum Öffnen"
+    daily-empty:
+      name: "<red>Keine Angebote"
+      lore-1: "<gray>Heute konnten keine kaufbaren"
+      lore-2: "<gray>Gadgets gefunden werden."
+    confirm-title: "<gold><bold>Gadget kaufen"
+    currency: "Coins"
+    price: "<dark_gray>» <gray>Preis: <gold>%price% Coins"
+    balance: "<dark_gray>» <gray>Dein Kontostand: <green>%balance% Coins"
+    owned: "<dark_gray>» <green>Gekauft"
+    locked: "<dark_gray>» <red>Noch nicht gekauft"
+    buy-hint: "<dark_gray>» <yellow>Klicken zum Kaufen"
+    unavailable: "<red>Die CoinsAPI ist aktuell nicht verfügbar."
+    pending: "<yellow>Dein Kauf wird bereits verarbeitet."
+    already-owned: "<green>Du besitzt %gadget% <green>bereits."
+    owned-open-menu: "<green>Du besitzt %gadget% <green>bereits. Aktiviere es im Gadget-Menü."
+    not-enough: "<red>Du hast nicht genug Coins. Preis: <gold>%price%<red>, Kontostand: <yellow>%balance%<red>."
+    purchase-success: "<green>%gadget% <gray>gekauft. Neuer Kontostand: <gold>%balance% Coins<gray>."
+    purchase-failed: "<red>Der Kauf konnte nicht abgeschlossen werden."
+    purchase-refunded: "<red>Der Kauf wurde abgebrochen. Deine Coins wurden erstattet. Kontostand: <gold>%balance% Coins<red>."
+    purchase-failed-refund: "<red>Der Kauf konnte nicht gespeichert werden. Bitte melde dich beim Team, falls Coins fehlen."
+    confirm:
+      name: "<green>Kauf bestätigen"
+      lore-1: "<gray>Gadget: <white>%gadget%"
+      lore-2: "<gray>Preis: <gold>%price% Coins"
+      lore-3: "<gray>Kontostand: <green>%balance% Coins"
+      lore-4: "<dark_gray>» <yellow>Klicken zum Kaufen"
+    not-enough-item:
+      name: "<red>Nicht genug Coins"
+      lore-1: "<gray>Preis: <gold>%price% Coins"
+      lore-2: "<gray>Kontostand: <yellow>%balance% Coins"
+      lore-3: "<dark_gray>» <red>Du brauchst mehr Coins."
+    cancel:
+      name: "<red>Abbrechen"
+      lore-1: "<gray>Zurück zur Gadget-Auswahl."
+  menu-title: "<gradient:#FFD98A:#FF9F1C>Gadget-Menü</gradient>"
+  category-owned-count: "<dark_gray>» <gray>Besitz: <green>%owned%<dark_gray>/<yellow>%total%"
+  category-particle-limit: "<dark_gray>» <yellow>Bis zu %limit% gleichzeitig"
+  category-active-none: "<dark_gray>» <gray>Aktiv: <red>Keins"
+  category-active-header: "<#8AEAFF>Aktiv <dark_gray>(<green>%amount%<dark_gray>):"
+  category-active-entry: "<dark_gray>» <green>%gadget%"
+  category-empty-owned:
+    name: "<red>Keine gekauften Gadgets"
+    lore-1: "<gray>Du besitzt in dieser Kategorie"
+    lore-2: "<gray>noch keine Gadgets."
+    lore-3: "<dark_gray>» <yellow>Kaufe welche im Shop"
+  categories:
+    movement:
+      name: "<gradient:#8AEAFF:#B8FFC7>Bewegung</gradient>"
+      description: "Ändere deine Bewegung in der Lobby"
+      note: "<dark_gray>» <yellow>Nur 1 gleichzeitig"
+      lore-1: "<gray>Ändere deine Bewegung"
+      lore-2: "<gray>in der Lobby!"
+      lore-3: "<dark_gray>» <yellow>Nur 1 gleichzeitig"
+    heads:
+      name: "<gradient:#FFD98A:#FF9F1C>Köpfe</gradient>"
+      description: "Verschiedene Köpfe für deinen Charakter"
+      lore-1: "<gray>Verschiedene Köpfe"
+      lore-2: "<gray>für deinen Charakter."
+    boots:
+      name: "<gradient:#FFE9A8:#FFC94D>Schuhe</gradient>"
+      description: "Schuhe mit besonderen Effekten"
+      lore-1: "<gray>Schuhe mit besonderen"
+      lore-2: "<gray>Effekten."
+    equipable:
+      name: "<gradient:#E0A8FF:#9A4FFF>Ausrüstung</gradient>"
+      description: "Spezielle Gadgets die du ausrüsten kannst"
+      note: "<dark_gray>» <yellow>Nur 1 gleichzeitig"
+      lore-1: "<gray>Spezielle Gadgets die"
+      lore-2: "<gray>du ausrüsten kannst."
+      lore-3: "<dark_gray>» <yellow>Nur 1 gleichzeitig"
+    particles:
+      name: "<gradient:#FFA8E6:#D88CFF>Partikel</gradient>"
+      description: "Umgib dich mit schönen Partikel-Effekten"
+      lore-1: "<gray>Umgib dich mit schönen"
+      lore-2: "<gray>Partikel-Effekten."
+    music:
+      name: "<gradient:#E0A8FF:#9A4FFF>Musik</gradient>"
+      description: "Spiele Schallplatten nur für dich ab"
+      lore-1: "<gray>Spiele Schallplatten"
+      lore-2: "<gray>nur für dich ab."
+    pets:
+      name: "<gradient:#FFD166:#B8FFC7>Begleiter</gradient>"
+      description: "Wähle einen Begleiter, der dir folgt"
+      lore-1: "<gray>Wähle einen Begleiter,"
+      lore-2: "<gray>der dir durch die Lobby folgt."
+    music-deactivate:
+      name: "<gradient:#8AEAFF:#D88CFF>Musik stoppen</gradient>"
+      lore-1: "<gray>Stoppt die aktuell laufende"
+      lore-2: "<gray>Music-Disc nur für dich."
+    deactivate-all:
+      name: "<gradient:#FFA8A8:#FF5E5E>Alle Gadgets deaktivieren</gradient>"
+      description: "Deaktiviert alle aktiven Gadgets auf einmal"
+      lore-1: "<gray>Deaktiviert alle aktiven"
+      lore-2: "<gray>Gadgets auf einmal."
+  category-back: "<yellow>Zurück"
+  
+  deactivate-all:
+    name: "<gradient:#FFA8A8:#FF5E5E>Alle Gadgets deaktivieren</gradient>"
+    description: "Deaktiviert alle aktiven Gadgets auf einmal"
+    lore-1: "<gray>Deaktiviert alle aktiven"
+    lore-2: "<gray>Gadgets auf einmal."
+  items:
+    fly-mode:
+      name: "<gradient:#8AEAFF:#B8FFC7>Fly-Mode</gradient>"
+      description: "Fliege dauerhaft durch die Lobby"
+      activated: "<green>Fly-Mode aktiviert. Du kannst jetzt durch die Lobby fliegen."
+      lore-1: "<gray>Fliege dauerhaft"
+      lore-2: "<gray>durch die Lobby!"
+    double-jump:
+      name: "<gradient:#FFE9A8:#FFC94D>Double Jump</gradient>"
+      description: "Springe zweimal in der Luft"
+      activated: "<green>Double Jump aktiviert. Dein zweiter Sprung ist bereit."
+      lore-1: "<gray>Springe zweimal in der Luft!"
+    jump-elytra:
+      name: "<gradient:#FFA8E6:#D88CFF>Jump-Elytra</gradient>"
+      description: "Double Jump + Elytra kombiniert! Springe und fliege weiter"
+      activated: "<green>Jump-Elytra aktiviert. Springe und gleite los."
+      lore-1: "<gray>Double Jump + Elytra kombiniert!"
+      lore-2: "<gray>Springe und fliege weiter!"
+    leather-head:
+      name: "<gradient:#E0E0E0:#A8A8A8>Leder-Kappe</gradient>"
+      description: "Eine einfache Lederkappe"
+      activated: "<green>Du trägst jetzt die Leder-Kappe."
+      lore-1: "<gray>Eine einfache Lederkappe!"
+    chainmail-head:
+      name: "<gradient:#B0B0B0:#5E5E5E>Ketten-Helm</gradient>"
+      description: "Ein robuster Kettenhelm"
+      activated: "<green>Du trägst jetzt den Ketten-Helm."
+      lore-1: "<gray>Ein robuster Kettenhelm!"
+    iron-head:
+      name: "<gradient:#FFFFFF:#C6D8FF>Eisen-Helm</gradient>"
+      description: "Ein starker Eisenhelm"
+      activated: "<green>Du trägst jetzt den Eisen-Helm."
+      lore-1: "<gray>Ein starker Eisenhelm!"
+    golden-head:
+      name: "<gradient:#FFD98A:#FF9F1C>Goldener Ritter-Helm</gradient>"
+      description: "Ein glänzender goldener Helm"
+      activated: "<green>Du trägst jetzt den goldenen Ritter-Helm."
+      lore-1: "<gray>Ein glänzender goldener Helm!"
+    diamond-head:
+      name: "<gradient:#8AEAFF:#B8FFC7>Diamant-Helm</gradient>"
+      description: "Ein funkelnder Diamanthelm"
+      activated: "<green>Du trägst jetzt den Diamant-Helm."
+      lore-1: "<gray>Ein funkelnder Diamanthelm!"
+    netherite-head:
+      name: "<gradient:#FF8A7A:#B5302A>Netherit-Helm</gradient>"
+      description: "Der ultimative Helm"
+      activated: "<green>Du trägst jetzt den Netherit-Helm."
+      lore-1: "<gray>Der ultimative Helm!"
+    turtle-head:
+      name: "<gradient:#7DECB4:#1F9E63>Schildkröten-Panzer</gradient>"
+      description: "Ein einzigartiger Schildkrötenpanzer"
+      activated: "<green>Du trägst jetzt den Schildkröten-Panzer."
+      lore-1: "<gray>Ein einzigartiger Schildkrötenpanzer!"
+    red-glass-head:
+      name: "<gradient:#FFA8A8:#FF5E5E>Rotes Glas</gradient>"
+      description: "Ein roter Glasblock als Helm"
+      activated: "<green>Rotes Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein roter Glasblock als Helm!"
+    blue-glass-head:
+      name: "<gradient:#9CC0FF:#5573FF>Blaues Glas</gradient>"
+      description: "Ein blauer Glasblock als Helm"
+      activated: "<green>Blaues Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein blauer Glasblock als Helm!"
+    green-glass-head:
+      name: "<gradient:#B8FFC7:#3DDC97>Grünes Glas</gradient>"
+      description: "Ein grüner Glasblock als Helm"
+      activated: "<green>Grünes Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein grüner Glasblock als Helm!"
+    yellow-glass-head:
+      name: "<gradient:#FFE9A8:#FFC94D>Gelbes Glas</gradient>"
+      description: "Ein gelber Glasblock als Helm"
+      activated: "<green>Gelbes Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein gelber Glasblock als Helm!"
+    purple-glass-head:
+      name: "<gradient:#E0A8FF:#9A4FFF>Lila Glas</gradient>"
+      description: "Ein lila Glasblock als Helm"
+      activated: "<green>Lila Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein lila Glasblock als Helm!"
+    pink-glass-head:
+      name: "<gradient:#FFA8E6:#D88CFF>Rosa Glas</gradient>"
+      description: "Ein rosa Glasblock als Helm"
+      activated: "<green>Rosa Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein rosa Glasblock als Helm!"
+    orange-glass-head:
+      name: "<gradient:#FFD98A:#FF9F1C>Oranges Glas</gradient>"
+      description: "Ein oranger Glasblock als Helm"
+      activated: "<green>Oranges Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein oranger Glasblock als Helm!"
+    light-blue-glass-head:
+      name: "<gradient:#8AEAFF:#B8FFC7>Hellblaues Glas</gradient>"
+      description: "Ein hellblauer Glasblock als Helm"
+      activated: "<green>Hellblaues Glas wurde als Helm ausgerüstet."
+      lore-1: "<gray>Ein hellblauer Glasblock als Helm!"
+    zombie-head:
+      name: "<gradient:#7DECB4:#1F9E63>Zombie-Kopf</gradient>"
+      description: "Ein gruseliger Zombie-Kopf"
+      activated: "<green>Du trägst jetzt den Zombie-Kopf."
+      lore-1: "<gray>Ein gruseliger Zombie-Kopf!"
+    skeleton-head:
+      name: "<gradient:#FFFFFF:#C6D8FF>Skelett-Kopf</gradient>"
+      description: "Ein knochiger Skelett-Kopf"
+      activated: "<green>Du trägst jetzt den Skelett-Kopf."
+      lore-1: "<gray>Ein knochiger Skelett-Kopf!"
+    creeper-head:
+      name: "<gradient:#B8FFC7:#3DDC97>Creeper-Kopf</gradient>"
+      description: "Ein explosiver Creeper-Kopf"
+      activated: "<green>Du trägst jetzt den Creeper-Kopf."
+      lore-1: "<gray>Ein explosiver Creeper-Kopf!"
+    wither-skeleton-head:
+      name: "<gradient:#B0B0B0:#5E5E5E>Wither-Skelett-Kopf</gradient>"
+      description: "Ein düsterer Wither-Skelett-Kopf"
+      activated: "<green>Du trägst jetzt den Wither-Skelett-Kopf."
+      lore-1: "<gray>Ein düsterer Wither-Skelett-Kopf!"
+    piglin-head:
+      name: "<gradient:#FFD98A:#FF9F1C>Piglin-Kopf</gradient>"
+      description: "Ein goldgieriger Piglin-Kopf"
+      activated: "<green>Du trägst jetzt den Piglin-Kopf."
+      lore-1: "<gray>Ein goldgieriger Piglin-Kopf!"
+    dragon-head:
+      name: "<gradient:#E0A8FF:#9A4FFF>Drachen-Kopf</gradient>"
+      description: "Ein mächtiger Drachen-Kopf"
+      activated: "<green>Du trägst jetzt den Drachen-Kopf."
+      lore-1: "<gray>Ein mächtiger Drachen-Kopf!"
+    jump-boost-boots:
+      name: "<gradient:#B8FFC7:#3DDC97>Jump Boost Schuh</gradient>"
+      description: "Erhöht deine Sprungkraft"
+      activated: "<green>Schuhe ausgerüstet!"
+      lore-1: "<gray>Erhöht deine Sprungkraft!"
+    speed-boots:
+      name: "<gradient:#8AEAFF:#B8FFC7>Speed Schuh</gradient>"
+      description: "Erhöht deine Laufgeschwindigkeit"
+      activated: "<green>Schuhe ausgerüstet!"
+      lore-1: "<gray>Erhöht deine Laufgeschwindigkeit!"
+    slow-falling-boots:
+      name: "<gradient:#FFE9A8:#FFC94D>Schwebender Schuh</gradient>"
+      description: "Verlangsamt deinen Fall"
+      activated: "<green>Schuhe ausgerüstet!"
+      lore-1: "<gray>Verlangsamt deinen Fall!"
+    jump-boost:
+      name: "<gradient:#B8FFC7:#3DDC97>Jump Boost Schuh</gradient>"
+      description: "Erhöht deine Sprungkraft"
+      activated: "<green>Jump Boost Schuhe ausgerüstet. Deine Sprünge sind stärker."
+      lore-1: "<gray>Erhöht deine Sprungkraft!"
+    speed:
+      name: "<gradient:#8AEAFF:#B8FFC7>Speed Schuh</gradient>"
+      description: "Erhöht deine Laufgeschwindigkeit"
+      activated: "<green>Speed Schuhe ausgerüstet. Du bist jetzt schneller."
+      lore-1: "<gray>Erhöht deine Laufgeschwindigkeit!"
+    slow-falling:
+      name: "<gradient:#FFE9A8:#FFC94D>Schwebender Schuh</gradient>"
+      description: "Verlangsamt deinen Fall"
+      activated: "<green>Schwebende Schuhe ausgerüstet. Du fällst sanfter."
+      lore-1: "<gray>Verlangsamt deinen Fall!"
+    ender-pearl:
+      name: "<gradient:#E0A8FF:#9A4FFF>Ender Pearl Rider</gradient>"
+      description: "Setze dich auf deine Enderperle und fliege mit ihr"
+      activated: "<dark_purple>Ender Pearl Rider aktiviert!"
+      instruction: "<gray>Wirf eine Enderperle und reite auf ihr!"
+      item-name: "<dark_purple>Enderperle-Gadget"
+      item-lore-1: "<gray>Wirf mich!"
+      item-lore-2: "<gray>Du fliegst mit!"
+      lore-1: "<gray>Setze dich auf deine Enderperle"
+      lore-2: "<gray>und fliege mit ihr!"
+    fox-trail:
+      name: "<gradient:#E0761F:#FFFFFF>Fuchs-Trail</gradient>"
+      description: "Eine fuchsfarbene Spur folgt dir beim Laufen"
+      activated: "<gold>Der Fuchs-Trail folgt dir jetzt."
+      lore-1: "<gray>Eine fuchsfarbene Spur"
+      lore-2: "<gray>folgt dir beim Laufen!"
+    rainbow-particle:
+      name: "<gradient:#FFA8E6:#D88CFF>Regenbogen Partikel</gradient>"
+      description: "Bunte rotierende Partikel um dich herum"
+      activated: "<green>Regenbogen-Partikel umgeben dich jetzt."
+      lore-1: "<gray>Bunte rotierende Partikel"
+      lore-2: "<gray>um dich herum!"
+    firework-particle:
+      name: "<gradient:#FFA8A8:#FF5E5E>Feuerwerk Partikel</gradient>"
+      description: "Spektakuläre Feuerwerk-Effekte folgen dir"
+      activated: "<green>Feuerwerk-Partikel folgen dir jetzt."
+      lore-1: "<gray>Spektakuläre Feuerwerk-Effekte"
+      lore-2: "<gray>folgen dir!"
+    heart-particle:
+      name: "<gradient:#FFA8A8:#FF5E5E>Herz Partikel</gradient>"
+      description: "Niedliche Herz-Effekte schweben um dich"
+      activated: "<green>Herz-Partikel schweben jetzt um dich."
+      lore-1: "<gray>Niedliche Herz-Effekte"
+      lore-2: "<gray>schweben um dich!"
+    rose-particle:
+      name: "<gradient:#FFA8E6:#D88CFF>Rosen Partikel</gradient>"
+      description: "Romantische Rosenblätter schweben um dich"
+      activated: "<green>Rosen-Partikel schweben jetzt um dich."
+      lore-1: "<gray>Romantische Rosenblätter"
+      lore-2: "<gray>schweben um dich!"
+    enderman-particle:
+      name: "<gradient:#E0A8FF:#9A4FFF>Enderman Partikel</gradient>"
+      description: "Mystische Enderman-Partikel umgeben dich"
+      activated: "<green>Enderman-Partikel umgeben dich jetzt."
+      lore-1: "<gray>Mystische Enderman-Partikel"
+      lore-2: "<gray>umgeben dich!"
+    fire-particle:
+      name: "<gradient:#FFA8A8:#FF5E5E>Feuer Partikel</gradient>"
+      description: "Heiße Flammen umgeben dich"
+      activated: "<green>Feuer-Partikel umgeben dich jetzt."
+      lore-1: "<gray>Heiße Flammen"
+      lore-2: "<gray>umgeben dich!"
+    soul-fire-particle:
+      name: "<gradient:#8AEAFF:#B8FFC7>Seelen-Feuer Partikel</gradient>"
+      description: "Mystisches Seelen-Feuer folgt dir"
+      activated: "<green>Seelen-Feuer folgt dir jetzt."
+      lore-1: "<gray>Mystisches Seelen-Feuer"
+      lore-2: "<gray>folgt dir!"
+    rain-cloud-particle:
+      name: "<gradient:#E0E0E0:#A8A8A8>Regenwolke</gradient>"
+      description: "Eine Regenwolke schwebt über dir"
+      activated: "<green>Deine Regenwolke schwebt jetzt über dir."
+      lore-1: "<gray>Eine Regenwolke"
+      lore-2: "<gray>schwebt über dir!"
+    villager-happy-particle:
+      name: "<gradient:#B8FFC7:#3DDC97>Glückliche Partikel</gradient>"
+      description: "Grüne glückliche Partikel wie von Dorfbewohnern"
+      activated: "<green>Glückliche Partikel begleiten dich jetzt."
+      lore-1: "<gray>Grüne glückliche Partikel"
+      lore-2: "<gray>wie von Dorfbewohnern!"
+    enchantment-particle:
+      name: "<gradient:#E0A8FF:#9A4FFF>Verzauberungs-Partikel</gradient>"
+      description: "Mystische Runen schweben um dich"
+      activated: "<green>Verzauberungs-Partikel schweben jetzt um dich."
+      lore-1: "<gray>Mystische Runen"
+      lore-2: "<gray>schweben um dich!"
+    conduit-particle:
+      name: "<gradient:#8AEAFF:#B8FFC7>Conduit-Partikel</gradient>"
+      description: "Ozeanische Energie umgibt dich"
+      activated: "<green>Conduit-Partikel umgeben dich jetzt."
+      lore-1: "<gray>Ozeanische Energie"
+      lore-2: "<gray>umgibt dich!"
+    electric-spark-particle:
+      name: "<gradient:#FFE9A8:#FFC94D>Elektrische Funken</gradient>"
+      description: "Elektrische Funken knistern um dich"
+      activated: "<green>Elektrische Funken knistern jetzt um dich."
+      lore-1: "<gray>Elektrische Funken"
+      lore-2: "<gray>knistern um dich!"
+    end-rod-particle:
+      name: "<gradient:#FFFFFF:#C6D8FF>End-Stab Partikel</gradient>"
+      description: "Weiße schwebende Partikel aus dem End"
+      activated: "<green>End-Stab Partikel leuchten jetzt um dich."
+      lore-1: "<gray>Weiße schwebende Partikel"
+      lore-2: "<gray>aus dem End!"
+    note-particle:
+      name: "<gradient:#FFA8E6:#D88CFF>Musik-Noten</gradient>"
+      description: "Bunte Musik-Noten tanzen um dich"
+      activated: "<green>Musik-Noten tanzen jetzt um dich."
+      lore-1: "<gray>Bunte Musik-Noten"
+      lore-2: "<gray>tanzen um dich!"
+    sculk-soul-particle:
+      name: "<gradient:#5AE0E0:#2A9F9F>Sculk-Seele</gradient>"
+      description: "Dunkle Seelen aus dem Deep Dark"
+      activated: "<green>Sculk-Seelen umgeben dich jetzt."
+      lore-1: "<gray>Dunkle Seelen"
+      lore-2: "<gray>aus dem Deep Dark!"
+    snow-cloud-particle:
+      name: "<gradient:#FFFFFF:#C6D8FF>Schneewolke</gradient>"
+      description: "Eine Schneewolke schwebt über dir"
+      activated: "<green>Deine Schneewolke schwebt jetzt über dir."
+      lore-1: "<gray>Eine Schneewolke"
+      lore-2: "<gray>schwebt über dir!"
+    glow-squid-particle:
+      name: "<gradient:#8AEAFF:#B8FFC7>Leuchttintenfisch</gradient>"
+      description: "Leuchtende Partikel wie vom Leuchttintenfisch"
+      activated: "<green>Leuchtende Partikel folgen dir jetzt."
+      lore-1: "<gray>Leuchtende Partikel"
+      lore-2: "<gray>wie vom Leuchttintenfisch!"
+    raid-omen-particle:
+      name: "<gradient:#B0B0B0:#5E5E5E>Raid-Omen</gradient>"
+      description: "Dunkle Omen-Partikel umgeben dich"
+      activated: "<green>Raid-Omen-Partikel umgeben dich jetzt."
+      lore-1: "<gray>Dunkle Omen-Partikel"
+      lore-2: "<gray>umgeben dich!"
+    sculk-charge-pop-particle:
+      name: "<gradient:#5AE0E0:#2A9F9F>Sculk-Ladung</gradient>"
+      description: "Explodierende Sculk-Ladung Partikel"
+      activated: "<green>Sculk-Ladungen platzen jetzt um dich."
+      lore-1: "<gray>Explodierende Sculk-Ladung"
+      lore-2: "<gray>Partikel!"
+    copper-particle:
+      name: "<gradient:#FFD98A:#FF9F1C>Kupfer-Partikel</gradient>"
+      description: "Bunte Wachs-Partikel vom Kupfer"
+      activated: "<green>Kupfer-Partikel funkeln jetzt um dich."
+      lore-1: "<gray>Bunte Wachs-Partikel"
+      lore-2: "<gray>vom Kupfer!"
+    rainbow:
+      name: "<gradient:#FFA8E6:#D88CFF>Regenbogen-Partikel</gradient>"
+      lore-1: "<gray>Bunte Regenbogenpartikel!"
+    firework:
+      name: "<gradient:#FFA8A8:#FF5E5E>Feuerwerk-Partikel</gradient>"
+      lore-1: "<gray>Explosive Feuerwerkpartikel!"
+    heart:
+      name: "<gradient:#FFA8A8:#FF5E5E>Herz-Partikel</gradient>"
+      lore-1: "<gray>Liebliche Herzpartikel!"
+    rose:
+      name: "<gradient:#FFA8E6:#D88CFF>Rosen-Partikel</gradient>"
+      lore-1: "<gray>Wunderschöne Rosenpartikel!"
+    fire:
+      name: "<gradient:#FFD98A:#FF9F1C>Feuer-Partikel</gradient>"
+      lore-1: "<gray>Heiße Feuerpartikel!"
+    soul-fire:
+      name: "<gradient:#8AEAFF:#B8FFC7>Seelenfeuer-Partikel</gradient>"
+      lore-1: "<gray>Mystische Seelenfeuerpartikel!"
+    enderman:
+      name: "<gradient:#E0A8FF:#9A4FFF>Enderman-Partikel</gradient>"
+      lore-1: "<gray>Mysteriöse Endermanpartikel!"
+    rain-cloud:
+      name: "<gradient:#E0E0E0:#A8A8A8>Regenwolken-Partikel</gradient>"
+      lore-1: "<gray>Regnerische Wolkenpartikel!"
+    villager-happy:
+      name: "<gradient:#B8FFC7:#3DDC97>Glücklicher Dorfbewohner-Partikel</gradient>"
+      lore-1: "<gray>Fröhliche Dorfbewohnerpartikel!"
+    enchantment:
+      name: "<gradient:#FFA8E6:#D88CFF>Verzauberungs-Partikel</gradient>"
+      lore-1: "<gray>Magische Verzauberungspartikel!"
+    conduit:
+      name: "<gradient:#8AEAFF:#B8FFC7>Konduit-Partikel</gradient>"
+      lore-1: "<gray>Ozeanische Konduitpartikel!"
+    electric-spark:
+      name: "<gradient:#FFE9A8:#FFC94D>Elektrische Funken-Partikel</gradient>"
+      lore-1: "<gray>Elektrische Funkenpartikel!"
+    end-rod:
+      name: "<gradient:#FFFFFF:#C6D8FF>Endstab-Partikel</gradient>"
+      lore-1: "<gray>Leuchtende Endstabpartikel!"
+    note:
+      name: "<gradient:#B8FFC7:#3DDC97>Noten-Partikel</gradient>"
+      lore-1: "<gray>Musikalische Notenpartikel!"
+    sculk-soul:
+      name: "<gradient:#5AE0E0:#2A9F9F>Sculk-Seelen-Partikel</gradient>"
+      lore-1: "<gray>Gruselige Sculk-Seelenpartikel!"
+    snow-cloud:
+      name: "<gradient:#FFFFFF:#C6D8FF>Schneewolken-Partikel</gradient>"
+      lore-1: "<gray>Schneereiche Wolkenpartikel!"
+    glow-squid:
+      name: "<gradient:#8AEAFF:#B8FFC7>Leuchtkalmar-Partikel</gradient>"
+      lore-1: "<gray>Leuchtende Kalmarpartikel!"
+    raid-omen:
+      name: "<gradient:#B0B0B0:#5E5E5E>Raid-Omen-Partikel</gradient>"
+      lore-1: "<gray>Unheilvolle Raidpartikel!"
+    sculk-charge-pop:
+      name: "<gradient:#5AE0E0:#2A9F9F>Sculk-Ladungs-Partikel</gradient>"
+      lore-1: "<gray>Platzende Sculk-Partikel!"
+    copper:
+      name: "<gradient:#FFD98A:#FF9F1C>Kupfer-Partikel</gradient>"
+      lore-1: "<gray>Oxydierende Kupferpartikel!"
+    disc-13:
+      name: "<gradient:#FFD98A:#FF9F1C>Disc 13</gradient>"
+      activated: "<green>Du hörst jetzt Disc 13."
+      lore-1: "<gray>Schallplatte 13 - Ein mysteriöser Track."
+    disc-cat:
+      name: "<gradient:#FFE9A8:#FFC94D>Disc Cat</gradient>"
+      activated: "<green>Du hörst jetzt Disc Cat."
+      lore-1: "<gray>Schallplatte Cat - Verspielt und fröhlich."
+    disc-blocks:
+      name: "<gradient:#B8FFC7:#3DDC97>Disc Blocks</gradient>"
+      activated: "<green>Du hörst jetzt Disc Blocks."
+      lore-1: "<gray>Schallplatte Blocks - Rhythmische Klänge."
+    disc-chirp:
+      name: "<gradient:#FFA8E6:#D88CFF>Disc Chirp</gradient>"
+      activated: "<green>Du hörst jetzt Disc Chirp."
+      lore-1: "<gray>Schallplatte Chirp - Vogelgezwitscher."
+    disc-far:
+      name: "<gradient:#8AEAFF:#B8FFC7>Disc Far</gradient>"
+      activated: "<green>Du hörst jetzt Disc Far."
+      lore-1: "<gray>Schallplatte Far - Verträumte Melodie."
+    disc-mall:
+      name: "<gradient:#FFA8A8:#FF5E5E>Disc Mall</gradient>"
+      activated: "<green>Du hörst jetzt Disc Mall."
+      lore-1: "<gray>Schallplatte Mall - Fröhlicher Beat."
+    disc-mellohi:
+      name: "<gradient:#E0A8FF:#9A4FFF>Disc Mellohi</gradient>"
+      activated: "<green>Du hörst jetzt Disc Mellohi."
+      lore-1: "<gray>Schallplatte Mellohi - Sanfte Töne."
+    disc-stal:
+      name: "<gradient:#7DECB4:#1F9E63>Disc Stal</gradient>"
+      activated: "<green>Du hörst jetzt Disc Stal."
+      lore-1: "<gray>Schallplatte Stal - Lässiger Groove."
+    disc-strad:
+      name: "<gradient:#FFD98A:#FF9F1C>Disc Strad</gradient>"
+      activated: "<green>Du hörst jetzt Disc Strad."
+      lore-1: "<gray>Schallplatte Strad - Ruhige Atmosphäre."
+    disc-ward:
+      name: "<gradient:#8AEAFF:#B8FFC7>Disc Ward</gradient>"
+      activated: "<green>Du hörst jetzt Disc Ward."
+      lore-1: "<gray>Schallplatte Ward - Geheimnisvoller Track."
+    disc-11:
+      name: "<gradient:#FF8A7A:#B5302A>Disc 11</gradient>"
+      activated: "<green>Du hörst jetzt Disc 11."
+      lore-1: "<gray>Schallplatte 11 - Gruselige Geräusche."
+    disc-wait:
+      name: "<gradient:#5AE0E0:#2A9F9F>Disc Wait</gradient>"
+      activated: "<green>Du hörst jetzt Disc Wait."
+      lore-1: "<gray>Schallplatte Wait - Verträumte Klänge."
+    disc-otherside:
+      name: "<gradient:#FFA8E6:#D88CFF>Disc Otherside</gradient>"
+      activated: "<green>Du hörst jetzt Disc Otherside."
+      lore-1: "<gray>Schallplatte Otherside - Melancholisch schön."
+    disc-pigstep:
+      name: "<gradient:#E0A8FF:#9A4FFF>Disc Pigstep</gradient>"
+      activated: "<green>Du hörst jetzt Disc Pigstep."
+      lore-1: "<gray>Schallplatte Pigstep - Derb und energiegeladen."
+    disc-relic:
+      name: "<gradient:#FFE9A8:#FFC94D>Disc Relic</gradient>"
+      activated: "<green>Du hörst jetzt Disc Relic."
+      lore-1: "<gray>Schallplatte Relic - Uralte Melodie."
+    disc-5:
+      name: "<gradient:#FFA8A8:#FF5E5E>Disc 5</gradient>"
+      activated: "<green>Du hörst jetzt Disc 5."
+      lore-1: "<gray>Schallplatte 5 - Ein unheimlicher Track."
+    disc-creator:
+      name: "<gradient:#8AEAFF:#B8FFC7>Disc Creator</gradient>"
+      activated: "<green>Du hörst jetzt Disc Creator."
+      lore-1: "<gray>Schallplatte Creator - Kreativer Sound."
+    disc-creator-music-box:
+      name: "<gradient:#B8FFC7:#3DDC97>Disc Creator Music Box</gradient>"
+      activated: "<green>Du hörst jetzt Disc Creator Music Box."
+      lore-1: "<gray>Schallplatte Creator Music Box - Verspielte Musikbox."
+    disc-precipice:
+      name: "<gradient:#FF8A7A:#B5302A>Disc Precipice</gradient>"
+      activated: "<green>Du hörst jetzt Disc Precipice."
+      lore-1: "<gray>Schallplatte Precipice - Dramatische Klänge."
+    disc-lava-chicken:
+      name: "<gradient:#FFA8A8:#FF5E5E>Lava Chicken</gradient>"
+      activated: "<green>Du hörst jetzt Lava Chicken."
+      lore-1: "<gray>Schallplatte Lava Chicken - Energiegeladener Beat."
+  
+jumppad:
+  activated: "<gray>Spring!"
+
+cookie-clicker:
+  anti-afk:
+    warning: "AntiAFK: Bewege dich, sonst wirst du weggeschleudert."
+    launched: "Du bist AFK. Bewege dich, bevor du Cookies sammelst."
+  anti-autoclicker:
+    detected: "Verdacht auf AutoClicker. Klicke langsamer."
+  ban:
+    active: "CookieClicker-Sperre: <yellow>%time% <red>verbleibend."
+  command:
+    usage: "<red>/lobbysystem cookie <ban|unban> <spieler>"
+    player-not-found: "<red>Spieler <yellow>%player% <red>wurde nicht gefunden."
+    ban-success: "<green>%player% wurde für <yellow>%time% <green>vom CookieClicker ausgeschlossen."
+    ban-failed: "<red>%player% konnte nicht vom CookieClicker ausgeschlossen werden."
+    unban-success: "<green>%player% darf den CookieClicker wieder benutzen."
+    unban-failed: "<red>Die CookieClicker-Sperre von %player% konnte nicht entfernt werden."
+
+# Command Messages
+only-player: "Nur Spieler können diesen Befehl ausführen."
+commandusemessage: "Benutze: "
+unknownsubcommand: "Unbekannter Unterbefehl."
+
+# Config
+config-reloaded: "<green>Config erfolgreich neu geladen."
+daily-shop-rerolled: "<green>Täglicher Shop neu gewürfelt <gray>(%count% Angebote)<green>. Spieler sehen die neuen Angebote beim erneuten Öffnen."
+
+# Spawn
+spawn-set: "<green>Spawn erfolgreich gesetzt!"
+spawn-fail: "<red>Fehler: Der Spawn konnte nicht gesetzt werden!"
+teleporting-spawn: "<gold>Teleportiere dich zum Spawn..."
+spawn-not-set: "<red>Fehler: Der Spawn wurde noch nicht gesetzt oder konnte nicht gefunden werden!"
+teleport-success: "<green>Du wurdest erfolgreich zum Spawn teleportiert!"
+teleport-actionbar-teleporting: "<gold><bold>⚡ <yellow>Teleportiere zum Spawn..."
+teleport-actionbar-success: "<green>✔ Erfolgreich zum Spawn teleportiert!"
+teleport-actionbar-spawn-not-set: "<red>✘ Spawn ist nicht gesetzt!"
+teleport-actionbar-failed: "<red>✘ Der Spawn-Teleport ist fehlgeschlagen!"
+teleport:
+  destination:
+    spawn: "Spawn"
+  bossbar:
+    spawn: "<yellow>Teleport zum Spawn <dark_gray>• <aqua>%seconds%s"
+
+# Item Cooldown
+item-cooldown: "<yellow>Bitte warte noch %seconds% Sekunde(n)!"
+
+# Void
+setvoid-usage: "<red>/lobbysystem setvoid <höhe>"
+setvoid-success: "<green>Void-Teleport-Höhe wurde auf <yellow>%height% <green>gesetzt."
+setvoid-invalid-number: "<red>Bitte gib eine gültige Zahl ein!"
+
+# LobbySystem Help Command
+lobbysystem-help-1: "<gold>-------- Help: /lobbysystem --------"
+lobbysystem-help-2: "<yellow>/ls setspawn <gray>- Setzt den Lobby-Spawn"
+lobbysystem-help-3: "<yellow>/ls setvoid <höhe> <gray>- Setzt die Void-Teleport-Höhe"
+lobbysystem-help-4: "<yellow>/ls reload <gray>- Lädt die Config neu"
+lobbysystem-help-5: "<yellow>/ls removegadget <spieler|uuid> <gadget-id> <gray>- Entfernt ein gekauftes Gadget"
+lobbysystem-help-6: "<yellow>/ls help <gray>- Zeigt diese Hilfe an"
+lobbysystem-help-7: "<gold>-------- Help: /lobbysystem --------"
+
+gadget-admin:
+  remove-usage: "<red>Benutze: /ls removegadget <spieler|uuid> <gadget-id>"
+  player-not-found: "<red>Der Spieler <yellow>%player% <red>wurde nicht gefunden."
+  unknown-gadget: "<red>Das Gadget <yellow>%gadget% <red>existiert nicht."
+  remove-success: "<green>%gadget% <gray>wurde <yellow>%player% <gray>entzogen."
+  remove-not-owned: "<yellow>%player% <gray>besitzt <white>%gadget% <gray>nicht als gekauften Unlock."
+  remove-failed: "<red>Der Unlock von <yellow>%gadget% <red>für <yellow>%player% <red>konnte nicht entfernt werden."
+  removed-target: "<red>Dir wurde <yellow>%gadget% <red>entzogen."
+
+# Lobby Switcher
+lobby-switcher:
+  title: "<gradient:#B8FFC7:#8AEAFF><bold>Lobby wechseln</bold></gradient>"
+  current-display-prefix: "<green><bold>AKTUELLE LOBBY</bold></green>"
+  status-connected: "<dark_gray>» <green>Du bist hier"
+  status-click: "<dark_gray>» <yellow>Klicke zum Verbinden"
+  status-starting: "<dark_gray>» <gold>Startet..."
+  status-full: "<dark_gray>» <red>Voll"
+  status-offline: "<dark_gray>» <red>Offline"
+  lore-players: "<dark_gray>» <gray>Spieler: <white>%players%<dark_gray>/<gray>%max%"
+  no-server: "<red>Kein weiterer Server online"
+  no-server-available: "Kein weiterer Server verfügbar"
+  already-on-server: "Du bist bereits auf dieser Lobby"
+  server-not-available: "Server ist nicht verfügbar"
+  server-full: "Server ist voll"
+# Server Connection
+server-connection:
+  connecting: "<gradient:#8AEAFF:#5B8DEF>⚡ Verbinde zu %server%</gradient>"
+  connected: "<gradient:#B8FFC7:#3DDC97>✔ Verbunden mit %server%</gradient>"
+  already-connected: "Du bist bereits auf diesem Server"
+  invalid-name: "<red>Ungültiger Servername!"
+  not-found: "<red>Server nicht gefunden!"
+  not-available: "<red>Server ist nicht verfügbar!"
+  full: "<red>Server ist voll!"
+  transfer-failed: "<red>Verbindung fehlgeschlagen!"
+  cloud-player-not-found: "<red>Cloud-Spieler nicht gefunden"
+  error: "<red>Verbindungsfehler"
+  player-data-error: "<red>Spielerdaten konnten nicht abgerufen werden"
+  unreachable: "<red>Server nicht erreichbar"
+
+quickjoin-portal:
+  unavailable: "Fuer %server% ist momentan kein Server verfuegbar."
+
+# Player-Hider
+player-hider:
+  name: "<red>Spieler verstecken"
+  description: "Klicke um zwischen Optionen zu wechseln"
+playerhider-all-visible: "<green>✔ <gray>Alle Spieler sind nun <green>sichtbar"
+playerhider-vip-only: "<light_purple>★ <gray>Nur <light_purple>VIPs <gray>sind nun <light_purple>sichtbar"
+playerhider-all-hidden: "<red>✘ <gray>Alle Spieler <red>versteckt"
+
+# Common/System Messages
+system:
+  error-opening-menu: "<red>Fehler beim Öffnen des Menüs!"
+  no-permission: "<red>Dazu hast du keine Berechtigung!"
+
+# UI Navigation
+parkour:
+  started: "<#B8FFC7>Run gestartet"
+  failed: "<#FFB4A8>Run beendet <dark_gray>| <#FFD166>Score: %score%"
+  completed: "<#B8FFC7>Dieser Run ist geschafft <dark_gray>| <#FFD166>Score: %score%"
+  cancelled: "<gradient:#8AEAFF:#B8FFC7>%time%</gradient>"
+  afk: "<#FFE9A8>Run wegen Inaktivität beendet"
+  no-space: "<#FFB4A8>Kein freier Startweg gefunden"
+  gadgets-paused: "<#FFE9A8>Gadgets pausiert"
+  gadgets-restored: "<#B8FFC7>Gadgets wiederhergestellt"
+  gadgets-blocked: "<#FFB4A8>Gadgets sind während des Runs deaktiviert"
+  new-best: "<#FFD166>Neuer Bestwert: %score% Blöcke"
+  actionbar: "<gradient:#8AEAFF:#B8FFC7>%time%</gradient> <dark_gray>• <#FFD166>Score: <white>%score% <dark_gray>| <#B8FFC7>Best: <white>%best%"
+
+ui:
+  back: "<yellow>Zurück"
+
+# Gemeinsamer Lobby-Shop (/lobby-shop)
+lobby-shop:
+  title: "<gradient:#B366FF:#00E5FF><bold>Lobby-Shop</bold></gradient>"
+  gadgets:
+    name: "<gradient:#B366FF:#00E5FF><bold>Gadget-Shop</bold></gradient>"
+    lore-1: "<gray>Kaufe täglich wechselnde"
+    lore-2: "<gray>Lobby-Gadgets und Effekte mit Coins."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Reset in: <aqua>%reset%"
+    lore-5: " "
+    lore-6: "<dark_gray>» <yellow>Klicken zum Öffnen"
+  ranks:
+    name: "<gradient:#FFD700:#FF8C00><bold>Ränge-Shop</bold></gradient>"
+    lore-1: "<gray>Schalte besondere Vorteile"
+    lore-2: "<gray>und zeitlich begrenzte Ränge frei."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Bezahlung mit deinen <gold>Coins"
+    lore-5: " "
+    lore-6: "<dark_gray>» <yellow>Klicken zum Öffnen"
+  rename-tokens:
+    name: "<gradient:#FFD166:#FF9F1C><bold>Umbenennungs-Tokens</bold></gradient>"
+    lore-1: "<gray>Kaufe Tokens, um"
+    lore-2: "<gray>deine Pets umzubenennen."
+    lore-3: " "
+    lore-4: "<dark_gray>» <gray>Preis: <gold>2500 Coins pro Token"
+    lore-5: "<dark_gray>» <yellow>Klicken zum Öffnen"
+  back:
+    name: "<yellow>Zurück zum Lobby-Shop"
+    lore-1: "<gray>Zurück zur Shop-Auswahl."
+    lore-2: " "
+    lore-3: "<dark_gray>» <yellow>Klicken zum Zurückkehren"
+  hologram:
+    common:
+      line-1: "<gradient:#B366FF:#00E5FF><bold>✦ Lobby-Shop ✦</bold></gradient>"
+      line-5: "<yellow>→ Rechtsklick zum Öffnen ←</yellow>"
+    gadgets:
+      line-2: "<gradient:#B366FF:#00E5FF><bold>Gadget-Shop</bold></gradient>"
+      line-3: "<gray>Neue Lobby-Gadgets kaufen</gray>"
+      line-4: "<yellow>Reset in:</yellow> <aqua>%reset%</aqua>"
+    ranks:
+      line-2: "<gradient:#FFD700:#FF8C00><bold>Ränge-Shop</bold></gradient>"
+      line-3: "<gray>Schalte besondere Vorteile frei</gray>"
+      line-4: "<yellow>Ränge auf Zeit:</yellow> <gold>mit Coins</gold>"
+
+# Rang-Shop (/rankshop)
+rankshop:
+  confirm-title: "<gradient:#FFB347:#FFD23F><bold>Laufzeit wählen</bold></gradient>"
+  disabled: "<red>Der Rang-Shop ist aktuell deaktiviert."
+  unavailable: "<red>Der Rang-Shop ist gerade nicht verfügbar."
+  pending: "<yellow>Dein Kauf wird bereits verarbeitet."
+  already-owned: "<gray>Du besitzt %rank% <gray>bereits – warte bis er abgelaufen ist."
+  higher-rank: "<red>Du besitzt bereits einen höheren Rang und kannst %rank% <red>nicht kaufen."
+  not-enough: "<red>Nicht genug Coins. Preis: <gold>%price%<red>, Kontostand: <yellow>%balance%<red>."
+  purchase-success: "<green>%rank% <gray>für <yellow>%days% Tage <gray>freigeschaltet. Kontostand: <gold>%balance% Coins<gray>."
+  purchase-refunded: "<red>Kauf abgebrochen. Deine Coins wurden erstattet. Kontostand: <gold>%balance% Coins<red>."
+  purchase-failed: "<red>Der Kauf konnte nicht abgeschlossen werden."
+  remaining-permanent: "dauerhaft"
+  remaining-days: "%days% Tage %hours% Std"
+  remaining-hours: "%hours% Std %minutes% Min"
+  remaining-minutes: "%minutes% Min"
+  actionbar:
+    success: "<gradient:#8AEAFF:#B8FFC7>Rang-Shop</gradient> <dark_gray>• <#B8FFC7>%message%"
+    info: "<gradient:#FFB347:#FFD23F>Rang-Shop</gradient> <dark_gray>• <#E7D7FF>%message%"
+    error: "<gradient:#FF6B6B:#FFD166>Rang-Shop</gradient> <dark_gray>• <#FFB4A8>%message%"
+  info:
+    name: "<gradient:#FFB347:#FFD23F>Rang-Shop</gradient>"
+    lore-1: ""
+    lore-2: "<gray>Kaufe zeitlich begrenzte Ränge"
+    lore-3: "<gray>mit deinen Coins."
+    lore-4: ""
+    lore-5: "<dark_gray>» <gray>Dein Kontostand: <gold>%balance% Coins"
+    lore-6: "<dark_gray>» <gray>Dein alter Rang bleibt erhalten und"
+    lore-7: "<dark_gray>  <gray>kehrt nach Ablauf automatisch zurück."
+  item:
+    header: "<dark_gray>» <gray>Verfügbare Laufzeiten:"
+    duration-line: "<dark_gray>• <yellow>%days% Tage <dark_gray>- <gold>%price% Coins"
+    separator: "<dark_gray><strikethrough>                        "
+    owned: "<green>✔ Aktiv <dark_gray>- <gray>noch <white>%time%"
+    owned-click: "<dark_gray>» <gray>Bereits aktiv"
+    higher-rank: "<red>✘ Du besitzt einen höheren Rang"
+    higher-rank-hint: "<dark_gray>» <gray>Nicht kaufbar"
+    click: "<dark_gray>» <yellow>Klicken zum Auswählen"
+  preview:
+    header: "<dark_gray>» <gray>Wähle eine Laufzeit:"
+    balance: "<dark_gray>» <gray>Dein Kontostand: <gold>%balance% Coins"
+  duration:
+    name: "<gradient:#B8FFC7:#8AEAFF>%days% Tage</gradient>"
+    name-locked: "<red>%days% Tage"
+    lore-1: "<gray>Rang: <white>%rank%"
+    lore-2: "<gray>Laufzeit: <yellow>%days% Tage"
+    lore-3: "<gray>Preis: <gold>%price% Coins"
+    lore-4: "<gray>Kontostand: <green>%balance% Coins"
+    lore-5: ""
+    lore-6: "<dark_gray>» <green>Klicken zum Kaufen"
+    lore-locked-1: "<gray>Laufzeit: <yellow>%days% Tage"
+    lore-locked-2: "<gray>Preis: <gold>%price% Coins"
+    lore-locked-3: "<gray>Kontostand: <red>%balance% Coins"
+    lore-locked-4: ""
+    lore-locked-5: "<dark_gray>» <red>Du brauchst mehr Coins."
+    owned-name: "<gray>%days% Tage"
+    owned-lore-1: "<gray>Du besitzt diesen Rang bereits."
+    owned-lore-2: "<dark_gray>» <gray>Verbleibend: <white>%time%"
+    owned-lore-3: "<dark_gray>» <gray>Erst nach Ablauf erneut kaufbar."
+    higher-name: "<red>Gesperrt"
+    higher-lore-1: "<gray>Du besitzt bereits einen"
+    higher-lore-2: "<gray>höheren Rang."
+    higher-lore-3: ""
+    higher-lore-4: "<dark_gray>» <red>Dieser Rang ist nicht kaufbar."
+  back:
+    name: "<yellow>Zurück"
+    lore-1: "<gray>Zurück zur Rang-Auswahl."
+
+daily-reward:
+  title: "<gradient:#FFD166:#FF8C42><bold>Tägliche Belohnung</bold></gradient>"
+  unavailable: "<red>Die tägliche Belohnung ist gerade nicht verfügbar."
+  pending: "<yellow>Deine tägliche Belohnung wird bereits verarbeitet."
+  wrong-tier: "<red>Diese Belohnung gehört nicht zu deinem Rang."
+  already-claimed: "<yellow>Du hast deine heutige Belohnung bereits abgeholt."
+  success: "<green>Du hast %coins% Coins als tägliche Belohnung erhalten."
+  info:
+    name: "<gradient:#8AEAFF:#FFD166>Täglicher Login</gradient>"
+    lore-1: ""
+    lore-2: "<gray>Hole jeden Tag deine Belohnung ab."
+    lore-3: "<gray>Die nächste Belohnung ist ab 0 Uhr verfügbar."
+    lore-4: ""
+    lore-5: "<dark_gray>» <gray>Nächster Reset: <yellow>%reset%"
+  rewards:
+    player:
+      name: "<gradient:#8AEAFF:#B8FFC7>Spieler-Belohnung</gradient>"
+      available-lore-1: ""
+      available-lore-2: "<gray>Belohnung: <gold>%coins% Coins"
+      available-lore-3: ""
+      available-lore-4: "<dark_gray>» <green>Klicken zum Abholen"
+      claimed-lore-1: ""
+      claimed-lore-2: "<gray>Belohnung: <gold>%coins% Coins"
+      claimed-lore-3: ""
+      claimed-lore-4: "<dark_gray>» <red>Heute bereits abgeholt"
+      locked-lore-1: ""
+      locked-lore-2: "<gray>Diese Belohnung ist nur für"
+      locked-lore-3: "<gray>Spieler ohne Fuchs-Rang."
+      locked-lore-4: ""
+      locked-lore-5: "<dark_gray>» <red>Nicht für deinen Rang"
+    fuchs:
+      name: "<gradient:#FF8C42:#FFD166>Fuchs-Belohnung</gradient>"
+      available-lore-1: ""
+      available-lore-2: "<gray>Belohnung: <gold>%coins% Coins"
+      available-lore-3: ""
+      available-lore-4: "<dark_gray>» <green>Klicken zum Abholen"
+      claimed-lore-1: ""
+      claimed-lore-2: "<gray>Belohnung: <gold>%coins% Coins"
+      claimed-lore-3: ""
+      claimed-lore-4: "<dark_gray>» <red>Heute bereits abgeholt"
+      locked-lore-1: ""
+      locked-lore-2: "<gray>Diese Belohnung ist exklusiv"
+      locked-lore-3: "<gray>für Spieler mit Fuchs-Rang."
+      locked-lore-4: ""
+      locked-lore-5: "<dark_gray>» <red>Fuchs-Rang benötigt"
+
+mining:
+  disabled: "<red>Der Mining-Spielmodus ist derzeit wegen Wartungsarbeiten deaktiviert."
+  profile-loading: "<yellow>Dein Mining-Fortschritt wird noch geladen."
+  already-active: "<yellow>Du bist bereits zu einer Schicht angemeldet."
+  not-active: "<red>Du bist zu keiner Mining-Schicht angemeldet."
+  cooldown: "<yellow>Du kannst deine nächste Schicht in %seconds% Sekunden beginnen."
+  pending: "<yellow>Deine letzte Mining-Aktion wird noch verarbeitet."
+  interaction-blocked: "<red>Diese Lobby-Funktion ist während deiner Mining-Schicht gesperrt."
+  stuck-pending: "<yellow>Deine Rettung wird bereits vorbereitet."
+  stuck-not-found: "<red>In deiner Nähe wurde keine sichere freie Stelle gefunden."
+  stuck-failed: "<red>Du konntest nicht zu einer freien Stelle teleportiert werden."
+  stuck-success: "<green>Du wurdest zur nächsten freien Stelle teleportiert."
+  shift-started: "<green>Deine Mining-Schicht hat begonnen. Verfügbare Zeit: %minutes% Minuten."
+  shift-expired: "<yellow>Schicht vorbei. Zurück zum Schichtleiter."
+  exhausted: "<red>Du bist erschöpft. Zurück zum Schichtleiter."
+  shift-ended: "<green>Schicht beendet: %points% Erz-Punkte, %xp% Schicht-XP (%percent%%)."
+  turn-in-success: "<green>Abgegeben: %points% Erz-Punkte und %xp% Schicht-XP."
+  no-cargo: "<yellow>Du hast keine Erze zum Abgeben."
+  level-coins: "<gold>+%coins% Coins <gray>durch deinen Level-Fortschritt"
+  save-failed: "<red>Deine Mining-Daten konnten nicht gespeichert werden. Die Fracht wurde nicht entfernt."
+  wrong-tool: "<red>Dieses Erz kannst du nur mit deiner Mining-Spitzhacke abbauen."
+  ore-locked: "<red>%ore% ist gesperrt. Kaufe Erzfreigabe-Stufe %level%."
+  ore-cooldown: "<yellow>Dieses Erz ist noch <red>%seconds% Sekunden <yellow>gesperrt."
+  pickaxe-too-weak: "<red>Für %ore% brauchst du mindestens eine %pickaxe%."
+  inventory-full: "<red>Dein Inventar ist voll. Gib deine Erze zuerst ab."
+  cargo-lore: "Mining-Fracht"
+  powerups:
+    invalid: "<red>Dieses Powerup ist ungültig oder wurde bereits benutzt."
+    not-enough: "<red>Dir fehlen %points% Erz-Punkte für dieses Powerup."
+    inventory-full: "<red>Du brauchst einen freien Inventarplatz für das Powerup."
+    purchased: "<green>%powerup% für %points% Erz-Punkte gekauft."
+    already-active: "<yellow>%powerup% ist bereits aktiv."
+    activated: "<green>%powerup% ist jetzt für %minutes% Minuten aktiv."
+    refunded: "<green>%points% Erz-Punkte für unbenutzte Powerups erstattet."
+    names:
+      magnet: "Magnet"
+      vein-miner: "Vein Miner"
+    shop-item:
+      name: "<gradient:#FFD166:#FF9F1C>Powerup-Shop</gradient>"
+      lore-1: "<gray>Kaufe temporäre Vorteile"
+      lore-2: "<dark_gray>» <yellow>Rechtsklick zum Öffnen"
+    items:
+      magnet:
+        name: "<gradient:#8AEAFF:#B8FFC7>Magnet</gradient>"
+        lore-1: "<gray>Zieht abgebaute Erze direkt ins Inventar."
+        lore-2: "<dark_gray>» <yellow>%minutes% Minuten <gray>mit Rechtsklick aktivieren"
+      vein-miner:
+        name: "<gradient:#FFD166:#FF9F1C>Vein Miner</gradient>"
+        lore-1: "<gray>Baut eine zusammenhängende Erzader ab."
+        lore-2: "<dark_gray>» <yellow>%minutes% Minuten <gray>mit Rechtsklick aktivieren"
+  prestige:
+    active-shift: "<red>Beende zuerst deine aktuelle Schicht."
+    level-required: "<red>Für Prestige benötigst du Level %level%."
+    success: "<green>Prestige %prestige% erreicht. Dein Fortschritt wurde zurückgesetzt."
+  admin:
+    no-permission: "<red>Dafür hast du keine Berechtigung."
+    cooldown-reset-usage: "<red>Benutze: /mine cooldown reset <Spieler|UUID>"
+    player-not-found: "<red>Der Spieler <yellow>%player% <red>wurde nicht gefunden."
+    cooldown-reset-success: "<green>Der Schicht-Cooldown von <yellow>%player% <green>wurde zurückgesetzt."
+    cooldown-reset-active: "<yellow>%player% befindet sich derzeit in einer Schicht."
+    cooldown-reset-pending: "<yellow>Die Mining-Daten von %player% werden gerade verarbeitet."
+    cooldown-reset-failed: "<red>Der Schicht-Cooldown von %player% konnte nicht zurückgesetzt werden."
+    status-header: "<#8AEAFF>Mining-Systemstatus"
+    status-database: "<gray>Speicher: <white>%mode% <dark_gray>| <gray>Latenz: <white>%latency%"
+    status-operations: "<gray>DB-Vorgänge: <white>%writes% Writes<dark_gray>, <white>%reads% Reads<dark_gray>, <white>%queued% wartend"
+    status-rewards: "<gray>Ausstehende Coin-Rewards: <white>%rewards%"
+    status-game: "<gray>Spiel: <white>%shifts% Schichten<dark_gray>, <white>%cooldowns% Erz-Cooldowns<dark_gray>, <white>%respawns% Respawns"
+    status-top: "<gray>Alter der Toplisten: <white>%age%"
+    status-last-error-none: "<gray>Letzter DB-Fehler: <green>keiner"
+    status-last-error: "<gray>Letzter DB-Fehler: <red>%operation% <dark_gray>- <white>%error% <dark_gray>(<gray>vor %age%<dark_gray>)"
+    status-mode-database: "MySQL"
+    status-mode-local: "lokale Datei"
+    status-unavailable: "nicht verfügbar"
+    status-failed: "<red>Der Mining-Systemstatus konnte nicht geladen werden."
+  bossbar:
+    active: "<gradient:#B8FFC7:#3DDC97>Mining-Schicht</gradient> <dark_gray>• <white>%time%"
+    ended: "<red>Schicht vorbei <dark_gray>• <white>Zum Schichtleiter"
+  pickaxe:
+    name: "Mining-Spitzhacke • Level %level%"
+    lore-1: "Geschwindigkeit: Stufe %speed%"
+    lore-2: "Glück: Stufe %luck%"
+    lore-3: "Erzfreigabe: bis %ore%"
+    tiers:
+      stone: "Steinspitzhacke"
+      iron: "Eisenspitzhacke"
+      diamond: "Diamantspitzhacke"
+      netherite: "Netheritspitzhacke"
+  ores:
+    coal: "Kohle"
+    copper: "Rohkupfer"
+    iron: "Roheisen"
+    lapis: "Lapislazuli"
+    gold: "Rohgold"
+    redstone: "Redstone"
+    emerald: "Smaragd"
+    diamond: "Diamant"
+  menu:
+    registrar:
+      title: "<gradient:#FFD166:#FF9F1C>Mining-Schichtführer</gradient>"
+    powerups:
+      title: "<gradient:#FFD166:#FF9F1C>Mining-Powerups</gradient>"
+      magnet:
+        name: "<gradient:#8AEAFF:#B8FFC7>Magnet</gradient>"
+        lore-1: "<gray>Abgebaute Erze landen direkt"
+        lore-2: "<gray>für %minutes% Minuten im Inventar."
+        cost: "<dark_gray>» <gray>Kosten: <yellow>%points% Erz-Punkte"
+        buy: "<dark_gray>» <yellow>Klicke zum Kaufen"
+      vein-miner:
+        name: "<gradient:#FFD166:#FF9F1C>Vein Miner</gradient>"
+        lore-1: "<gray>Baut verbundene Blöcke derselben"
+        lore-2: "<gray>Erzader für %minutes% Minuten gemeinsam ab."
+        cost: "<dark_gray>» <gray>Kosten: <yellow>%points% Erz-Punkte"
+        buy: "<dark_gray>» <yellow>Klicke zum Kaufen"
+      balance:
+        name: "<yellow>Deine Erz-Punkte"
+        lore: "<dark_gray>» <gray>Verfügbar: <yellow>%points%"
+    profile:
+      name: "<gradient:#8AEAFF:#B8FFC7>Dein Fortschritt</gradient>"
+      prestige: "<dark_gray>» <gray>Prestige: <light_purple>%prestige%"
+      level: "<dark_gray>» <gray>Bergbau-Level: <yellow>%level%"
+      xp: "<dark_gray>» <gray>Schicht-XP: <yellow>%xp%<gray>/<yellow>%required%"
+      xp-maximum: "<dark_gray>» <green>Maximallevel erreicht"
+      balance: "<dark_gray>» <gray>Erz-Punkte: <yellow>%points%"
+      lifetime: "<dark_gray>» <gray>Gesammelte Erz-Punkte: <yellow>%points%"
+      ores: "<dark_gray>» <gray>Abgegebene Erze: <yellow>%ores%"
+    start:
+      name: "<gradient:#B8FFC7:#3DDC97>Schicht beginnen</gradient>"
+      lore-1: "<gray>Räumt dein Lobby-Inventar und"
+      lore-2: "<gray>gibt dir deine Mining-Spitzhacke."
+      lore-3: " "
+      lore-4: "<dark_gray>» <yellow>Klicke zum Anmelden"
+    turn-in:
+      name: "<gradient:#FFD166:#FF9F1C>Erze abgeben</gradient>"
+      ores: "<dark_gray>» <gray>Fracht: <yellow>%ores% Erze"
+      points: "<dark_gray>» <gray>Erz-Punkte: <yellow>%points%"
+      xp: "<dark_gray>» <gray>Schicht-XP: <aqua>%xp%"
+      click: "<dark_gray>» <yellow>Klicke zum vollständigen Abgeben"
+    cargo:
+      name: "<gradient:#D8B4FE:#8B5CF6>Aktuelle Fracht</gradient>"
+      ores: "<dark_gray>» <gray>Erze: <yellow>%ores%"
+      base: "<dark_gray>» <gray>Basis-Erz-Punkte: <yellow>%points%"
+      final: "<dark_gray>» <gray>Mit Veredelung: <yellow>%points%"
+      xp: "<dark_gray>» <gray>Schicht-XP: <aqua>%xp%"
+    exit:
+      name: "<red>Schicht beenden"
+      lore-1: "<red>Achtung: <gray>Verbleibende Fracht wird"
+      lore-2: "<gray>beim Beenden nur zu <yellow>%percent%% <gray>gewertet."
+      lore-3: " "
+      lore-4: "<gray>Vorher vollständig abgeben: <green>%full_points% Erz-Punkte"
+      lore-5: "<gray>Direkt beenden: <yellow>%exit_points% Erz-Punkte"
+      lore-6: " "
+      lore-7: "<green>Tipp: <gray>Nutze zuerst <white>Erze abgeben<gray>,"
+      lore-8: "<gray>damit du die vollen <green>100% <gray>erhältst."
+      lore-9: " "
+      lore-10: "<dark_gray>» <red>Klicke trotzdem zum Beenden"
+    cooldown:
+      name: "<yellow>Schichterholung"
+      lore-1: "<dark_gray>» <gray>Noch <yellow>%seconds% Sekunden"
+    prestige:
+      active-name: "<red>Prestige nicht verfügbar"
+      active-lore: "<gray>Beende zuerst deine aktuelle Schicht."
+      locked-name: "<gray>Prestige gesperrt"
+      locked-lore: "<dark_gray>» <gray>Level: <yellow>%level%<gray>/<yellow>%maximum%"
+      ready-name: "<gradient:#D8B4FE:#8B5CF6>Prestige durchführen</gradient>"
+      ready-lore-1: "<gray>Nächstes Prestige: <light_purple>%prestige%"
+      ready-lore-2: "<gray>Setzt Level, Erz-Punkte und Upgrades zurück."
+      ready-lore-3: "<dark_gray>» <yellow>Klicke für die Bestätigung"
+      confirm:
+        title: "<gradient:#D8B4FE:#8B5CF6>Prestige bestätigen</gradient>"
+        confirm-name: "<gradient:#B8FFC7:#3DDC97>Prestige durchführen</gradient>"
+        confirm-lore-1: "<gray>Neues Prestige: <light_purple>%prestige%"
+        confirm-lore-2: "<gray>Level, Erz-Punkte und Upgrades werden zurückgesetzt."
+        confirm-lore-3: "<dark_gray>» <green>Klicke zum Bestätigen"
+        retained-name: "<yellow>Diese Statistiken bleiben"
+        retained-lore-1: "<dark_gray>» <gray>Gesammelte Erz-Punkte: <yellow>%points%"
+        retained-lore-2: "<dark_gray>» <gray>Abgegebene Erze: <yellow>%ores%"
+        cancel-name: "<red>Abbrechen"
+        cancel-lore: "<dark_gray>» <gray>Zurück zum Schichtleiter"
+    upgrades:
+      title: "<gradient:#FFD166:#FF9F1C>Mining-Schmied</gradient>"
+      item-name: "<gradient:#FFD166:#FF9F1C>%upgrade%</gradient>"
+      current: "<dark_gray>» <gray>Aktuelle Stufe: <yellow>%level%"
+      effect: "<dark_gray>» <gray>Aktueller Wert: <yellow>%value%"
+      next: "<dark_gray>» <gray>Nächste Stufe: <yellow>%level%"
+      cost: "<dark_gray>» <gray>Kosten: <yellow>%points% Erz-Punkte"
+      details: "<dark_gray>» <yellow>Klicke für die Detailansicht"
+      maximum: "<green>Maximale Stufe erreicht"
+      balance: "<green>Deine Erz-Punkte"
+      balance-lore: "<dark_gray>» <gray>Verfügbar: <yellow>%points%"
+      prestige-cost: "<dark_gray>» <gray>Prestige %prestige%: <red>+%increase%% je Prestige"
+      detail:
+        title: "<gradient:#FFD166:#FF9F1C>%upgrade%</gradient>"
+        summary-current: "<dark_gray>» <gray>Stufe: <yellow>%level%<gray>/<yellow>%maximum%"
+        summary-effect: "<dark_gray>» <gray>Aktueller Effekt: <yellow>%value%"
+        summary-balance: "<dark_gray>» <gray>Erz-Punkte: <yellow>%points%"
+        level-name: "<gradient:#8AEAFF:#B8FFC7>Stufe %level%</gradient>"
+        level-effect: "<dark_gray>» <gray>Effekt: <yellow>%value%"
+        level-cost: "<dark_gray>» <gray>Kosten: <yellow>%points% Erz-Punkte"
+        status-unlocked: "<green>Freigeschaltet"
+        status-current: "<green>Aktuell verwendete Stufe"
+        status-next: "<yellow>Nächste kaufbare Stufe"
+        status-locked: "<dark_gray>Noch gesperrt"
+        level-progress: "<dark_gray>» <gray>Dein Stand: <yellow>%balance%<gray>/<yellow>%cost% Erz-Punkte"
+        level-missing: "<dark_gray>» <gray>Dir fehlen: <red>%points% Erz-Punkte"
+        level-affordable: "<dark_gray>» <green>Kauf möglich"
+        click-next: "<dark_gray>» <yellow>Klicke zum Auswählen"
+        action-name: "<gradient:#B8FFC7:#3DDC97>Stufe %level% verbessern</gradient>"
+        action-lore-1: "<gray>Effekt nach dem Kauf: <yellow>%value%"
+        action-lore-2: "<gray>Kosten: <yellow>%points% Erz-Punkte"
+        action-lore-3: "<dark_gray>» <yellow>Klicke zur Bestätigung"
+        maximum-name: "<green>Maximale Stufe erreicht"
+        maximum-lore-1: "<gray>Dieses Upgrade ist vollständig verbessert."
+        balance-name: "<yellow>Deine Erz-Punkte"
+        balance-lore: "<dark_gray>» <gray>Verfügbar: <yellow>%points%"
+        back-name: "<red>Zurück"
+        back-lore: "<dark_gray>» <gray>Zur Upgrade-Übersicht"
+      confirm:
+        title: "<gradient:#FFD166:#FF9F1C>Kauf bestätigen</gradient>"
+        confirm-name: "<gradient:#B8FFC7:#3DDC97>Upgrade kaufen</gradient>"
+        confirm-lore-1: "<gray>Neue Stufe: <yellow>%level%"
+        confirm-lore-2: "<gray>Kosten: <yellow>%points% Erz-Punkte"
+        confirm-lore-3: "<gray>Dein Guthaben: <yellow>%balance%"
+        confirm-lore-4: "<dark_gray>» <green>Klicke zum Bestätigen"
+        not-enough-name: "<red>Nicht genügend Erz-Punkte"
+        not-enough-lore-1: "<gray>Benötigt: <yellow>%points% Erz-Punkte"
+        not-enough-lore-2: "<gray>Dein Guthaben: <yellow>%balance%"
+        not-enough-lore-3: "<dark_gray>» <red>Dir fehlen Erz-Punkte"
+        preview-name: "<gradient:#FFD166:#FF9F1C>%upgrade%</gradient>"
+        preview-current: "<dark_gray>» <gray>Stufe %level%: <yellow>%value%"
+        preview-next: "<dark_gray>» <gray>Stufe %level%: <green>%value%"
+        preview-cost: "<dark_gray>» <gray>Kaufpreis: <yellow>%points% Erz-Punkte"
+        preview-balance: "<dark_gray>» <gray>Guthaben: <yellow>%points% Erz-Punkte"
+        cancel-name: "<red>Abbrechen"
+        cancel-lore: "<dark_gray>» <gray>Zurück zur Detailansicht"
+  upgrade:
+    names:
+      speed: "Abbau-Geschwindigkeit"
+      luck: "Glück"
+      refinement: "Erzveredelung"
+      energy: "Energie"
+      ore-access: "Erzfreigabe"
+      cooldown: "Schicht-Erholung"
+    values:
+      speed: "Effizienz %level%"
+      ore-access: "bis %ore%"
+      cooldown: "Wartezeit %time% Min."
+    maximum: "<yellow>Dieses Upgrade hat bereits die maximale Stufe."
+    not-enough: "<red>Dir fehlen Erz-Punkte. Benötigt: %points%."
+    success: "<green>%upgrade% wurde auf Stufe %level% verbessert."
