@@ -47,11 +47,11 @@ profiles:
         language: en
         path: fallback/Flunar-Wedding/locale_en.yml
         sha256: 7c42a5e526b5a9d0c3b15f1361935ee88e0345c5cf42f222e5251ce012b5f3ae
-      - plugin: Flunar-Piano
+      - plugin: Flunar-Moderation
         language: de
-        path: fallback/Flunar-Piano/locale_de.yml
-        sha256: 35e171d1e3ddab2b2bf16806700555333bb0594b43f96383bebed674645ab2c2
-      - plugin: Flunar-Piano
+        path: fallback/Flunar-Moderation/locale_de.yml
+        sha256: e1107ca693e3578e8acb0bb22c60db9ab92f7f09ffcf6e77eb08c4012f709b46
+      - plugin: Flunar-Moderation
         language: en
-        path: fallback/Flunar-Piano/locale_en.yml
-        sha256: 87a858d7f497a8253f23929c47e2ad3f849784a025f72b2546c239bd6eaba4f7
+        path: fallback/Flunar-Moderation/locale_en.yml
+        sha256: 6f446002e735943ba7e13be3777ca183ff7be6fc06f4f22f887c87d67a826d96
