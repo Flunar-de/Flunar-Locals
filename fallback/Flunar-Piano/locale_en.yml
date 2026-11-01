@@ -49,7 +49,7 @@ ban-reason:
   exploit: "Exploiting a bug or vulnerability"
 
 ban-reason-option:
-  right-extremist: "far-right-extremist-songs"
+  right-extremist: "far-right-extremist-songs."
   left-extremist: "far-left-extremist-songs"
   discriminatory: "discriminatory-songs"
   inappropriate: "inappropriate-songs"

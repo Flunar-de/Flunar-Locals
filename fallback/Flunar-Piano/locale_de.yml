@@ -46,7 +46,7 @@ ban-reason:
   spam: "Absichtliches Tasten-Spam oder störendes Klimpern"
   abuse: "Missbrauch des Pianos"
   trolling: "Trolling oder Störung anderer Spieler"
-  exploit: "Ausnutzen eines Fehlers oder Exploits"
+  exploit: "Ausnutzen eines Fehlers oder Exploits."
 
 ban-reason-option:
   right-extremist: "rechtsextremistische-lieder"
