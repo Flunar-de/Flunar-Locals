@@ -36,7 +36,7 @@ command:
   crate-disabled: "<yellow>Diese Crate ist noch deaktiviert. Setze enabled: true in crates/{id}.yml und führe /crates reload aus.</yellow>"
   player-only: "<gradient:#ff9955:#ff5555>Dieser Befehl ist nur für Spieler verfügbar.</gradient>"
   not-ready: "<gradient:#fbbf24:#f97316>Das Crate-System wird noch geladen.</gradient>"
-  usage: "<gradient:#38bdf8:#6366f1>Shop: /crates buy · Admin: /crates <key|set|remove|reload|payout|purchase|deletedata></gradient>"
+  usage: "<gradient:#38bdf8:#6366f1>Shop: /crates buy · Admin: /crates <key|reward|set|remove|reload|payout|purchase|deletedata></gradient>"
   delete-usage: "<yellow>/crates deletedata <UUID> confirm</yellow>"
   delete-offline: "<yellow>Für die Datenlöschung muss der Spieler online sein.</yellow>"
   delete-busy: "<yellow>Ein Crate-Kauf oder Gewinn ist noch offen. Es wurden keine Daten gelöscht.</yellow>"

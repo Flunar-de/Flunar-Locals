@@ -18,11 +18,11 @@ profiles:
       - plugin: Flunar-Shop
         language: de
         path: fallback/Flunar-Shop/locale_de.yml
-        sha256: 745acef437e4fc3fab3f505275c6a337d10b760247522791fb0cf3ef73aec44a
+        sha256: 5a7f6503d70bd8305a04ec686ce82df2ca6691cbcb4cbdf86c6b3eb77b737685
       - plugin: Flunar-Shop
         language: en
         path: fallback/Flunar-Shop/locale_en.yml
-        sha256: 780755f62c230e3b5fbeda9c58820e35698c83a2d9ae5d96d480171cc036c428
+        sha256: 397dffba44657c4647b43a6134590e3b8d9fe92903cafdfae7669fee34ef8ae6
       - plugin: CoinsAPI
         language: de
         path: fallback/CoinsAPI/locale_de.yml
@@ -242,11 +242,11 @@ profiles:
       - plugin: Flunar-Crate
         language: de
         path: fallback/Flunar-Crate/locale_de.yml
-        sha256: 01d3eb2607a6da5d113b84493e3feb2c95cd42dcf3a4055a5a3fc97bd6363adc
+        sha256: b1c60ed4c2d7c9b87f56f5a915e7c6a4af8052b27374d1b05d5cdb3b2b2a0092
       - plugin: Flunar-Crate
         language: en
         path: fallback/Flunar-Crate/locale_en.yml
-        sha256: 00345380824598fb1a9c7a8f43995d686b872e545aa1dcb61a26e00fa559b8bc
+        sha256: 49999872e4b1d13453a543b56ede26a01fd28afd60362841e334294286b301fb
       - plugin: Flunar-Social
         language: de
         path: fallback/Flunar-Social/locale_de.yml

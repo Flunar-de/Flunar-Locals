@@ -36,7 +36,7 @@ command:
   crate-disabled: "<yellow>This crate is still disabled. Set enabled: true in crates/{id}.yml and run /crates reload.</yellow>"
   player-only: "<gradient:#ff9955:#ff5555>This command is only available to players.</gradient>"
   not-ready: "<gradient:#fbbf24:#f97316>The crate system is still loading.</gradient>"
-  usage: "<gradient:#38bdf8:#6366f1>Shop: /crates buy · Admin: /crates <key|set|remove|reload|payout|purchase|deletedata></gradient>"
+  usage: "<gradient:#38bdf8:#6366f1>Shop: /crates buy · Admin: /crates <key|reward|set|remove|reload|payout|purchase|deletedata></gradient>"
   delete-usage: "<yellow>/crates deletedata <UUID> confirm</yellow>"
   delete-offline: "<yellow>The player must be online to delete crate data.</yellow>"
   delete-busy: "<yellow>A crate purchase or reward is still open. No data was deleted.</yellow>"
