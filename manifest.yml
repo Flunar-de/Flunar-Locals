@@ -58,11 +58,11 @@ profiles:
       - plugin: Flunar-Protect
         language: de
         path: fallback/Flunar-Protect/locale_de.yml
-        sha256: 95d44d88aeb67015f3815f28bf302de0341e48ac88cf074a95801aaac462e9ba
+        sha256: 04fc816e040f33641769952cab66417d35ca059013af9298d084e791359c4753
       - plugin: Flunar-Protect
         language: en
         path: fallback/Flunar-Protect/locale_en.yml
-        sha256: c2e8f1e2e7d9758b3fb81f857157732912ed525162590f27b632dfcea8ee41e9
+        sha256: c03656b4b0be348f8f4890df752d46ab39234a569e720f440a7eabc123ffa756
       - plugin: Flunar-Moderation
         language: de
         path: fallback/Flunar-Moderation/locale_de.yml
