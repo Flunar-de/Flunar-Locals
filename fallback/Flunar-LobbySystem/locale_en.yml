@@ -1520,3 +1520,15 @@ mining:
     maximum: "<yellow>This upgrade is already at its maximum level."
     not-enough: "<red>You do not have enough ore points. Required: %points%."
     success: "<green>%upgrade% was upgraded to level %level%."
+
+# Lobby system: texts previously hardcoded in the plugin code
+common:
+  noperms: "<red>You do not have permission to do that."
+kick-restart: "<yellow>This lobby is restarting. Please reconnect."
+setvoid-out-of-range: "<red>Invalid void height! It must be between -64 and 320."
+setvoid-out-of-range-actionbar: "<red>The value must be between -64 and 320"
+cookie-select-start: "<yellow>Now hit the cookie block."
+cookie-block-set: "<green>Cookie block set."
+gadgets-enderpearl-name: "<dark_purple>Ender pearl gadget"
+gadgets-enderpearl-lore-1: "<gray>Throw me!"
+gadgets-enderpearl-lore-2: "<gray>You fly along!"
