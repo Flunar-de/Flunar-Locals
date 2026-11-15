@@ -1,5 +1,5 @@
 cinema:
-  unavailable: "<red>Das Cinema wird gerade beendet und ist nicht mehr verfügbar.</red>"
+  unavailable: "<red>Das Cinema wird gerade gestartet oder beendet und ist momentan nicht verfügbar.</red>"
   players-only: "<red>Diesen Befehl können nur Spieler verwenden.</red>"
   database-error: "<red>Die Cinema-Datenbank ist gerade nicht verfügbar. Bitte versuche es später erneut.</red>"
   access-loading: "<yellow>Dein Cinema-Zugang wird noch geprüft. Bitte warte kurz.</yellow>"
@@ -25,16 +25,18 @@ cinema:
     admin-4: "<gold>/cinema admin join|leave|stop</gold>"
     admin-5: "<gold>/cinema admin reset &lt;UUID/Spieler&gt; confirm</gold>"
     admin-6: "<gold>/cinema admin screen list|remove &lt;ID&gt;</gold>"
+    admin-7: "<gold>/cinema admin register</gold> <dark_gray>–</dark_gray> <white>Anvisiertes Cinema-Schild registrieren</white>"
 
   usage:
     add: "<red>Verwendung: /cinema add &lt;URL&gt;</red>"
     show: "<red>Verwendung: /cinema show &lt;URL&gt;</red>"
     remove: "<red>Verwendung: /cinema remove &lt;Position&gt;</red>"
-    admin: "<yellow>Verwendung: /cinema admin &lt;ban|unban|play|join|leave|stop|reset|screen&gt;</yellow>"
+    admin: "<yellow>Verwendung: /cinema admin &lt;ban|unban|play|join|leave|stop|register|reset|screen&gt;</yellow>"
     ban: "<red>Verwendung: /cinema admin ban &lt;Spieler&gt;</red>"
     unban: "<red>Verwendung: /cinema admin unban &lt;Spieler&gt;</red>"
     admin-play: "<red>Verwendung: /cinema admin play &lt;URL&gt;</red>"
     reset: "<red>Bestätigung erforderlich: /cinema admin reset &lt;UUID/Spieler&gt; confirm</red>"
+    register: "<red>Verwendung: /cinema admin register</red>"
     screen: "<red>Verwendung: /cinema admin screen &lt;list|remove ID&gt;</red>"
 
   rules:
@@ -132,6 +134,8 @@ cinema:
     completed: "<green>Die persönlichen Cinema-Daten von %player% wurden gelöscht. Eine aktive Sperre blieb erhalten.</green>"
 
   sign:
+    look-at-sign: "<red>Du musst ein Cinema-Schild in höchstens 6 Blöcken Entfernung ansehen.</red>"
+    invalid-registration-syntax: "<red>Schildsyntax: Zeile 1 fln:, Zeile 2 screen oder join und danach die passenden Werte.</red>"
     invalid-join-syntax: "<red>Schildsyntax: Zeile 1 fln:, Zeile 2 join, Zeile 3 Saal-/Leinwand-ID, Zeile 4 leer.</red>"
     join-registered: "<green>Das Einstiegsschild für Saal %room% wurde registriert und geschützt.</green>"
     unknown-room: "<red>Für den Saal %room% ist keine Leinwand registriert.</red>"

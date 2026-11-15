@@ -1,5 +1,5 @@
 cinema:
-  unavailable: "<red>Cinema is shutting down and is no longer available.</red>"
+  unavailable: "<red>Cinema is currently starting or shutting down and is not available.</red>"
   players-only: "<red>Only players can use this command.</red>"
   database-error: "<red>The Cinema database is currently unavailable. Please try again later.</red>"
   access-loading: "<yellow>Your Cinema access is still being checked. Please wait a moment.</yellow>"
@@ -25,16 +25,18 @@ cinema:
     admin-4: "<gold>/cinema admin join|leave|stop</gold>"
     admin-5: "<gold>/cinema admin reset &lt;UUID/player&gt; confirm</gold>"
     admin-6: "<gold>/cinema admin screen list|remove &lt;ID&gt;</gold>"
+    admin-7: "<gold>/cinema admin register</gold> <dark_gray>–</dark_gray> <white>Register the targeted Cinema sign</white>"
 
   usage:
     add: "<red>Usage: /cinema add &lt;URL&gt;</red>"
     show: "<red>Usage: /cinema show &lt;URL&gt;</red>"
     remove: "<red>Usage: /cinema remove &lt;position&gt;</red>"
-    admin: "<yellow>Usage: /cinema admin &lt;ban|unban|play|join|leave|stop|reset|screen&gt;</yellow>"
+    admin: "<yellow>Usage: /cinema admin &lt;ban|unban|play|join|leave|stop|register|reset|screen&gt;</yellow>"
     ban: "<red>Usage: /cinema admin ban &lt;player&gt;</red>"
     unban: "<red>Usage: /cinema admin unban &lt;player&gt;</red>"
     admin-play: "<red>Usage: /cinema admin play &lt;URL&gt;</red>"
     reset: "<red>Confirmation required: /cinema admin reset &lt;UUID/player&gt; confirm</red>"
+    register: "<red>Usage: /cinema admin register</red>"
     screen: "<red>Usage: /cinema admin screen &lt;list|remove ID&gt;</red>"
 
   rules:
@@ -132,6 +134,8 @@ cinema:
     completed: "<green>%player%'s personal Cinema data was deleted. An active ban was preserved.</green>"
 
   sign:
+    look-at-sign: "<red>You must look at a Cinema sign within 6 blocks.</red>"
+    invalid-registration-syntax: "<red>Sign syntax: line 1 fln:, line 2 screen or join, followed by the matching values.</red>"
     invalid-join-syntax: "<red>Sign syntax: line 1 fln:, line 2 join, line 3 room/screen ID, line 4 empty.</red>"
     join-registered: "<green>The entrance sign for room %room% was registered and protected.</green>"
     unknown-room: "<red>No screen is registered for room %room%.</red>"
