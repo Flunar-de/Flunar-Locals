@@ -1492,3 +1492,15 @@ mining:
     maximum: "<yellow>Dieses Upgrade hat bereits die maximale Stufe."
     not-enough: "<red>Dir fehlen Erz-Punkte. Benötigt: %points%."
     success: "<green>%upgrade% wurde auf Stufe %level% verbessert."
+
+# Lobby-System: Texte aus dem Plugin-Code
+common:
+  noperms: "<red>Dafür hast du keine Berechtigung."
+kick-restart: "<yellow>Diese Lobby wird gerade neu gestartet. Bitte verbinde dich erneut."
+setvoid-out-of-range: "<red>Ungültige Void-Höhe! Muss zwischen -64 und 320 sein."
+setvoid-out-of-range-actionbar: "<red>Wert muss zwischen -64 und 320 liegen"
+cookie-select-start: "<yellow>Schlage jetzt den Cookie-Block."
+cookie-block-set: "<green>Cookie-Block gesetzt."
+gadgets-enderpearl-name: "<dark_purple>Enderperle-Gadget"
+gadgets-enderpearl-lore-1: "<gray>Wirf mich!"
+gadgets-enderpearl-lore-2: "<gray>Du fliegst mit!"
