@@ -19,6 +19,9 @@ cinema:
     player-7: "<gray>/cinema skip</gray> <dark_gray>–</dark_gray> <white>Skip the current media</white>"
     player-8: "<gray>/cinema queue [page]</gray> <dark_gray>–</dark_gray> <white>Show the queue</white>"
     player-9: "<gray>/cinema remove \\<position></gray> <dark_gray>–</dark_gray> <white>Remove a queued entry</white>"
+    player-10: "<gray>/cinema kick \\<player></gray> <dark_gray>–</dark_gray> <white>Remove a member as the host</white>"
+    player-11: "<gray>/cinema break</gray> <dark_gray>–</dark_gray> <white>Pause playback as the host</white>"
+    player-12: "<gray>/cinema play</gray> <dark_gray>–</dark_gray> <white>Resume paused playback as the host</white>"
     admin-1: "<gold>/cinema admin ban \\<player></gold>"
     admin-2: "<gold>/cinema admin unban \\<player></gold>"
     admin-3: "<gold>/cinema admin play \\<URL></gold>"
@@ -26,15 +29,18 @@ cinema:
     admin-5: "<gold>/cinema admin reset \\<UUID/player> confirm</gold>"
     admin-6: "<gold>/cinema admin screen list|remove \\<ID></gold>"
     admin-7: "<gold>/cinema admin register</gold> <dark_gray>–</dark_gray> <white>Register the targeted Cinema sign</white>"
+    admin-8: "<gold>/cinema admin image \\<URL></gold> <dark_gray>–</dark_gray> <white>Change the global idle image</white>"
 
   usage:
     add: "<red>Usage: /cinema add \\<URL></red>"
     show: "<red>Usage: /cinema show \\<URL></red>"
     remove: "<red>Usage: /cinema remove \\<position></red>"
-    admin: "<yellow>Usage: /cinema admin \\<ban|unban|play|join|leave|stop|register|reset|screen></yellow>"
+    kick: "<red>Usage: /cinema kick \\<player></red>"
+    admin: "<yellow>Usage: /cinema admin \\<ban|unban|play|image|join|leave|stop|register|reset|screen></yellow>"
     ban: "<red>Usage: /cinema admin ban \\<player></red>"
     unban: "<red>Usage: /cinema admin unban \\<player></red>"
     admin-play: "<red>Usage: /cinema admin play \\<URL></red>"
+    admin-image: "<red>Usage: /cinema admin image \\<URL></red>"
     reset: "<red>Confirmation required: /cinema admin reset \\<UUID/player> confirm</red>"
     register: "<red>Usage: /cinema admin register</red>"
     screen: "<red>Usage: /cinema admin screen \\<list|remove ID></red>"
@@ -75,6 +81,11 @@ cinema:
     admin-left: "<green>You left the watch party administratively.</green>"
     admin-host-cannot-leave: "<red>The original host can only end the entire party with /cinema leave.</red>"
     admin-stopped: "<green>The watch party was stopped administratively.</green>"
+    kick-not-host: "<red>Only the host can remove members from the watch party.</red>"
+    kick-not-member: "<red>This player is not a member of the current watch party.</red>"
+    kick-host: "<red>The host cannot remove themselves. Use /cinema leave to end the party.</red>"
+    kicked-host: "<green>%player% was removed from the watch party.</green>"
+    kicked-player: "<yellow>The host removed you from the watch party.</yellow>"
     host-cooldown: "<yellow>After reaching the time limit, you must wait about %minutes% more minute(s).</yellow>"
     host-disconnected: "<yellow>The host disconnected and has %seconds% seconds to return.</yellow>"
     host-reconnected: "<green>You returned in time and are the host again.</green>"
@@ -105,11 +116,20 @@ cinema:
   media:
     invalid-url: "<red>This media URL is invalid or not allowed.</red>"
 
+  image:
+    invalid-url: "<red>The image URL must be a valid public HTTPS address without credentials, a fragment, or a custom port.</red>"
+    updated: "<green>The global Cinema idle image was saved and updated.</green>"
+
   playback:
     started: "<green>Now playing: <white>%title%</white></green>"
     stopped: "<yellow>Playback stopped. The watch party remains active.</yellow>"
     skipped-next: "<green>Skipped. Next up: <white>%title%</white></green>"
     nothing-playing: "<red>No video or stream is currently playing.</red>"
+    paused: "<yellow>Playback was paused.</yellow>"
+    resumed: "<green>Playback resumed.</green>"
+    already-paused: "<yellow>Playback is already paused.</yellow>"
+    already-playing: "<yellow>Playback is already running.</yellow>"
+    control-not-host: "<red>Only the host or a Cinema administrator can pause or resume playback.</red>"
 
   queue:
     added: "<green><white>%title%</white> was added at position %position%.</green>"
@@ -162,3 +182,5 @@ cinema:
 
   actionbar:
     now-playing: "<gradient:#38bdf8:#8b5cf6>▶ Cinema</gradient> <dark_gray>|</dark_gray> <white>Now playing: %title%</white>"
+    paused: "<gradient:#38bdf8:#8b5cf6>Ⅱ Cinema</gradient> <dark_gray>|</dark_gray> <yellow>Paused: %title%</yellow>"
+    ended: "<gradient:#38bdf8:#8b5cf6>■ Cinema</gradient> <dark_gray>|</dark_gray> <yellow>Playback ended</yellow>"
