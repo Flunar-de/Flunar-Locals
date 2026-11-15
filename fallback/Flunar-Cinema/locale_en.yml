@@ -6,7 +6,8 @@ cinema:
   invalid-action: "<red>This action is invalid or has already expired.</red>"
   player-not-found: "<red>This player is unknown to Cinema. You can use their UUID instead.</red>"
   cooldown: "<yellow>Please wait another %seconds% second(s) before using this action again.</yellow>"
-  labymod-required: "<yellow>You need LabyMod 4 with Watch Party enabled to see the screen.</yellow>"
+  labymod-required: "<yellow>Flunar Cinema is only available with LabyMod 4 and the WatchTogether feature enabled.</yellow>"
+  labymod-checking: "<yellow>Your LabyMod status is still being checked. Please click the entrance sign again in a moment.</yellow>"
 
   help:
     title: "<gradient:#38bdf8:#8b5cf6><b>Flunar Cinema</b></gradient>"
@@ -30,17 +31,19 @@ cinema:
     admin-6: "<gold>/cinema admin screen list|remove \\<ID></gold>"
     admin-7: "<gold>/cinema admin register</gold> <dark_gray>–</dark_gray> <white>Register the targeted Cinema sign</white>"
     admin-8: "<gold>/cinema admin image \\<URL></gold> <dark_gray>–</dark_gray> <white>Change the global idle image</white>"
+    admin-9: "<gold>/cinema admin joinimage \\<URL></gold> <dark_gray>–</dark_gray> <white>Change the join image shown during playback</white>"
 
   usage:
     add: "<red>Usage: /cinema add \\<URL></red>"
     show: "<red>Usage: /cinema show \\<URL></red>"
     remove: "<red>Usage: /cinema remove \\<position></red>"
     kick: "<red>Usage: /cinema kick \\<player></red>"
-    admin: "<yellow>Usage: /cinema admin \\<ban|unban|play|image|join|leave|stop|register|reset|screen></yellow>"
+    admin: "<yellow>Usage: /cinema admin \\<ban|unban|play|image|joinimage|join|leave|stop|register|reset|screen></yellow>"
     ban: "<red>Usage: /cinema admin ban \\<player></red>"
     unban: "<red>Usage: /cinema admin unban \\<player></red>"
     admin-play: "<red>Usage: /cinema admin play \\<URL></red>"
     admin-image: "<red>Usage: /cinema admin image \\<URL></red>"
+    admin-joinimage: "<red>Usage: /cinema admin joinimage \\<URL></red>"
     reset: "<red>Confirmation required: /cinema admin reset \\<UUID/player> confirm</red>"
     register: "<red>Usage: /cinema admin register</red>"
     screen: "<red>Usage: /cinema admin screen \\<list|remove ID></red>"
@@ -119,6 +122,7 @@ cinema:
   image:
     invalid-url: "<red>The image URL must be a valid public HTTPS address without credentials, a fragment, or a custom port.</red>"
     updated: "<green>The global Cinema idle image was saved and updated.</green>"
+    join-updated: "<green>The Cinema join image shown during active playback was saved and updated.</green>"
 
   playback:
     started: "<green>Now playing: <white>%title%</white></green>"
