@@ -79,6 +79,14 @@ profiles:
         language: en
         path: fallback/Flunar-Piano/locale_en.yml
         sha256: 462723599496b5af62430d3d897e8592ad8b59fa6dd403281ba8d4a27b097b01
+      - plugin: Flunar-Cinema
+        language: de
+        path: fallback/Flunar-Cinema/locale_de.yml
+        sha256: db7fb870b9d394ad3abb9e60c6ff69782d32fe4d090ad35986ad34f48ca6cf09
+      - plugin: Flunar-Cinema
+        language: en
+        path: fallback/Flunar-Cinema/locale_en.yml
+        sha256: 3ab8aa1164e5e7c54918a5d85c7c8a1fc3da86cb938783a1613188237f6da0f6
       - plugin: Flunar-AGB
         language: cs
         path: fallback/Flunar-AGB/locale_cs.yml
