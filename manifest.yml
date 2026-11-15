@@ -82,11 +82,11 @@ profiles:
       - plugin: Flunar-Cinema
         language: de
         path: fallback/Flunar-Cinema/locale_de.yml
-        sha256: 31f14b169dee2308d010e98eb8ac47b6c02922b2fc40a2a88aeac0dd89748c5f
+        sha256: 6ebb85f59a66dc154fbafd31acf75c71654940c2ec04428d17d48cbb4ca27d8d
       - plugin: Flunar-Cinema
         language: en
         path: fallback/Flunar-Cinema/locale_en.yml
-        sha256: 1f0b38bad5036ca8dca48ea2ba136833ee31a4fad32ce804b5dbc6060223e105
+        sha256: cfa5d4eba5280e398e52be58cd9f137f7508715934b206336eda46479e2c6890
       - plugin: Flunar-AGB
         language: cs
         path: fallback/Flunar-AGB/locale_cs.yml
