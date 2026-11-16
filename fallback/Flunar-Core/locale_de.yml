@@ -164,14 +164,17 @@ locale-sync:
   legacy: " <dark_gray>(Legacy-Modus: lokale Dateien bleiben vorrangig)</dark_gray>"
   fatal: "<red>Locale-Sync fehlgeschlagen: %detail%"
 core-sync:
-  usage: "<yellow>Verwendung: /core sync locales | titles"
+  usage: "<yellow>Verwendung: <white>/core sync locales</white> | <white>/core sync titles</white>"
   no-permission: "<red>Du darfst keinen Sync ausführen."
-  titles-started: "<gray>Starte den Titel-Sync aus der Datenbank."
-  titles-success: "<green>Titel synchronisiert: %count% Titel, System %state%."
-  titles-failed: "<red>Titel-Sync fehlgeschlagen: %error%. Der lokale Cache bleibt aktiv."
-  titles-state-active: "aktiv"
-  titles-state-inactive: "inaktiv"
-  titles-not-loaded: "<red>Titel sind nicht geladen."
+  titles:
+    started: "<gray>Der Titel-Sync startet. Titel und Spielerauswahl werden aus der Datenbank neu geladen und lokal gecacht."
+    success: "<green>Titel-Sync abgeschlossen: <white>%count%</white> <green>Titel geladen (Quelle: %source%). Das Titel-System ist jetzt <white>%state%</white><green>."
+    failed: "<red>Titel-Sync fehlgeschlagen: %error%. Es bleibt der bisherige Stand aktiv, also der lokale Cache."
+    not-loaded: "<red>Das Titel-System wurde beim Start nicht geladen. Die Details stehen in der Konsole."
+    state-active: "aktiv"
+    state-inactive: "inaktiv"
+    source-database: "Datenbank"
+    source-cache: "lokaler Cache"
 
 # =============================================================================
 # Chat, Sicherheit und Limits
@@ -292,29 +295,60 @@ chatfilter:
 # Titel
 # =============================================================================
 titles:
-  disabled: "<red>Titel sind auf diesem Server gerade nicht verfügbar."
-  list-header: "<gray>Deine Titel:"
-  list-empty: "<gray>Du besitzt noch keine Titel."
-  mark-selected: "<green>✔</green>"
-  mark-unselected: "<dark_gray>○</dark_gray>"
-  select-entry: "%mark% <click:run_command:'/titles %id%'><hover:show_text:'%hover%'>%display%</hover></click>"
-  select-hover: "Klicken zum Auswählen"
-  reset: "<click:run_command:'/titles reset'><red>[Titel ablegen]</red></click>"
-  result:
-    ok: "<green>Erledigt."
-    already: "<yellow>Der Spieler besitzt diesen Titel bereits."
-    not-found: "<red>Dieser Titel existiert nicht."
-    not-owned: "<red>Du besitzt diesen Titel nicht."
-    unavailable: "<red>Titel können gerade nicht geändert werden (Datenbank nicht verfügbar oder Titel deaktiviert)."
-    invalid-id: "<red>Ungültige Titel-ID: 2-32 Zeichen a-z, 0-9, _ oder -."
-    invalid-display: "<red>Der Titel-Text darf nicht leer sein und höchstens 512 Zeichen haben."
-    error: "<red>Datenbankfehler. Details stehen in der Konsole."
+  disabled: "<red>Titel sind auf diesem Server gerade nicht verfügbar. Versuche es später erneut oder wende dich an das Team."
+  player:
+    list-header: "<gray>Deine Titel <dark_gray>(klicke auf einen Titel, um ihn zu wählen):"
+    list-empty: "<gray>Du besitzt noch keine Titel. Titel bekommst du zum Beispiel durch Events oder besondere Erfolge auf dem Server."
+    list-entry: "%mark% <click:run_command:'/titles %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
+    mark-selected: "<green>✔</green>"
+    mark-unselected: "<dark_gray>○</dark_gray>"
+    hover: "<gray>Klicken, um diesen Titel zu wählen"
+    reset-button: "<click:run_command:'/titles reset'><red>[Titel ablegen]</red></click> <dark_gray>- entfernt den gewählten Titel"
+    select:
+      ok: "<green>Du trägst jetzt den Titel %display%<green>. Er wird ab sofort unter deinem Namen angezeigt."
+      not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Mit <white>/titles</white> <red>siehst du alle Titel, die du besitzt."
+      not-owned: "<red>Du besitzt den Titel <white>%title%</white> <red>noch nicht. Sammle ihn zuerst, bevor du ihn wählen kannst."
+      unavailable: "<red>Dein Titel kann gerade nicht geändert werden. Entweder ist die Datenbank nicht erreichbar oder deine Titeldaten werden noch geladen. Versuche es in ein paar Sekunden erneut."
+      error: "<red>Beim Speichern deiner Auswahl ist ein Datenbankfehler aufgetreten. Dein bisheriger Titel bleibt unverändert."
+    reset:
+      ok: "<green>Dein Titel wurde abgelegt. Unter deinem Namen wird jetzt kein Titel mehr angezeigt."
+      unavailable: "<red>Dein Titel kann gerade nicht abgelegt werden, weil die Datenbank nicht erreichbar ist oder deine Titeldaten noch geladen werden. Dein Titel bleibt sichtbar."
+      error: "<red>Beim Ablegen deines Titels ist ein Datenbankfehler aufgetreten. Dein Titel bleibt sichtbar."
   admin:
-    usage: "<yellow>Verwendung: /core titles list | create <id> <text> | delete <id> | give <spieler> <id> | take <spieler> <id>"
+    usage: "<yellow>Verwendung: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <spieler> <id></white> | <white>take <spieler> <id></white>"
     no-permission: "<red>Du darfst Titel nicht verwalten."
-    list-empty: "<gray>Es gibt noch keine Titel."
-    list-entry: "<gray>- <white>%id%</white> <dark_gray>→</dark_gray> %display%"
-    player-not-found: "<red>Spieler nicht gefunden (er muss schon einmal auf dem Server gewesen sein)."
+    player-not-found: "<red>Spieler nicht gefunden. Er muss schon einmal auf dem Server gewesen sein."
+    list-empty: "<gray>Es gibt noch keine Titel. Lege den ersten mit <white>/core titles create</white> <gray>an."
+    list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
+    create:
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde angelegt und ist ab sofort vergebbar. Vorschau: %display%"
+      invalid-id: "<red>Die ID <white>%title%</white> <red>ist ungültig. Erlaubt sind 2 bis 32 Zeichen: Kleinbuchstaben a bis z, Ziffern, _ und -."
+      invalid-display: "<red>Der Anzeigetext ist leer oder zu lang. Er darf höchstens 512 Zeichen haben."
+      unavailable: "<red>Der Titel wurde nicht angelegt, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+      error: "<red>Beim Anlegen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+    update:
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde aktualisiert. Die neue Anzeige lautet: %display% <green>und gilt sofort für alle Spieler, die ihn gewählt haben."
+      not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
+      invalid-display: "<red>Der Anzeigetext ist leer oder zu lang. Er darf höchstens 512 Zeichen haben."
+      unavailable: "<red>Der Titel wurde nicht geändert, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+      error: "<red>Beim Ändern ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+    delete:
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde gelöscht. Spieler, die ihn besaßen, haben ihn verloren, und wer ihn gewählt hatte, sieht ihn nicht mehr."
+      not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Eine Liste aller Titel gibt es mit <white>/core titles list</white>."
+      unavailable: "<red>Der Titel wurde nicht gelöscht, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+      error: "<red>Beim Löschen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+    give:
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde an <white>%player%</white> <green>vergeben. Er kann ihn jetzt mit <white>/titles</white> <green>wählen."
+      already: "<yellow><white>%player%</white> <yellow>besitzt den Titel <white>%title%</white> <yellow>bereits. Es wurde nichts geändert."
+      not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
+      unavailable: "<red>Der Titel wurde nicht vergeben, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+      error: "<red>Beim Vergeben ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+    take:
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde <white>%player%</white> <green>entzogen. Hatte er ihn gewählt, ist seine Auswahl jetzt leer."
+      not-owned: "<red><white>%player%</white> <red>besitzt den Titel <white>%title%</white> <red>nicht. Es wurde nichts geändert."
+      not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Eine Liste aller Titel gibt es mit <white>/core titles list</white>."
+      unavailable: "<red>Der Titel wurde nicht entzogen, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+      error: "<red>Beim Entziehen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
 
 # =============================================================================
 # Dialoge

@@ -164,14 +164,17 @@ locale-sync:
   legacy: " <dark_gray>(Legacy mode: local files remain preferred)</dark_gray>"
   fatal: "<red>Locale sync failed: %detail%"
 core-sync:
-  usage: "<yellow>Usage: /core sync locales | titles"
+  usage: "<yellow>Usage: <white>/core sync locales</white> | <white>/core sync titles</white>"
   no-permission: "<red>You are not allowed to run a sync."
-  titles-started: "<gray>Starting titles sync from the database."
-  titles-success: "<green>Titles synced: %count% titles, system %state%."
-  titles-failed: "<red>Titles sync failed: %error%. The local cache remains in use."
-  titles-state-active: "active"
-  titles-state-inactive: "inactive"
-  titles-not-loaded: "<red>Titles are not loaded."
+  titles:
+    started: "<gray>Starting the titles sync. Titles and player selections are reloaded from the database and cached locally."
+    success: "<green>Titles sync finished: <white>%count%</white> <green>titles loaded (source: %source%). The title system is now <white>%state%</white><green>."
+    failed: "<red>Titles sync failed: %error%. The previous state stays active, which means the local cache."
+    not-loaded: "<red>The title system was not loaded at startup. The details are in the console."
+    state-active: "active"
+    state-inactive: "inactive"
+    source-database: "database"
+    source-cache: "local cache"
 
 # =============================================================================
 # Chat, Sicherheit und Limits
@@ -292,29 +295,60 @@ chatfilter:
 # Titel
 # =============================================================================
 titles:
-  disabled: "<red>Titles are not available on this server right now."
-  list-header: "<gray>Your titles:"
-  list-empty: "<gray>You do not own any titles yet."
-  mark-selected: "<green>✔</green>"
-  mark-unselected: "<dark_gray>○</dark_gray>"
-  select-entry: "%mark% <click:run_command:'/titles %id%'><hover:show_text:'%hover%'>%display%</hover></click>"
-  select-hover: "Click to select"
-  reset: "<click:run_command:'/titles reset'><red>[Remove title]</red></click>"
-  result:
-    ok: "<green>Done."
-    already: "<yellow>The player already owns this title."
-    not-found: "<red>This title does not exist."
-    not-owned: "<red>You do not own this title."
-    unavailable: "<red>Titles cannot be changed right now (database unavailable or titles disabled)."
-    invalid-id: "<red>Invalid title ID: use 2-32 characters a-z, 0-9, _ or -."
-    invalid-display: "<red>The title text must not be empty and at most 512 characters long."
-    error: "<red>A database error occurred. Details are in the console."
+  disabled: "<red>Titles are not available on this server right now. Please try again later or contact the staff."
+  player:
+    list-header: "<gray>Your titles <dark_gray>(click a title to select it):"
+    list-empty: "<gray>You do not own any titles yet. You can earn them through events or special achievements on the server."
+    list-entry: "%mark% <click:run_command:'/titles %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
+    mark-selected: "<green>✔</green>"
+    mark-unselected: "<dark_gray>○</dark_gray>"
+    hover: "<gray>Click to select this title"
+    reset-button: "<click:run_command:'/titles reset'><red>[Remove title]</red></click> <dark_gray>- removes the selected title"
+    select:
+      ok: "<green>You are now wearing the title %display%<green>. It is shown under your name from now on."
+      not-found: "<red>The title <white>%title%</white> <red>does not exist. Use <white>/titles</white> <red>to see all titles you own."
+      not-owned: "<red>You do not own the title <white>%title%</white> <red>yet. Collect it before you can select it."
+      unavailable: "<red>Your title cannot be changed right now, either because the database is unreachable or because your title data is still loading. Please try again in a few seconds."
+      error: "<red>A database error occurred while saving your selection. Your current title stays unchanged."
+    reset:
+      ok: "<green>Your title has been removed. No title is shown under your name anymore."
+      unavailable: "<red>Your title cannot be removed right now, because the database is unreachable or your title data is still loading. Your title stays visible."
+      error: "<red>A database error occurred while removing your title. Your title stays visible."
   admin:
-    usage: "<yellow>Usage: /core titles list | create <id> <text> | delete <id> | give <player> <id> | take <player> <id>"
+    usage: "<yellow>Usage: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <player> <id></white> | <white>take <player> <id></white>"
     no-permission: "<red>You are not allowed to manage titles."
-    list-empty: "<gray>No titles exist yet."
-    list-entry: "<gray>- <white>%id%</white> <dark_gray>→</dark_gray> %display%"
-    player-not-found: "<red>Player not found (they must have joined the server before)."
+    player-not-found: "<red>Player not found. They must have joined the server before."
+    list-empty: "<gray>No titles exist yet. Create the first one with <white>/core titles create</white><gray>."
+    list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
+    create:
+      ok: "<green>The title <white>%title%</white> <green>has been created and can be granted from now on. Preview: %display%"
+      invalid-id: "<red>The ID <white>%title%</white> <red>is invalid. Use 2 to 32 characters: lowercase letters a to z, digits, _ and -."
+      invalid-display: "<red>The display text is empty or too long. It may contain at most 512 characters."
+      unavailable: "<red>The title was not created because the database is unreachable. Please try again later."
+      error: "<red>A database error occurred while creating the title. Nothing was changed. The details are in the console."
+    update:
+      ok: "<green>The title <white>%title%</white> <green>has been updated. The new display is %display% <green>and applies immediately to all players who selected it."
+      not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
+      invalid-display: "<red>The display text is empty or too long. It may contain at most 512 characters."
+      unavailable: "<red>The title was not updated because the database is unreachable. Please try again later."
+      error: "<red>A database error occurred while updating the title. Nothing was changed. The details are in the console."
+    delete:
+      ok: "<green>The title <white>%title%</white> <green>has been deleted. Players who owned it have lost it, and anyone who had selected it no longer sees it."
+      not-found: "<red>The title <white>%title%</white> <red>does not exist. List all titles with <white>/core titles list</white>."
+      unavailable: "<red>The title was not deleted because the database is unreachable. Please try again later."
+      error: "<red>A database error occurred while deleting the title. Nothing was changed. The details are in the console."
+    give:
+      ok: "<green>The title <white>%title%</white> <green>has been granted to <white>%player%</white><green>. They can select it with <white>/titles</white><green>."
+      already: "<yellow><white>%player%</white> <yellow>already owns the title <white>%title%</white><yellow>. Nothing was changed."
+      not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
+      unavailable: "<red>The title was not granted because the database is unreachable. Please try again later."
+      error: "<red>A database error occurred while granting the title. Nothing was changed. The details are in the console."
+    take:
+      ok: "<green>The title <white>%title%</white> <green>has been removed from <white>%player%</white><green>. If they had selected it, their selection is now empty."
+      not-owned: "<red><white>%player%</white> <red>does not own the title <white>%title%</white><red>. Nothing was changed."
+      not-found: "<red>The title <white>%title%</white> <red>does not exist. List all titles with <white>/core titles list</white><red>."
+      unavailable: "<red>The title was not removed because the database is unreachable. Please try again later."
+      error: "<red>A database error occurred while removing the title. Nothing was changed. The details are in the console."
 
 # =============================================================================
 # Dialoge
