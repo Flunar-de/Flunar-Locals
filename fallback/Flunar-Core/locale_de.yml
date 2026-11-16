@@ -319,18 +319,26 @@ titles:
       unavailable: "<red>Dein Titel kann gerade nicht abgelegt werden, weil die Datenbank nicht erreichbar ist oder deine Titeldaten noch geladen werden. Dein Titel bleibt sichtbar."
       error: "<red>Beim Ablegen deines Titels ist ein Datenbankfehler aufgetreten. Dein Titel bleibt sichtbar."
   admin:
-    usage: "<yellow>Verwendung: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <spieler> <id></white> | <white>take <spieler> <id></white> | <white>auto <id> <TT.MM.JJJJ></white> | <white>auto <id> delete</white> | <white>auto list</white>"
+    usage: "<yellow>Verwendung: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <spieler> <id></white> | <white>take <spieler> <id></white> | <white>auto <id> [von] <bis></white> | <white>auto <id> delete</white> | <white>auto list</white> | <white>require <id> <permission|none></white>"
     no-permission: "<red>Du darfst Titel nicht verwalten."
     player-not-found: "<red>Spieler nicht gefunden. Er muss schon einmal auf dem Server gewesen sein."
     list-empty: "<gray>Es gibt noch keine Titel. Lege den ersten mit <white>/core titles create</white> <gray>an."
+    list-permission: "<dark_gray>   ↳ <gray>benötigt Permission <white>%permission%"
     list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
     auto:
       invalid-date: "<red>Das Datum ist ungültig. Verwende das Format TT.MM.JJJJ, zum Beispiel 31.12.2027."
       past-date: "<red>Das Datum liegt in der Vergangenheit. Wähle heute oder ein späteres Datum."
+      invalid-range: "<red>Der Startwert liegt nach dem Endwert. Der Start muss am Endtag oder davor liegen."
       list-empty: "<gray>Für keinen Titel ist eine automatische Vergabe festgelegt."
       list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> automatisch bis einschließlich %until%"
+      list-entry-range: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> automatisch vom %from% bis einschließlich %until%"
       set:
         ok: "<green>Der Titel <white>%title%</white> <green>wird automatisch vergeben, wenn ein Spieler bis einschließlich <white>%until%</white> <green>beitritt. Online Spieler ohne den Titel erhalten ihn sofort."
+        not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
+        unavailable: "<red>Die automatische Vergabe konnte nicht gespeichert werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+        error: "<red>Beim Speichern ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+      set-range:
+        ok: "<green>Der Titel <white>%title%</white> <green>wird automatisch vergeben, wenn ein Spieler zwischen <white>%from%</white> <green>und einschließlich <white>%until%</white> <green>beitritt. Online Spieler ohne den Titel erhalten ihn in diesem Zeitraum sofort."
         not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
         unavailable: "<red>Die automatische Vergabe konnte nicht gespeichert werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
         error: "<red>Beim Speichern ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
@@ -356,9 +364,22 @@ titles:
       not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Eine Liste aller Titel gibt es mit <white>/core titles list</white>."
       unavailable: "<red>Der Titel wurde nicht gelöscht, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
       error: "<red>Beim Löschen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+    require:
+      set:
+        ok: "<green>Der Titel <white>%title%</white> <green>ist jetzt an die Permission <white>%permission%</white> <green>gebunden. Wer sie hat, erhält den Titel, wer sie verliert, verliert ihn automatisch. Die Prüfung läuft etwa alle 30 Sekunden."
+        not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
+        invalid-permission: "<red>Die Permission <white>%permission%</white> <red>ist ungültig. Erlaubt sind Buchstaben, Ziffern, Punkte, Unterstriche, Bindestriche und Sterne."
+        unavailable: "<red>Die Permission konnte nicht gespeichert werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+        error: "<red>Beim Speichern ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+      remove:
+        ok: "<green>Der Titel <white>%title%</white> <green>ist nicht mehr an eine Permission gebunden. Wer ihn bereits besitzt, behält ihn."
+        not-found: "<red>Der Titel <white>%title%</white> <red>hat keine Permission-Bindung."
+        unavailable: "<red>Die Bindung konnte nicht entfernt werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+        error: "<red>Beim Entfernen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
     give:
       ok: "<green>Der Titel <white>%title%</white> <green>wurde an <white>%player%</white> <green>vergeben. Er kann ihn jetzt mit <white>/titles set %title%</white> <green>setzen."
       already: "<yellow><white>%player%</white> <yellow>besitzt den Titel <white>%title%</white> <yellow>bereits. Es wurde nichts geändert."
+      permission-missing: "<red><white>%player%</white> <red>kann den Titel <white>%title%</white> <red>nicht erhalten, weil ihm die nötige Permission fehlt. Der Titel ist an eine Permission gebunden. Die Bindung siehst du mit <white>/core titles list</white><red>."
       not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
       unavailable: "<red>Der Titel wurde nicht vergeben, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
       error: "<red>Beim Vergeben ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
@@ -415,6 +436,10 @@ dialogs:
     links-tooltip: "Discord und Bewerbung öffnen"
     language: "<aqua>Sprache"
     language-tooltip: "Deine Sprache auswählen"
+    titles: "Titel"
+    titles-tooltip: "Titel anlegen, bearbeiten, an Permissions binden und vergeben"
+    sync: "Sync"
+    sync-tooltip: "Locales oder Titel aus der Datenbank neu laden"
   language:
     title: "<aqua>Sprache auswählen"
     body: "<white>Aktuelle Sprache: <yellow>%language%"
@@ -523,3 +548,65 @@ dialogs:
     word: "Blacklist-Wort"
     allowword: "Erlaubtes Wort"
     url: "Erlaubte URL"
+  sync:
+    title: "Sync"
+    body: "Wähle, was neu geladen werden soll. Locales holen die Texte aus dem Locals-Repository, Titel laden Titel und Spielerauswahl aus der Datenbank neu."
+    locales: "Locales synchen"
+    locales-tooltip: "Lädt die Texte neu"
+    titles: "Titel synchen"
+    titles-tooltip: "Lädt Titel und Spielerauswahl aus der Datenbank neu"
+  titles:
+    title: "Titel verwalten"
+    body: "Wähle eine Aktion. Die Eingaben werden wie die Befehle unter /core titles geprüft."
+    list: "Liste"
+    list-tooltip: "Alle Titel im Chat anzeigen"
+    create: "Erstellen"
+    create-tooltip: "Neuen Titel anlegen"
+    update: "Bearbeiten"
+    update-tooltip: "Anzeige eines Titels ändern"
+    require: "Permission"
+    require-tooltip: "Titel an eine Permission binden oder die Bindung entfernen"
+    delete: "Löschen"
+    delete-tooltip: "Titel endgültig löschen"
+    give: "Vergeben"
+    give-tooltip: "Titel einem Spieler geben"
+    take: "Entziehen"
+    take-tooltip: "Titel einem Spieler entziehen"
+    auto: "Automatisch"
+    auto-tooltip: "Automatische Vergabe mit optionalem Startdatum festlegen"
+    auto-remove: "Auto beenden"
+    auto-remove-tooltip: "Automatische Vergabe beenden"
+    auto-list: "Auto-Liste"
+    auto-list-tooltip: "Alle automatischen Vergaben im Chat anzeigen"
+    field:
+      id: "ID"
+      display: "Anzeige"
+      permission: "Permission (leer = keine)"
+      player: "Spielername"
+      from: "Start TT.MM.JJJJ (optional)"
+      until: "Ende TT.MM.JJJJ"
+    form:
+      create:
+        title: "Titel erstellen"
+        body: "ID (2 bis 32 Zeichen: Kleinbuchstaben, Ziffern, _ und -) und Anzeige. Die Anzeige darf Farben im MiniMessage-Format enthalten."
+      update:
+        title: "Titel bearbeiten"
+        body: "ID des Titels und die neue Anzeige. Die Änderung gilt sofort."
+      require:
+        title: "Permission binden"
+        body: "ID und Permission angeben. Leer lassen entfernt die Bindung. Wer die Permission verliert, verliert den Titel automatisch."
+      delete:
+        title: "Titel löschen"
+        body: "Der Titel wird endgültig gelöscht. Wer ihn besaß, verliert ihn."
+      give:
+        title: "Titel vergeben"
+        body: "Spielername und ID des Titels."
+      take:
+        title: "Titel entziehen"
+        body: "Spielername und ID des Titels."
+      auto:
+        title: "Automatische Vergabe"
+        body: "ID und Enddatum im Format TT.MM.JJJJ. Ein Startdatum ist optional. Ohne Startdatum gilt die Vergabe sofort."
+      auto-remove:
+        title: "Automatische Vergabe beenden"
+        body: "ID des Titels. Wer den Titel schon hat, behält ihn."

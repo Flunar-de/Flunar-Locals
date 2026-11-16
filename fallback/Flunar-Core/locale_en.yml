@@ -319,18 +319,26 @@ titles:
       unavailable: "<red>Your title cannot be removed right now, because the database is unreachable or your title data is still loading. Your title stays visible."
       error: "<red>A database error occurred while removing your title. Your title stays visible."
   admin:
-    usage: "<yellow>Usage: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <player> <id></white> | <white>take <player> <id></white> | <white>auto <id> <DD.MM.YYYY></white> | <white>auto <id> delete</white> | <white>auto list</white>"
+    usage: "<yellow>Usage: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <player> <id></white> | <white>take <player> <id></white> | <white>auto <id> [from] <until></white> | <white>auto <id> delete</white> | <white>auto list</white> | <white>require <id> <permission|none></white>"
     no-permission: "<red>You are not allowed to manage titles."
     player-not-found: "<red>Player not found. They must have joined the server before."
     list-empty: "<gray>No titles exist yet. Create the first one with <white>/core titles create</white><gray>."
+    list-permission: "<dark_gray>   ↳ <gray>requires permission <white>%permission%"
     list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
     auto:
       invalid-date: "<red>The date is invalid. Use the format DD.MM.YYYY, for example 31.12.2027."
       past-date: "<red>The date lies in the past. Choose today or a later date."
+      invalid-range: "<red>The start date is after the end date. The start must be on or before the end date."
       list-empty: "<gray>No title has an automatic grant set."
       list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> granted automatically until and including %until%"
+      list-entry-range: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> granted automatically from %from% until and including %until%"
       set:
         ok: "<green>The title <white>%title%</white> <green>will be granted automatically to every player who joins until and including <white>%until%</white><green>. Online players without it receive it immediately."
+        not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
+        unavailable: "<red>The automatic grant could not be saved because the database is unreachable. Please try again later."
+        error: "<red>A database error occurred while saving. Nothing was changed. The details are in the console."
+      set-range:
+        ok: "<green>The title <white>%title%</white> <green>will be granted automatically to every player who joins between <white>%from%</white> <green>and <white>%until%</white> <green>(inclusive). Online players without it receive it immediately during that period."
         not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
         unavailable: "<red>The automatic grant could not be saved because the database is unreachable. Please try again later."
         error: "<red>A database error occurred while saving. Nothing was changed. The details are in the console."
@@ -356,9 +364,22 @@ titles:
       not-found: "<red>The title <white>%title%</white> <red>does not exist. List all titles with <white>/core titles list</white>."
       unavailable: "<red>The title was not deleted because the database is unreachable. Please try again later."
       error: "<red>A database error occurred while deleting the title. Nothing was changed. The details are in the console."
+    require:
+      set:
+        ok: "<green>The title <white>%title%</white> <green>is now bound to the permission <white>%permission%</white>. Players who have it receive the title, players who lose it lose the title automatically. The check runs about every 30 seconds."
+        not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
+        invalid-permission: "<red>The permission <white>%permission%</white> <red>is invalid. Allowed are letters, digits, dots, underscores, hyphens and asterisks."
+        unavailable: "<red>The permission could not be saved because the database is unreachable. Please try again later."
+        error: "<red>A database error occurred while saving. Nothing was changed. The details are in the console."
+      remove:
+        ok: "<green>The title <white>%title%</white> <green>is no longer bound to a permission. Players who already have it keep it."
+        not-found: "<red>The title <white>%title%</white> <red>has no permission binding."
+        unavailable: "<red>The binding could not be removed because the database is unreachable. Please try again later."
+        error: "<red>A database error occurred while removing the binding. Nothing was changed. The details are in the console."
     give:
       ok: "<green>The title <white>%title%</white> <green>has been granted to <white>%player%</white><green>. They can set it with <white>/titles set %title%</white><green>."
       already: "<yellow><white>%player%</white> <yellow>already owns the title <white>%title%</white><yellow>. Nothing was changed."
+      permission-missing: "<red><white>%player%</white> <red>cannot receive the title <white>%title%</white><red>, because the required permission is missing. The title is bound to a permission. Check the binding with <white>/core titles list</white><red>."
       not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
       unavailable: "<red>The title was not granted because the database is unreachable. Please try again later."
       error: "<red>A database error occurred while granting the title. Nothing was changed. The details are in the console."
@@ -415,6 +436,10 @@ dialogs:
     links-tooltip: "Open Discord and application links"
     language: "<aqua>Language"
     language-tooltip: "Select your language"
+    titles: "Titles"
+    titles-tooltip: "Create, edit, bind to permissions and grant titles"
+    sync: "Sync"
+    sync-tooltip: "Reload locales or titles from the database"
   language:
     title: "<aqua>Select language"
     body: "<white>Current language: <yellow>%language%"
@@ -523,3 +548,65 @@ dialogs:
     word: "Blacklist word"
     allowword: "Allowed word"
     url: "Allowed URL"
+  sync:
+    title: "Sync"
+    body: "Choose what to reload. Locales fetch the texts from the Locals repository, titles reload titles and player selections from the database."
+    locales: "Sync locales"
+    locales-tooltip: "Reloads the texts"
+    titles: "Sync titles"
+    titles-tooltip: "Reloads titles and player selections from the database"
+  titles:
+    title: "Manage titles"
+    body: "Choose an action. Your input is checked the same way as the commands under /core titles."
+    list: "List"
+    list-tooltip: "Show all titles in chat"
+    create: "Create"
+    create-tooltip: "Create a new title"
+    update: "Edit"
+    update-tooltip: "Change the display of a title"
+    require: "Permission"
+    require-tooltip: "Bind a title to a permission or remove the binding"
+    delete: "Delete"
+    delete-tooltip: "Delete a title permanently"
+    give: "Give"
+    give-tooltip: "Give a title to a player"
+    take: "Take"
+    take-tooltip: "Take a title from a player"
+    auto: "Automatic"
+    auto-tooltip: "Set an automatic grant with an optional start date"
+    auto-remove: "End auto"
+    auto-remove-tooltip: "End an automatic grant"
+    auto-list: "Auto list"
+    auto-list-tooltip: "Show all automatic grants in chat"
+    field:
+      id: "ID"
+      display: "Display"
+      permission: "Permission (empty = none)"
+      player: "Player name"
+      from: "Start DD.MM.YYYY (optional)"
+      until: "End DD.MM.YYYY"
+    form:
+      create:
+        title: "Create title"
+        body: "ID (2 to 32 characters: lowercase letters, digits, _ and -) and display. The display may use MiniMessage colors."
+      update:
+        title: "Edit title"
+        body: "ID of the title and the new display. The change applies immediately."
+      require:
+        title: "Bind permission"
+        body: "Enter the ID and the permission. Leave it empty to remove the binding. Players who lose the permission lose the title automatically."
+      delete:
+        title: "Delete title"
+        body: "The title is deleted permanently. Players who owned it lose it."
+      give:
+        title: "Give title"
+        body: "Player name and title ID."
+      take:
+        title: "Take title"
+        body: "Player name and title ID."
+      auto:
+        title: "Automatic grant"
+        body: "ID and end date in the format DD.MM.YYYY. A start date is optional. Without a start date the grant applies immediately."
+      auto-remove:
+        title: "End automatic grant"
+        body: "ID of the title. Players who already have it keep it."
