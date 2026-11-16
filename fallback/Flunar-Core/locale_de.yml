@@ -297,12 +297,13 @@ chatfilter:
 titles:
   disabled: "<red>Titel sind auf diesem Server gerade nicht verfügbar. Versuche es später erneut oder wende dich an das Team."
   player:
-    list-header: "<gray>Deine Titel <dark_gray>(klicke auf einen Titel, um ihn zu wählen):"
+    list-header: "<gray>Deine Titel <dark_gray>(klicke auf einen Titel, um ihn zu setzen):"
+    usage: "<yellow>Verwendung: <white>/titles set <titel></white> <yellow>oder <white>/titles reset</white>"
     list-empty: "<gray>Du besitzt noch keine Titel. Titel bekommst du zum Beispiel durch Events oder besondere Erfolge auf dem Server."
-    list-entry: "%mark% <click:run_command:'/titles %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
+    list-entry: "%mark% <click:run_command:'/titles set %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
     mark-selected: "<green>✔</green>"
     mark-unselected: "<dark_gray>○</dark_gray>"
-    hover: "<gray>Klicken, um diesen Titel zu wählen"
+    hover: "<gray>Klicken, um diesen Titel zu setzen"
     reset-button: "<click:run_command:'/titles reset'><red>[Titel ablegen]</red></click> <dark_gray>- entfernt den gewählten Titel"
     select:
       ok: "<green>Du trägst jetzt den Titel %display%<green>. Er wird ab sofort unter deinem Namen angezeigt."
@@ -338,7 +339,7 @@ titles:
       unavailable: "<red>Der Titel wurde nicht gelöscht, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
       error: "<red>Beim Löschen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
     give:
-      ok: "<green>Der Titel <white>%title%</white> <green>wurde an <white>%player%</white> <green>vergeben. Er kann ihn jetzt mit <white>/titles</white> <green>wählen."
+      ok: "<green>Der Titel <white>%title%</white> <green>wurde an <white>%player%</white> <green>vergeben. Er kann ihn jetzt mit <white>/titles set %title%</white> <green>setzen."
       already: "<yellow><white>%player%</white> <yellow>besitzt den Titel <white>%title%</white> <yellow>bereits. Es wurde nichts geändert."
       not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
       unavailable: "<red>Der Titel wurde nicht vergeben, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."

@@ -10,11 +10,11 @@ profiles:
       - plugin: Flunar-Core
         language: de
         path: fallback/Flunar-Core/locale_de.yml
-        sha256: b3a5e68d2cdfd1df0a22701880e3753c007565b5c9e718475685f0c26661e3f6
+        sha256: b8359cb42b30ba34c389429324d53a1a2f9f26de33f264e67003cb2d7e9cca27
       - plugin: Flunar-Core
         language: en
         path: fallback/Flunar-Core/locale_en.yml
-        sha256: ab85165040d4fb9fe7150c693513c9859ceb898e51fea9215225a2af4cafbf55
+        sha256: 1a8405a18cdd7b57a8f0dc47c307cab4d44956e50bf680324d46c7306ff64a80
       - plugin: Flunar-Shop
         language: de
         path: fallback/Flunar-Shop/locale_de.yml

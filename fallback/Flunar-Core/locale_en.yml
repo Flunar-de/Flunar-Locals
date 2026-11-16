@@ -297,12 +297,13 @@ chatfilter:
 titles:
   disabled: "<red>Titles are not available on this server right now. Please try again later or contact the staff."
   player:
-    list-header: "<gray>Your titles <dark_gray>(click a title to select it):"
+    list-header: "<gray>Your titles <dark_gray>(click a title to set it):"
+    usage: "<yellow>Usage: <white>/titles set <title></white> <yellow>or <white>/titles reset</white>"
     list-empty: "<gray>You do not own any titles yet. You can earn them through events or special achievements on the server."
-    list-entry: "%mark% <click:run_command:'/titles %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
+    list-entry: "%mark% <click:run_command:'/titles set %title%'><hover:show_text:'%hover%'>%display%</hover></click>"
     mark-selected: "<green>✔</green>"
     mark-unselected: "<dark_gray>○</dark_gray>"
-    hover: "<gray>Click to select this title"
+    hover: "<gray>Click to set this title"
     reset-button: "<click:run_command:'/titles reset'><red>[Remove title]</red></click> <dark_gray>- removes the selected title"
     select:
       ok: "<green>You are now wearing the title %display%<green>. It is shown under your name from now on."
@@ -338,7 +339,7 @@ titles:
       unavailable: "<red>The title was not deleted because the database is unreachable. Please try again later."
       error: "<red>A database error occurred while deleting the title. Nothing was changed. The details are in the console."
     give:
-      ok: "<green>The title <white>%title%</white> <green>has been granted to <white>%player%</white><green>. They can select it with <white>/titles</white><green>."
+      ok: "<green>The title <white>%title%</white> <green>has been granted to <white>%player%</white><green>. They can set it with <white>/titles set %title%</white><green>."
       already: "<yellow><white>%player%</white> <yellow>already owns the title <white>%title%</white><yellow>. Nothing was changed."
       not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
       unavailable: "<red>The title was not granted because the database is unreachable. Please try again later."
