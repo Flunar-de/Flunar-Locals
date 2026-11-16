@@ -1,39 +1,81 @@
+# Flunar-Core – English texts (fallback)
+#
+# Layout: sections are grouped by topic. Keys are code paths (for example "titles.result.ok").
+# Do not rename keys, otherwise the code cannot find the text.
+# Keep placeholders such as %count% or %player% unchanged.
+
+# =============================================================================
+# Allgemein
+# =============================================================================
 noperms: "<red>You don't have permission to do that."
-
 only-player: "Only players can execute this command."
-
 commandusemessage: "<red>Usage: "
-
 unknownsubcommand: "<red>Unknown subcommand."
-
 player-not-found: "<red>Player not found or not online."
-
-# Common messages that ALL plugins can use
+unknown-command: "<red>Unknown command: <yellow>%command%<red>. Type /help for help."
+command-blocked: "<red>You are frozen and cannot use commands!"
 common:
   noperms: "<red>You don't have permission!"
   only-player: "<red>This command is only for players!"
   player-not-found: "<red>Player not found!"
   cooldown: "<red>Please wait %seconds% more seconds!"
 
-# Unknown command message
-unknown-command: "<red>Unknown command: <yellow>%command%<red>. Type /help for help."
-
-# manager Help Command
-manager-help-1: "<gold>-------- Help: /manager --------"
-manager-help-2: "<yellow>/manager itemclear <gray>- Executes an ItemClear"
-manager-help-3: "<yellow>/manager server-restart <gray>- Executes a Server Restart"
-manager-help-4: "<gold>-------- Help: /manager --------"
-
-
-# Join Listener
+# =============================================================================
+# Join- und Quit-Nachrichten
+# =============================================================================
 join-message: "<dark_gray>[<green>+<dark_gray>] <gray>%player%"
 quit-message: "<dark_gray>[<red>-<dark_gray>] <gray>%player%"
 
-# IP Command
+# =============================================================================
+# Spielerbefehle
+# =============================================================================
+language:
+  current: "<gray>Your current language: <yellow>%language%"
+  available: "<gray>Available languages: <yellow>%languages%"
+  usage: "<gray>Usage: <yellow>/language <language>"
+  changed: "<green>Your language has been changed to <yellow>%language%<green>!"
+  not-available: "<red>The language <yellow>%language% <red>is not available."
+link:
+  usage: "<red>Usage: <white>/link CODE<red>. You can find the code in the dashboard on the website."
+  invalid-code: "<red>The code is invalid. It consists of twelve characters."
+  invalid-name: "<red>Your player name cannot be linked."
+  unavailable: "<red>The website link is currently unavailable."
+  cooldown: "<red>Please wait a moment before trying again."
+  checking: "<gray>Checking link..."
+  success: "<green>Your Minecraft account is now linked to your Discord account. You can view the link in the dashboard on the website."
+  code-invalid: "<red>This code is invalid or has expired. Create a new code in the dashboard."
+  minecraft-account-taken: "<red>This Minecraft account is already linked to another Discord account. Remove the old link in the dashboard first."
+  account-platform-already-linked: "<red>An account for this platform is already linked. You can link one account per platform (Java or Bedrock)."
+  platform-mismatch: "<red>This code belongs to another platform. Use the code created for your edition (Java or Bedrock)."
+  invalid-request: "<red>The link could not be processed. Please try again."
+  rate-limited: "<red>There were too many link attempts. Please wait a moment."
+  misconfigured: "<red>The website link is not configured correctly on the server. Please inform the Flunar team."
+  website-unavailable: "<red>The website is currently unreachable. Please try again later."
+gamemode:
+  invalid: "<red>Invalid game mode: <yellow>%input%"
+  changed-self: "<gray>Game mode set to <yellow>%gamemode%<gray>."
+  changed-other: "<gray>Set game mode of <yellow>%player% <gray>to <yellow>%gamemode%<gray>."
+  changed-by-other: "<gray>Your game mode was set to <yellow>%gamemode%<gray>."
+  name:
+    survival: "<green>Survival"
+    creative: "<aqua>Creative"
+    adventure: "<yellow>Adventure"
+    spectator: "<gray>Spectator"
+fly:
+  enabled: "<green>Flight mode <dark_green>enabled<green>."
+  disabled: "<red>Flight mode <dark_red>disabled<red>."
+  enabled-other-sender: "<green>Flight mode for <yellow>%player% <green>enabled."
+  disabled-other-sender: "<red>Flight mode for <yellow>%player% <red>disabled."
+  enabled-other-target: "<green>Your flight mode has been <dark_green>enabled<green>."
+  disabled-other-target: "<red>Your flight mode has been <dark_red>disabled<red>."
 player-no-perms-other-ip: "<red>You are not allowed to view other players' IPs."
 player-ip-show: "<gray>The IP address of <green><player> <gray>is: <yellow><ip>"
+bewerben-link: "https://dc.flunar.de"
+discord-link: "https://dc.flunar.de"
 
-# Teleport Command
+# =============================================================================
+# Teleport
+# =============================================================================
 tp-to-player: "<green>You have been teleported to <yellow>{target}<green>."
 tp-other: "<yellow>{from} <green>was teleported to <yellow>{to}<green>."
 tp-all-to: "<green>All players were teleported to <yellow>{to}<green>."
@@ -44,9 +86,24 @@ tp-coords: "<green>You have been teleported to coordinates <yellow>X: {x} Y: {y}
 tp-invalid-coords: "<red>Invalid coordinates. Please provide three valid numbers."
 tp-other-self: "<red>A player cannot be teleported to themselves."
 console-needs-two-players: "<red>The console must specify two player names."
+teleport:
+  bossbar:
+    title: "Teleporting..."
+    countdown: "Teleporting in %seconds% seconds..."
+  subtitle:
+    countdown: "<yellow>%seconds%s"
+    cancelled: "<red>Cancelled"
+    success: "<green>✓"
+  title:
+    countdown: "<gold>Teleport"
+    cancelled: "<red>Teleport"
+    success: "<green>Teleport"
 
-
-# Item-Clear System
+# =============================================================================
+# Core-Verwaltung
+# =============================================================================
+core-reload-success: "<green>Core systems have been reloaded."
+core-doctor-header: "<dark_gray><strikethrough>---------- <reset><aqua><bold>Flunar Doctor <reset><dark_gray><strikethrough>----------"
 itemclear:
   disabled: "<gray>Item-Clear is <red>disabled<gray>."
   auto-start: "<yellow>Ground items will be removed in <red>1 minute <yellow>due to high load."
@@ -54,23 +111,6 @@ itemclear:
   already-running: "<red>An Item-Clear is already running."
   countdown: "<yellow>Item-Clear in <red><seconds> <yellow>second<n>."
   finished: "<green>✔ <yellow><amount> <gray>items were removed!"
-
-bewerben-header: "<dark_gray><strikethrough>---------------- <reset><green><bold>APPLICATION <reset><dark_gray><strikethrough>----------------"
-bewerben-text: "<gray>Would you like to become part of our <green>Team<gray>?\n<gray>Then apply now on our Discord!"
-bewerben-button-text: "<green><bold>                 [Click here]                 "
-bewerben-link: "https://dc.flunar.de"
-bewerben-footer: "<dark_gray><strikethrough>-----------------------------------------------"
-bewerben-hover: "Click here to join our Discord!"
-bewerben-success: "Good luck with your application!"
-
-discord-header: "<dark_gray><strikethrough>---------------- <reset><green><bold>DISCORD <reset><dark_gray><strikethrough>----------------"
-discord-text: "<gray>Become part of the community <gray>?\n<gray>and join our Discord!"
-discord-button-text: "<green><bold>                 [Click here]                 "
-discord-link: "https://dc.flunar.de"
-discord-footer: "<dark_gray><strikethrough>-----------------------------------------------"
-discord-hover: "Click here to join our Discord!"
-
-
 restart:
   title: "<red>SERVER RESTART"
   subtitle: "<yellow>%seconds% seconds"
@@ -80,7 +120,7 @@ restart:
   manual: "<gray>An administrator has scheduled a server restart in <yellow>%seconds% seconds<gray>!"
   kick: |
     <red><bold>Server Restart
-    
+
     <gray>The server is currently restarting.
     <gray>Please try again in a few moments!
   help:
@@ -94,8 +134,48 @@ restart:
     cancel-desc: "<dark_gray>» Cancels a scheduled manual restart"
     list: "• <green>/core restart list"
     list-desc: "<dark_gray>» Shows all scheduled restarts"
+services:
+  help-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Available commands:"
+  help-list: "<dark_gray>➥ <gray>/core services list <dark_gray>- <gray>Shows all services"
+  help-start: "<dark_gray>➥ <gray>/core services start <name> <dark_gray>- <gray>Starts a service"
+  help-stop: "<dark_gray>➥ <gray>/core services stop <name> <dark_gray>- <gray>Stops a service"
+  help-reload: "<dark_gray>➥ <gray>/core services reload <name> <dark_gray>- <gray>Reloads a service"
+  list-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Registered services:"
+  list-entry: "<dark_gray>➥ <gray>%service% <dark_gray>- %status%"
+  usage-start: "<red>Usage: <gray>/core services start <name>"
+  usage-stop: "<red>Usage: <gray>/core services stop <name>"
+  usage-reload: "<red>Usage: <gray>/core services reload <name>"
+  not-found: "<red>Service <yellow>%service% <red>not found!"
+  already-running: "<red>Service <yellow>%service% <red>is already running!"
+  already-stopped: "<red>Service <yellow>%service% <red>is already stopped!"
+  started: "<green>Service <yellow>%service% <green>has been started!"
+  stopped: "<red>Service <yellow>%service% <red>has been stopped!"
+  reloaded: "<green>Service <yellow>%service% <green>has been reloaded!"
+locale-sync:
+  usage: "<yellow>Usage: /core locales sync"
+  no-permission: "<red>You are not allowed to run the locale sync."
+  started: "<gray>Starting locale sync for all registered plugins, including Core."
+  summary: "<gray>Locale sync for profile <white>%profile%</white>: <green>%synced% synced</green>, <red>%failed% failed</red>, <yellow>%not-activated% not activated</yellow>, <gray>%no-remote% without central locales</gray>."
+  revision: "<dark_gray>Revision: %revision%</dark_gray>"
+  plugin-synced: "<green>✔ %plugin%: synced, revision %revision%%legacy%"
+  plugin-failed: "<red>✖ %plugin%: failed: %detail%%legacy%"
+  plugin-not-activated: "<yellow>⚠ %plugin%: not activated; the previous cache remains active.%legacy%"
+  plugin-no-remote: "<gray>○ %plugin%: no central locales for this profile.%legacy%"
+  legacy: " <dark_gray>(Legacy mode: local files remain preferred)</dark_gray>"
+  fatal: "<red>Locale sync failed: %detail%"
+core-sync:
+  usage: "<yellow>Usage: /core sync locales | titles"
+  no-permission: "<red>You are not allowed to run a sync."
+  titles-started: "<gray>Starting titles sync from the database."
+  titles-success: "<green>Titles synced: %count% titles, system %state%."
+  titles-failed: "<red>Titles sync failed: %error%. The local cache remains in use."
+  titles-state-active: "active"
+  titles-state-inactive: "inactive"
+  titles-not-loaded: "<red>Titles are not loaded."
 
-# Chat Management Messages
+# =============================================================================
+# Chat, Sicherheit und Limits
+# =============================================================================
 chat:
   global-muted: "<red>Global chat is currently disabled."
   player-muted: "<red>You have been muted from chat."
@@ -104,39 +184,22 @@ chat:
   blocked-url: "<red>You are not allowed to send URLs in chat."
   unsupported-characters: "<red>Your message contains characters unavailable on a German QWERTZ keyboard."
   spam-detected: "<red>Your message was detected as spam."
-  luckperms-not-found: "<red>LuckPerms not found! Chat formatting disabled."
-
-# Security Messages
 security:
   book-too-many-pages: "<red>This book has too many pages! (Max: %max%)"
   book-page-too-long: "<red>A book page is too long!"
   book-title-too-long: "<red>The book title is too long!"
-  sign-too-many-lines: "<red>Too many lines on the sign!"
   sign-line-too-long: "<red>A line on the sign is too long!"
-
-# Rate Limiter Messages
 ratelimit:
   exceeded: "<red>You're sending too many commands! (Max: %max% per second)"
-
-# IP Limit Messages
 iplimit:
   kick-message: |
     <red><bold>Too Many Accounts
-    
+
     <gray>There are already <yellow>%current% <gray>accounts from your IP
     <gray>on the server. Maximum: <yellow>%max%
-    
+
     <gray>Please contact the team if this is
     <gray>an error.
-
-# Language System Messages
-language:
-  current: "<gray>Your current language: <yellow>%language%"
-  available: "<gray>Available languages: <yellow>%languages%"
-  usage: "<gray>Usage: <yellow>/language <language>"
-  changed: "<green>Your language has been changed to <yellow>%language%<green>!"
-  not-available: "<red>The language <yellow>%language% <red>is not available."
-
 announce:
   from: "From:"
   time: "Time:"
@@ -154,6 +217,9 @@ announce:
     event: "• <gold>/announce event <gray><message>"
     event-desc: "<dark_gray>» Sends an event announcement"
 
+# =============================================================================
+# Chatfilter
+# =============================================================================
 chatfilter:
   usage-add: "Usage: /core chatfilter add <word/allowword/url> <value> [exact/compound/fuzzy]"
   usage-remove: "Usage: /core chatfilter remove <word/allowword/url> <value>"
@@ -222,62 +288,37 @@ chatfilter:
     reload: "• <gold>/core chatfilter reload"
     reload-desc: "<dark_gray>» Reloads the ChatFilter"
 
-services:
-  help-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Available commands:"
-  help-list: "<dark_gray>➥ <gray>/core services list <dark_gray>- <gray>Shows all services"
-  help-start: "<dark_gray>➥ <gray>/core services start <name> <dark_gray>- <gray>Starts a service"
-  help-stop: "<dark_gray>➥ <gray>/core services stop <name> <dark_gray>- <gray>Stops a service"
-  help-reload: "<dark_gray>➥ <gray>/core services reload <name> <dark_gray>- <gray>Reloads a service"
-  list-header: "<gray><bold>[<reset><#1FADFF><bold>S<reset><#38B6FF><bold>e<reset><#50BFFF><bold>r<reset><#69C8FF><bold>v<reset><#81D1FF><bold>i<reset><#9ADAFF><bold>c<reset><#B2E3FF><bold>e<reset><#CBECFF><bold>s<reset><gray><bold>] <reset><gray>Registered services:"
-  list-entry: "<dark_gray>➥ <gray>%service% <dark_gray>- %status%"
-  usage-start: "<red>Usage: <gray>/core services start <name>"
-  usage-stop: "<red>Usage: <gray>/core services stop <name>"
-  usage-reload: "<red>Usage: <gray>/core services reload <name>"
-  not-found: "<red>Service <yellow>%service% <red>not found!"
-  already-running: "<red>Service <yellow>%service% <red>is already running!"
-  already-stopped: "<red>Service <yellow>%service% <red>is already stopped!"
-  started: "<green>Service <yellow>%service% <green>has been started!"
-  stopped: "<red>Service <yellow>%service% <red>has been stopped!"
-  reloaded: "<green>Service <yellow>%service% <green>has been reloaded!"
+# =============================================================================
+# Titel
+# =============================================================================
+titles:
+  disabled: "<red>Titles are not available on this server right now."
+  list-header: "<gray>Your titles:"
+  list-empty: "<gray>You do not own any titles yet."
+  mark-selected: "<green>✔</green>"
+  mark-unselected: "<dark_gray>○</dark_gray>"
+  select-entry: "%mark% <click:run_command:'/titles %id%'><hover:show_text:'%hover%'>%display%</hover></click>"
+  select-hover: "Click to select"
+  reset: "<click:run_command:'/titles reset'><red>[Remove title]</red></click>"
+  result:
+    ok: "<green>Done."
+    already: "<yellow>The player already owns this title."
+    not-found: "<red>This title does not exist."
+    not-owned: "<red>You do not own this title."
+    unavailable: "<red>Titles cannot be changed right now (database unavailable or titles disabled)."
+    invalid-id: "<red>Invalid title ID: use 2-32 characters a-z, 0-9, _ or -."
+    invalid-display: "<red>The title text must not be empty and at most 512 characters long."
+    error: "<red>A database error occurred. Details are in the console."
+  admin:
+    usage: "<yellow>Usage: /core titles list | create <id> <text> | delete <id> | give <player> <id> | take <player> <id>"
+    no-permission: "<red>You are not allowed to manage titles."
+    list-empty: "<gray>No titles exist yet."
+    list-entry: "<gray>- <white>%id%</white> <dark_gray>→</dark_gray> %display%"
+    player-not-found: "<red>Player not found (they must have joined the server before)."
 
-# Teleport API Messages
-teleport:
-  bossbar:
-    title: "Teleporting..."
-    countdown: "Teleporting in %seconds% seconds..."
-  subtitle:
-    countdown: "<yellow>%seconds%s"
-    cancelled: "<red>Cancelled"
-    success: "<green>✓"
-  title:
-    countdown: "<gold>Teleport"
-    cancelled: "<red>Teleport"
-    success: "<green>Teleport"
-
-gamemode:
-  invalid:       "<red>Invalid game mode: <yellow>%input%"
-  changed-self:  "<gray>Game mode set to <yellow>%gamemode%<gray>."
-  changed-other: "<gray>Set game mode of <yellow>%player% <gray>to <yellow>%gamemode%<gray>."
-  changed-by-other: "<gray>Your game mode was set to <yellow>%gamemode%<gray>."
-
-  name:
-    survival:  "<green>Survival"
-    creative:  "<aqua>Creative"
-    adventure: "<yellow>Adventure"
-    spectator: "<gray>Spectator"
-
-fly:
-  enabled:               "<green>Flight mode <dark_green>enabled<green>."
-  disabled:              "<red>Flight mode <dark_red>disabled<red>."
-  enabled-other-sender:  "<green>Flight mode for <yellow>%player% <green>enabled."
-  disabled-other-sender: "<red>Flight mode for <yellow>%player% <red>disabled."
-  enabled-other-target:  "<green>Your flight mode has been <dark_green>enabled<green>."
-  disabled-other-target: "<red>Your flight mode has been <dark_red>disabled<red>."
-
-core-reload-success: "<green>Core systems have been reloaded."
-core-doctor-header: "<dark_gray><strikethrough>---------- <reset><aqua><bold>Flunar Doctor <reset><dark_gray><strikethrough>----------"
-command-blocked: "<red>You are frozen and cannot use commands!"
-
+# =============================================================================
+# Dialoge
+# =============================================================================
 dialogs:
   common:
     back: "<red>Back"
@@ -288,8 +329,8 @@ dialogs:
     remove: "<red>Remove"
     save: "<green>Save"
     value-required: "Please enter a value."
-    yes: "Yes"
-    no: "No"
+    "yes": "Yes"
+    "no": "No"
   panel:
     title: "<#1FADFF><bold>Flunar <reset><dark_aqua>Panel"
     body: "<white>Central management for Flunar-Core."
@@ -429,32 +470,3 @@ dialogs:
     word: "Blacklist word"
     allowword: "Allowed word"
     url: "Allowed URL"
-locale-sync:
-  usage: "<yellow>Usage: /core locales sync"
-  no-permission: "<red>You are not allowed to run the locale sync."
-  started: "<gray>Starting locale sync for all registered plugins, including Core."
-  summary: "<gray>Locale sync for profile <white>%profile%</white>: <green>%synced% synced</green>, <red>%failed% failed</red>, <yellow>%not-activated% not activated</yellow>, <gray>%no-remote% without central locales</gray>."
-  revision: "<dark_gray>Revision: %revision%</dark_gray>"
-  plugin-synced: "<green>✔ %plugin%: synced, revision %revision%%legacy%"
-  plugin-failed: "<red>✖ %plugin%: failed: %detail%%legacy%"
-  plugin-not-activated: "<yellow>⚠ %plugin%: not activated; the previous cache remains active.%legacy%"
-  plugin-no-remote: "<gray>○ %plugin%: no central locales for this profile.%legacy%"
-  legacy: " <dark_gray>(Legacy mode: local files remain preferred)</dark_gray>"
-  fatal: "<red>Locale sync failed: %detail%"
-
-link:
-  usage: "<red>Usage: <white>/link CODE<red>. You can find the code in the dashboard on the website."
-  invalid-code: "<red>The code is invalid. It consists of twelve characters."
-  invalid-name: "<red>Your player name cannot be linked."
-  unavailable: "<red>The website link is currently unavailable."
-  cooldown: "<red>Please wait a moment before trying again."
-  checking: "<gray>Checking link..."
-  success: "<green>Your Minecraft account is now linked to your Discord account. You can view the link in the dashboard on the website."
-  code-invalid: "<red>This code is invalid or has expired. Create a new code in the dashboard."
-  minecraft-account-taken: "<red>This Minecraft account is already linked to another Discord account. Remove the old link in the dashboard first."
-  account-platform-already-linked: "<red>An account for this platform is already linked. You can link one account per platform (Java or Bedrock)."
-  platform-mismatch: "<red>This code belongs to another platform. Use the code created for your edition (Java or Bedrock)."
-  invalid-request: "<red>The link could not be processed. Please try again."
-  rate-limited: "<red>There were too many link attempts. Please wait a moment."
-  misconfigured: "<red>The website link is not configured correctly on the server. Please inform the Flunar team."
-  website-unavailable: "<red>The website is currently unreachable. Please try again later."
