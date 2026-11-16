@@ -319,11 +319,26 @@ titles:
       unavailable: "<red>Your title cannot be removed right now, because the database is unreachable or your title data is still loading. Your title stays visible."
       error: "<red>A database error occurred while removing your title. Your title stays visible."
   admin:
-    usage: "<yellow>Usage: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <player> <id></white> | <white>take <player> <id></white>"
+    usage: "<yellow>Usage: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <player> <id></white> | <white>take <player> <id></white> | <white>auto <id> <DD.MM.YYYY></white> | <white>auto <id> delete</white> | <white>auto list</white>"
     no-permission: "<red>You are not allowed to manage titles."
     player-not-found: "<red>Player not found. They must have joined the server before."
     list-empty: "<gray>No titles exist yet. Create the first one with <white>/core titles create</white><gray>."
     list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
+    auto:
+      invalid-date: "<red>The date is invalid. Use the format DD.MM.YYYY, for example 31.12.2027."
+      past-date: "<red>The date lies in the past. Choose today or a later date."
+      list-empty: "<gray>No title has an automatic grant set."
+      list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> granted automatically until and including %until%"
+      set:
+        ok: "<green>The title <white>%title%</white> <green>will be granted automatically to every player who joins until and including <white>%until%</white><green>. Online players without it receive it immediately."
+        not-found: "<red>The title <white>%title%</white> <red>does not exist. Create it first with <white>/core titles create</white><red>."
+        unavailable: "<red>The automatic grant could not be saved because the database is unreachable. Please try again later."
+        error: "<red>A database error occurred while saving. Nothing was changed. The details are in the console."
+      remove:
+        ok: "<green>The automatic grant for <white>%title%</white> <green>has been removed. Players who already have it keep it."
+        not-found: "<red>The title <white>%title%</white> <red>has no automatic grant."
+        unavailable: "<red>The automatic grant could not be removed because the database is unreachable. Please try again later."
+        error: "<red>A database error occurred while removing. Nothing was changed. The details are in the console."
     create:
       ok: "<green>The title <white>%title%</white> <green>has been created and can be granted from now on. Preview: %display%"
       invalid-id: "<red>The ID <white>%title%</white> <red>is invalid. Use 2 to 32 characters: lowercase letters a to z, digits, _ and -."

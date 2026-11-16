@@ -319,11 +319,26 @@ titles:
       unavailable: "<red>Dein Titel kann gerade nicht abgelegt werden, weil die Datenbank nicht erreichbar ist oder deine Titeldaten noch geladen werden. Dein Titel bleibt sichtbar."
       error: "<red>Beim Ablegen deines Titels ist ein Datenbankfehler aufgetreten. Dein Titel bleibt sichtbar."
   admin:
-    usage: "<yellow>Verwendung: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <spieler> <id></white> | <white>take <spieler> <id></white>"
+    usage: "<yellow>Verwendung: <white>/core titles list</white> | <white>create <id> <text></white> | <white>update <id> <text></white> | <white>delete <id></white> | <white>give <spieler> <id></white> | <white>take <spieler> <id></white> | <white>auto <id> <TT.MM.JJJJ></white> | <white>auto <id> delete</white> | <white>auto list</white>"
     no-permission: "<red>Du darfst Titel nicht verwalten."
     player-not-found: "<red>Spieler nicht gefunden. Er muss schon einmal auf dem Server gewesen sein."
     list-empty: "<gray>Es gibt noch keine Titel. Lege den ersten mit <white>/core titles create</white> <gray>an."
     list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> %display%"
+    auto:
+      invalid-date: "<red>Das Datum ist ungültig. Verwende das Format TT.MM.JJJJ, zum Beispiel 31.12.2027."
+      past-date: "<red>Das Datum liegt in der Vergangenheit. Wähle heute oder ein späteres Datum."
+      list-empty: "<gray>Für keinen Titel ist eine automatische Vergabe festgelegt."
+      list-entry: "<gray>- <white>%title%</white> <dark_gray>→</dark_gray> automatisch bis einschließlich %until%"
+      set:
+        ok: "<green>Der Titel <white>%title%</white> <green>wird automatisch vergeben, wenn ein Spieler bis einschließlich <white>%until%</white> <green>beitritt. Online Spieler ohne den Titel erhalten ihn sofort."
+        not-found: "<red>Den Titel <white>%title%</white> <red>gibt es nicht. Lege ihn zuerst mit <white>/core titles create</white> <red>an."
+        unavailable: "<red>Die automatische Vergabe konnte nicht gespeichert werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+        error: "<red>Beim Speichern ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
+      remove:
+        ok: "<green>Die automatische Vergabe von <white>%title%</white> <green>wurde entfernt. Wer den Titel bereits hat, behält ihn."
+        not-found: "<red>Für den Titel <white>%title%</white> <red>gibt es keine automatische Vergabe."
+        unavailable: "<red>Die automatische Vergabe konnte nicht entfernt werden, weil die Datenbank nicht erreichbar ist. Versuche es später erneut."
+        error: "<red>Beim Entfernen ist ein Datenbankfehler aufgetreten. Es wurde nichts geändert. Die Details stehen in der Konsole."
     create:
       ok: "<green>Der Titel <white>%title%</white> <green>wurde angelegt und ist ab sofort vergebbar. Vorschau: %display%"
       invalid-id: "<red>Die ID <white>%title%</white> <red>ist ungültig. Erlaubt sind 2 bis 32 Zeichen: Kleinbuchstaben a bis z, Ziffern, _ und -."
