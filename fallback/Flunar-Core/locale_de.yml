@@ -296,6 +296,9 @@ chatfilter:
 # =============================================================================
 titles:
   disabled: "<red>Titel sind auf diesem Server gerade nicht verfügbar. Versuche es später erneut oder wende dich an das Team."
+  notify:
+    unlocked: "<green>Titel freigeschaltet: %display% <green>– wähle ihn mit <white>/titles set %title%</white><green>."
+    from-team: "<green>Ein Teammitglied hat dir den Titel %display% <green>gegeben. Wähle ihn mit <white>/titles set %title%</white><green>."
   player:
     list-header: "<gray>Deine Titel <dark_gray>(klicke auf einen Titel, um ihn zu setzen):"
     usage: "<yellow>Verwendung: <white>/titles set <titel></white> <yellow>oder <white>/titles reset</white>"
