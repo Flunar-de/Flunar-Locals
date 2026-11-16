@@ -143,3 +143,5 @@ level.summary.gained: "<gray>You received <green>+%xp% XP</green>."
 level.admin.usage: "<gray>Usage: <yellow>/pillars level <set|add|prestige|reset|info> <player> [value]"
 level.admin.invalid-number: "<red>Invalid number: <white>%input%</white>"
 level.admin.changed: "<green>✔ <yellow>%player%<gray>: level <yellow>%level%<gray>, prestige <yellow>%prestige% <gray>(%tier%<gray>)"
+
+rewards.coins-received: "<gold>You received coins! New balance: <white>%coins%</white></gold>"

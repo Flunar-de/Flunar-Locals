@@ -298,11 +298,11 @@ profiles:
       - plugin: Flunar-PillarChaos
         language: de
         path: fallback/Flunar-PillarChaos/locale_de.yml
-        sha256: 9acfa3a5ae015a9294d7858d6858d83d539e7e39a036988598df3a68ba354d62
+        sha256: 284c96bb3e8e9c98e393f7add14ea0fb5121cb24ae94cf1b3f3bae2daf52fd26
       - plugin: Flunar-PillarChaos
         language: en
         path: fallback/Flunar-PillarChaos/locale_en.yml
-        sha256: 89ddd9c84c8363e42dcb8f356e442bfe31604fae02d2ef86851b0d4d036851e1
+        sha256: 97bf96197353637784e8c7251bb34dc6954a35f19ba5837929e5895456b2cfe1
   smp:
     extends: fallback
     files: []
