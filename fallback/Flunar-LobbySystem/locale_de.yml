@@ -90,6 +90,10 @@ quick-menu:
     name: "<gold>Clan"
     lore-1: "<gray>Clan-Verwaltung und Mitglieder."
     lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
+  server-titles:
+    name: "<light_purple>Server-Titel"
+    lore-1: "<gray>Wähle deinen Titel, der unter deinem Namen angezeigt wird."
+    lore-2: "<dark_gray>» <yellow>Klicke zum Öffnen"
   lobby-settings:
     module: "Lobby-Einstellungen"
     name: "<aqua>Lobby-Einstellungen"
@@ -226,6 +230,38 @@ pets:
   rename:
     done: "<green>Dein Begleiter heißt jetzt <yellow>%name%<green>."
     no-tokens: "<red>Du hast keinen Umbenennungs-Token. Kaufe einen im Lobby-Shop."
+
+server-titles:
+  title: "<yellow><bold>Server-Titel"
+  selected: "<green>Dein Titel ist jetzt <white>%display%<green>."
+  reset-done: "<green>Dein Titel wurde abgelegt."
+  reset-none: "<red>Du hast gerade keinen Titel ausgewählt."
+  not-owned: "<red>Diesen Titel besitzt du nicht."
+  not-found: "<red>Diesen Titel gibt es nicht mehr."
+  error: "<red>Der Titel konnte nicht gesetzt werden. Versuche es später erneut."
+  page:
+    name: "<gray>Seite <white>%page%<gray>/<white>%pages%"
+  previous:
+    name: "<yellow>« Vorherige Seite"
+  next:
+    name: "<yellow>Nächste Seite »"
+  empty:
+    name: "<gray>Keine Titel"
+    lore-1: "<gray>Du besitzt noch keine Titel."
+  entry:
+    name: "%display%"
+    id: "<dark_gray>ID: <gray>%title%"
+    selected: "<green>✔ Aktuell ausgewählt"
+    click: "<dark_gray>» <yellow>Klicke zum Auswählen"
+  reset:
+    name: "<red>Titel ablegen"
+    lore-1: "<gray>Entfernt den aktuell gewählten Titel."
+  back:
+    name: "<gray>Zurück zum Profil"
+    lore-1: "<dark_gray>» <yellow>Klicke zum Zurückkehren"
+  unavailable:
+    name: "<red>Titel sind gerade nicht verfügbar"
+    lore-1: "<gray>Versuche es später erneut."
 
 rename-tokens:
   shop-title: "<gradient:#FFD166:#FF9F1C><bold>Umbenennungs-Token-Shop</bold></gradient>"

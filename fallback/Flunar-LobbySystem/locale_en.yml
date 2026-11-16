@@ -90,6 +90,10 @@ quick-menu:
     name: "<gold>Clan"
     lore-1: "<gray>Clan management and members."
     lore-2: "<dark_gray>» <yellow>Click to open"
+  server-titles:
+    name: "<light_purple>Server titles"
+    lore-1: "<gray>Choose the title shown under your name."
+    lore-2: "<dark_gray>» <yellow>Click to open"
   lobby-settings:
     module: "Lobby Settings"
     name: "<aqua>Lobby Settings"
@@ -226,6 +230,38 @@ pets:
   rename:
     done: "<green>Your companion is now called <yellow>%name%<green>."
     no-tokens: "<red>You do not have a rename token. Buy one in the Lobby Shop."
+
+server-titles:
+  title: "<yellow><bold>Server titles"
+  selected: "<green>Your title is now <white>%display%<green>."
+  reset-done: "<green>Your title has been removed."
+  reset-none: "<red>You do not have a title selected right now."
+  not-owned: "<red>You do not own this title."
+  not-found: "<red>This title no longer exists."
+  error: "<red>The title could not be set. Please try again later."
+  page:
+    name: "<gray>Page <white>%page%<gray>/<white>%pages%"
+  previous:
+    name: "<yellow>« Previous page"
+  next:
+    name: "<yellow>Next page »"
+  empty:
+    name: "<gray>No titles"
+    lore-1: "<gray>You do not own any titles yet."
+  entry:
+    name: "%display%"
+    id: "<dark_gray>ID: <gray>%title%"
+    selected: "<green>✔ Currently selected"
+    click: "<dark_gray>» <yellow>Click to select"
+  reset:
+    name: "<red>Remove title"
+    lore-1: "<gray>Removes the currently selected title."
+  back:
+    name: "<gray>Back to profile"
+    lore-1: "<dark_gray>» <yellow>Click to go back"
+  unavailable:
+    name: "<red>Titles are currently unavailable"
+    lore-1: "<gray>Please try again later."
 
 rename-tokens:
   shop-title: "<gradient:#FFD166:#FF9F1C><bold>Rename Token Shop</bold></gradient>"
