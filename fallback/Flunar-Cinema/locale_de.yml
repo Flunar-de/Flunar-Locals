@@ -6,8 +6,8 @@ cinema:
   invalid-action: "<red>Diese Aktion ist ungültig oder bereits abgelaufen.</red>"
   player-not-found: "<red>Dieser Spieler ist in den Cinema-Daten nicht bekannt. Verwende alternativ seine UUID.</red>"
   cooldown: "<yellow>Bitte warte noch %seconds% Sekunde(n), bevor du diese Aktion erneut ausführst.</yellow>"
-  labymod-required: "<yellow>Flunar Cinema kann nur mit LabyMod 4 und aktivierter WatchTogether-Funktion genutzt werden.</yellow>"
-  labymod-checking: "<yellow>Dein LabyMod-Status wird noch geprüft. Bitte klicke in einem kurzen Moment erneut auf das Einstiegsschild.</yellow>"
+  labymod-required: "<yellow>Flunar Cinema kann nur mit dem Laby Client und aktivierter Watch Party genutzt werden.</yellow>"
+  labymod-checking: "<yellow>Dein Laby-Client-Status wird noch geprüft. Bitte klicke in einem kurzen Moment erneut auf das Einstiegsschild.</yellow>"
 
   help:
     title: "<gradient:#38bdf8:#8b5cf6><b>Flunar Cinema</b></gradient>"
