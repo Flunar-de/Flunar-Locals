@@ -226,11 +226,11 @@ profiles:
       - plugin: Flunar-Reward
         language: de
         path: fallback/Flunar-Reward/locale_de.yml
-        sha256: e380650475249744da6e8c1ab633bf7a9d27640487f4b5d38c3d8b1f5c8b5d02
+        sha256: 0b374a86bd547e145d3528eb9469a03c352f1d9a267b43a26735ce94b2c9db98
       - plugin: Flunar-Reward
         language: en
         path: fallback/Flunar-Reward/locale_en.yml
-        sha256: ecc485f11d4acd2c3e9816c6c38744d7176b60ccadd3756f8c66cfcfcd488a57
+        sha256: 0ff40332f76ff2c89ab6fb97c3a00c39234a2c89729e15a4acca7d9f2ee0802c
       - plugin: Flunar-Jobs
         language: de
         path: fallback/Flunar-Jobs/locale_de.yml
@@ -303,3 +303,9 @@ profiles:
         language: en
         path: fallback/Flunar-PillarChaos/locale_en.yml
         sha256: 89ddd9c84c8363e42dcb8f356e442bfe31604fae02d2ef86851b0d4d036851e1
+  smp:
+    extends: fallback
+    files: []
+  citybuild:
+    extends: fallback
+    files: []
