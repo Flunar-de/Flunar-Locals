@@ -112,17 +112,24 @@ itemclear:
   countdown: "<yellow>Item-Clear in <red><seconds> <yellow>Sekunde<n>."
   finished: "<green>✔ <yellow><amount> <gray>Items wurden entfernt!"
 restart:
-  title: "<red>SERVER RESTART"
-  subtitle: "<yellow>%seconds% Sekunden"
-  warning: "<red>Der Server startet in <yellow>%minutes% Minuten <red>neu! <gray>(%time% Uhr)"
-  countdown: "<red><bold>SERVER RESTART IN %seconds% SEKUNDEN!"
-  now: "<red>Der Server wird jetzt neugestartet!"
-  manual: "<gray>Ein Administrator hat einen Server-Restart in <yellow>%seconds% Sekunden <gray>angesetzt!"
+  title: "<red><bold>⚠ SERVER RESTART ⚠"
+  subtitle: "<gray>Neustart in <yellow>%duration%"
+  units:
+    second: "Sekunde"
+    seconds: "Sekunden"
+    minute: "Minute"
+    minutes: "Minuten"
+  warning: "Der Server startet in <yellow><bold>%duration%</bold> <white>neu.\n<gray>Geplanter Neustart um <yellow>%time% Uhr<gray>."
+  countdown: "<red>Der Server startet in <yellow>%duration% <red>neu!"
+  now: "Der Server wird <red><bold>jetzt neu gestartet</bold><white>.\n<gray>Du wirst auf eine Lobby verschoben oder vom Server getrennt."
+  transfer: "<gray>Du wirst wegen des Restarts auf eine <yellow>Lobby <gray>verschoben..."
+  manual: "Ein Teammitglied hat einen Server-Restart in <yellow><bold>%duration%</bold> <white>angesetzt."
+  cancelled: "Der geplante Server-Restart wurde <green>abgebrochen<white>.\n<gray>Der Server läuft ganz normal weiter."
   kick: |
-    <red><bold>Server Restart
+    <red><bold>⚠ SERVER RESTART ⚠
 
-    <gray>Der Server wird gerade neugestartet.
-    <gray>Bitte versuche es in wenigen Momenten erneut!
+    <gray>Der Server wird gerade neu gestartet.
+    <gray>Bitte verbinde dich in wenigen Momenten erneut!
   help:
     title: "Restart"
     commands-label: "Verfügbare Befehle:"

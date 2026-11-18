@@ -112,17 +112,24 @@ itemclear:
   countdown: "<yellow>Item-Clear in <red><seconds> <yellow>second<n>."
   finished: "<green>✔ <yellow><amount> <gray>items were removed!"
 restart:
-  title: "<red>SERVER RESTART"
-  subtitle: "<yellow>%seconds% seconds"
-  warning: "<red>The server will restart in <yellow>%minutes% minutes<red>! <gray>(%time% o'clock)"
-  countdown: "<red><bold>SERVER RESTART IN %seconds% SECONDS!"
-  now: "<red>The server is restarting now!"
-  manual: "<gray>An administrator has scheduled a server restart in <yellow>%seconds% seconds<gray>!"
+  title: "<red><bold>⚠ SERVER RESTART ⚠"
+  subtitle: "<gray>Restarting in <yellow>%duration%"
+  units:
+    second: "second"
+    seconds: "seconds"
+    minute: "minute"
+    minutes: "minutes"
+  warning: "The server will restart in <yellow><bold>%duration%</bold><white>.\n<gray>Scheduled restart at <yellow>%time%<gray>."
+  countdown: "<red>The server restarts in <yellow>%duration%<red>!"
+  now: "The server is <red><bold>restarting now</bold><white>.\n<gray>You will be moved to a lobby or disconnected from the server."
+  transfer: "<gray>You are being moved to a <yellow>lobby <gray>because of the restart..."
+  manual: "A team member has scheduled a server restart in <yellow><bold>%duration%</bold><white>."
+  cancelled: "The scheduled server restart has been <green>cancelled<white>.\n<gray>The server keeps running as usual."
   kick: |
-    <red><bold>Server Restart
+    <red><bold>⚠ SERVER RESTART ⚠
 
     <gray>The server is currently restarting.
-    <gray>Please try again in a few moments!
+    <gray>Please reconnect in a few moments!
   help:
     title: "Restart"
     commands-label: "Available Commands:"
