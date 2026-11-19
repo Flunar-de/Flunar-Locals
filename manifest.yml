@@ -34,11 +34,11 @@ profiles:
       - plugin: Flunar-LobbySystem
         language: de
         path: fallback/Flunar-LobbySystem/locale_de.yml
-        sha256: d93b1883491562ee008f4450bdbfab604969a51015b452edf070e2659639efb1
+        sha256: 721dfb48fc5f798b7a19f0a1f7e85c1236a975e55adde27558c7eb2a829b500e
       - plugin: Flunar-LobbySystem
         language: en
         path: fallback/Flunar-LobbySystem/locale_en.yml
-        sha256: 5863df224748581a209b9e9b782e061236da4c158f9e65638fac5c0ea8aa099b
+        sha256: 2d9f64c052eb568d82bcd4ab60f4c1df930de813be1f323ff2f43f169ea59fe8
       - plugin: Flunar-ClanSystem
         language: de
         path: fallback/Flunar-ClanSystem/locale_de.yml

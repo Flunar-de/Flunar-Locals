@@ -1344,6 +1344,7 @@ mining:
     already-active: "<yellow>%powerup% is already active."
     activated: "<green>%powerup% is now active for %minutes% minutes."
     refunded: "<green>Refunded %points% ore points for unused powerups."
+    extended: "<green>%powerup% extended. Active for %minutes% more minutes."
     names:
       magnet: "Magnet"
       vein-miner: "Vein Miner"
@@ -1392,6 +1393,7 @@ mining:
   bossbar:
     active: "<gradient:#B8FFC7:#3DDC97>Mining Shift</gradient> <dark_gray>• <white>%time%"
     ended: "<red>Shift over <dark_gray>• <white>To the shift manager"
+    powerup: "<dark_gray>• <aqua>%powerup% <white>%time%"
   pickaxe:
     name: "Mining Pickaxe • Level %level%"
     lore-1: "Speed: Level %speed%"
@@ -1431,7 +1433,7 @@ mining:
       night-vision:
         name: "<gradient:#B79CFF:#8AEAFF>Night Vision</gradient>"
         lore-1: "<gray>Clear sight in dark tunnels"
-        lore-2: "<gray>for %minutes% minutes, no particles."
+        lore-2: "<gray>%minutes% min, no particles, stackable."
         cost: "<dark_gray>» <gray>Fixed price: <yellow>%points% ore points"
         buy: "<dark_gray>» <yellow>Click to purchase"
       balance:
@@ -1567,6 +1569,7 @@ mining:
       speed: "Efficiency %level%"
       ore-access: "up to %ore%"
       cooldown: "%time% min waiting time"
+      refinement: "%value%x ore points (no XP)"
     maximum: "<yellow>This upgrade is already at its maximum level."
     not-enough: "<red>You do not have enough ore points. Required: %points%."
     success: "<green>%upgrade% was upgraded to level %level%."
