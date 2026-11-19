@@ -1305,6 +1305,9 @@ mining:
   pickaxe-too-weak: "<red>Für %ore% brauchst du mindestens eine %pickaxe%."
   inventory-full: "<red>Dein Inventar ist voll. Gib deine Erze zuerst ab."
   cargo-lore: "Mining-Fracht"
+  level-up:
+    title: "<gradient:#FFD166:#FF9F1C>Level %level%</gradient>"
+    subtitle: "<gray>Dein Bergbau-Level ist gestiegen"
   powerups:
     invalid: "<red>Dieses Powerup ist ungültig oder wurde bereits benutzt."
     not-enough: "<red>Dir fehlen %points% Erz-Punkte für dieses Powerup."
@@ -1316,6 +1319,7 @@ mining:
     names:
       magnet: "Magnet"
       vein-miner: "Vein Miner"
+      night-vision: "Nachtsicht"
     shop-item:
       name: "<gradient:#FFD166:#FF9F1C>Powerup-Shop</gradient>"
       lore-1: "<gray>Kaufe temporäre Vorteile"
@@ -1328,6 +1332,10 @@ mining:
       vein-miner:
         name: "<gradient:#FFD166:#FF9F1C>Vein Miner</gradient>"
         lore-1: "<gray>Baut eine zusammenhängende Erzader ab."
+        lore-2: "<dark_gray>» <yellow>%minutes% Minuten <gray>mit Rechtsklick aktivieren"
+      night-vision:
+        name: "<gradient:#B79CFF:#8AEAFF>Nachtsicht</gradient>"
+        lore-1: "<gray>Lässt dich auch im Dunkeln klar sehen."
         lore-2: "<dark_gray>» <yellow>%minutes% Minuten <gray>mit Rechtsklick aktivieren"
   prestige:
     active-shift: "<red>Beende zuerst deine aktuelle Schicht."
@@ -1391,6 +1399,12 @@ mining:
         lore-1: "<gray>Baut verbundene Blöcke derselben"
         lore-2: "<gray>Erzader für %minutes% Minuten gemeinsam ab."
         cost: "<dark_gray>» <gray>Kosten: <yellow>%points% Erz-Punkte"
+        buy: "<dark_gray>» <yellow>Klicke zum Kaufen"
+      night-vision:
+        name: "<gradient:#B79CFF:#8AEAFF>Nachtsicht</gradient>"
+        lore-1: "<gray>Klare Sicht in dunklen Stollen,"
+        lore-2: "<gray>%minutes% Minuten ohne Partikel."
+        cost: "<dark_gray>» <gray>Fester Preis: <yellow>%points% Erz-Punkte"
         buy: "<dark_gray>» <yellow>Klicke zum Kaufen"
       balance:
         name: "<yellow>Deine Erz-Punkte"

@@ -1333,6 +1333,9 @@ mining:
   pickaxe-too-weak: "<red>You need at least a %pickaxe% for %ore%."
   inventory-full: "<red>Your inventory is full. Turn in your ores first."
   cargo-lore: "Mining cargo"
+  level-up:
+    title: "<gradient:#FFD166:#FF9F1C>Level %level%</gradient>"
+    subtitle: "<gray>Your mining level increased"
   powerups:
     invalid: "<red>This powerup is invalid or has already been used."
     not-enough: "<red>You need %points% more ore points for this powerup."
@@ -1344,6 +1347,7 @@ mining:
     names:
       magnet: "Magnet"
       vein-miner: "Vein Miner"
+      night-vision: "Night Vision"
     shop-item:
       name: "<gradient:#FFD166:#FF9F1C>Powerup Shop</gradient>"
       lore-1: "<gray>Purchase temporary advantages"
@@ -1356,6 +1360,10 @@ mining:
       vein-miner:
         name: "<gradient:#FFD166:#FF9F1C>Vein Miner</gradient>"
         lore-1: "<gray>Mines one connected ore vein."
+        lore-2: "<dark_gray>» <yellow>Right-click to activate for %minutes% minutes"
+      night-vision:
+        name: "<gradient:#B79CFF:#8AEAFF>Night Vision</gradient>"
+        lore-1: "<gray>Lets you see clearly in the dark."
         lore-2: "<dark_gray>» <yellow>Right-click to activate for %minutes% minutes"
   prestige:
     active-shift: "<red>Finish your current shift first."
@@ -1419,6 +1427,12 @@ mining:
         lore-1: "<gray>Mines connected blocks from the same"
         lore-2: "<gray>ore vein together for %minutes% minutes."
         cost: "<dark_gray>» <gray>Cost: <yellow>%points% ore points"
+        buy: "<dark_gray>» <yellow>Click to purchase"
+      night-vision:
+        name: "<gradient:#B79CFF:#8AEAFF>Night Vision</gradient>"
+        lore-1: "<gray>Clear sight in dark tunnels"
+        lore-2: "<gray>for %minutes% minutes, no particles."
+        cost: "<dark_gray>» <gray>Fixed price: <yellow>%points% ore points"
         buy: "<dark_gray>» <yellow>Click to purchase"
       balance:
         name: "<yellow>Your Ore Points"
