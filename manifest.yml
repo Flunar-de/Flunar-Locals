@@ -194,11 +194,11 @@ profiles:
       - plugin: Flunar-Playtimesystem
         language: de
         path: fallback/Flunar-Playtimesystem/locale_de.yml
-        sha256: 04c64a4fc114f8c5fccd8c35440d4517526bb0a0466e2d75215ce02e05704079
+        sha256: 0e5476a8351cc3f30eb8a17d52ffe67e30c53cc0049c0e1651a105f3f1e6b6b2
       - plugin: Flunar-Playtimesystem
         language: en
         path: fallback/Flunar-Playtimesystem/locale_en.yml
-        sha256: 504686c0db070df82ef40613aa883c88f1762de3c2bf0c8af38e99456936ed71
+        sha256: 32c0c5071f811608dac2729bcf05950385553f7539008ed11c775385e12b5547
       - plugin: Flunar-Worldmanager
         language: de
         path: fallback/Flunar-Worldmanager/locale_de.yml

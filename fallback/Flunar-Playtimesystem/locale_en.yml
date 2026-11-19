@@ -1,32 +1,127 @@
-noperms: "<red>You don't have permission to do that."
-no-permission: "<red>You are missing the permission: <yellow>%permission%"
-only-player: "Only players can execute this command."
-commandusemessage: "<red>Usage: "
-unknownsubcommand: "<red>Unknown subcommand."
-db-error: "<red>Database connection error."
-online-other-notfound: "<red>Player <yellow>%player% <red>was not found."
-flunar-online-help-1: "<gold>------------ Help: /Online ------------"
-flunar-online-help-2: "<yellow>/Online help <gray>- Shows this help page"
-flunar-online-help-3: "<yellow>/Online <gray>- Shows your own playtime"
-flunar-online-help-4: "<yellow>/Online player <player> <gray>- Shows another player's playtime"
-flunar-online-help-5: "<yellow>/Online stats <gray>- Shows your playtime statistics"
-flunar-online-help-6: "<gold>------------ Help: /Online ------------"
-online-self-no-data: "<red>No playtime data found."
-online-self-time: "<green>Your playtime: <yellow>%time%"
-online-stats-title: "<gold>Your playtime statistics"
-online-stats-total: "<gray>Total playtime: <yellow>%time%"
-online-stats-current-active: "<gray>Active time on this server: <yellow>%time%"
-online-stats-afk-total: "<gray>Recognized AFK time total: <yellow>%time%"
-online-stats-last-session: "<gray>Last completed session: <yellow>%time%"
-online-stats-sessions: "<gray>Recorded sessions: <yellow>%count%"
-online-other-no-data: "<red>No playtime data found for <yellow>%player%<red>."
-online-other-time: "<green><yellow>%player%<green>'s playtime is <yellow>%time%"
-online-player-usage: "/online player <player>"
-online-registered-total: "<green>There are <yellow>%total% <green>registered players."
-online-admin-usage: "/online admin <subcommand>"
-online-admin-reset-usage: "/online admin reset <player>"
-online-admin-reset-success: "<green><yellow>%player%<green>'s playtime was reset to <yellow>0<green>."
-online-admin-player-usage: "/online admin player <player>"
+# Flunar-Playtimesystem – English texts (fallback)
+#
+# Do not rename keys, otherwise the code cannot find the text.
+# Keep placeholders such as %time%, %player%, %count% or %rank% unchanged.
+# The plugin builds every duration from days, hours and minutes
+# (e.g. "2 days, 5 hours, 30 minutes"); the unit names are under "time-unit-*".
+# Colours: active time green (#4ade80), AFK time red (#f87171).
+
+# =============================================================================
+# General
+# =============================================================================
+noperms: "<#f87171>You don't have permission to do that."
+no-permission: "<#f87171>You are missing the permission <white>%permission%</white><#f87171>."
+only-player: "<#f87171>Only players can execute this command."
+commandusemessage: "<#f87171>Usage <dark_gray>»</dark_gray> "
+unknownsubcommand: "<#f87171>Unknown subcommand. <gray>All commands: <click:run_command:'/online help'><hover:show_text:'<gray>Click to open'><#7dd3fc>/online help</#7dd3fc></hover></click>"
+db-error: "<#f87171>Playtime data is currently unavailable. Please try again in a moment."
+
+# =============================================================================
+# Time and date format
+# =============================================================================
+time-unit-day: "day"
+time-unit-days: "days"
+time-unit-hour: "hour"
+time-unit-hours: "hours"
+time-unit-minute: "minute"
+time-unit-minutes: "minutes"
+date-format: "yyyy-MM-dd HH:mm"
+date-unknown: "unknown"
+
+# =============================================================================
+# Help (/online help)
+# =============================================================================
+online-help-header: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Playtime</gradient> <dark_gray>·</dark_gray> <gray>Commands</gray> <dark_gray>«</dark_gray>"
+online-help-1: "<dark_gray>▪</dark_gray> <click:run_command:'/online'><hover:show_text:'<gray>Click to run'><#7dd3fc>/online</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Your playtime"
+online-help-2: "<dark_gray>▪</dark_gray> <click:run_command:'/online stats'><hover:show_text:'<gray>Click to run'><#7dd3fc>/online stats</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Your statistics"
+online-help-3: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online player '><hover:show_text:'<gray>Click to insert'><#7dd3fc>/online player <player></#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Another player's playtime"
+online-help-4: "<dark_gray>▪</dark_gray> <click:run_command:'/online top'><hover:show_text:'<gray>Click to run'><#7dd3fc>/online top</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Playtime leaderboard"
+online-help-5: "<dark_gray>▪</dark_gray> <click:run_command:'/online registered'><hover:show_text:'<gray>Click to run'><#7dd3fc>/online registered</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Registered players"
+online-help-admin-1: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online admin player '><hover:show_text:'<gray>Click to insert'><#facc15>/online admin player <player></#facc15></hover></click> <dark_gray>»</dark_gray> <gray>Player info"
+online-help-admin-2: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online admin reset '><hover:show_text:'<gray>Click to insert'><#facc15>/online admin reset <player></#facc15></hover></click> <dark_gray>»</dark_gray> <gray>Reset playtime"
+
+# =============================================================================
+# Own and other players' playtime
+# =============================================================================
+online-self-title: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Your playtime</gradient> <dark_gray>«</dark_gray>"
+online-self-active: "<dark_gray>▪</dark_gray> <gray>Active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-self-afk: "<dark_gray>▪</dark_gray> <gray>AFK time</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-self-no-data: "<#f87171>No playtime data was found for you yet."
+online-other-time: "<white>%player%</white><gray>'s active playtime</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-other-no-data: "<#f87171>No playtime data was found for <white>%player%</white><#f87171>."
+online-other-notfound: "<#f87171>Player <white>%player%</white> <#f87171>was not found."
+online-player-usage: "<#7dd3fc>/online player <player>"
+online-registered-total: "<gray>Registered players</gray> <dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>%total%</gradient>"
+
+# =============================================================================
+# Statistics (/online stats)
+# =============================================================================
+online-stats-title: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Your playtime statistics</gradient> <dark_gray>«</dark_gray>"
+online-stats-total: "<dark_gray>▪</dark_gray> <gray>Total active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-current-active: "<dark_gray>▪</dark_gray> <gray>Active on this server</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-last-session: "<dark_gray>▪</dark_gray> <gray>Last session (active)</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-afk-total: "<dark_gray>▪</dark_gray> <gray>Total AFK time</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-stats-sessions: "<dark_gray>▪</dark_gray> <gray>Sessions</gray> <dark_gray>»</dark_gray> <white>%count%"
+
+# =============================================================================
+# Admin (/online admin)
+# =============================================================================
+online-admin-usage: "<#facc15>/online admin <player|reset> <player>"
+online-admin-help-header: "<dark_gray>»</dark_gray> <gradient:#facc15:#f97316>Playtime</gradient> <dark_gray>·</dark_gray> <gray>Admin</gray> <dark_gray>«</dark_gray>"
+online-admin-player-usage: "<#facc15>/online admin player <player>"
+online-admin-player-title: "<dark_gray>»</dark_gray> <gradient:#facc15:#f97316>Player info</gradient> <dark_gray>·</dark_gray> <white>%player%</white> <dark_gray>«</dark_gray>"
+online-admin-player-status: "<dark_gray>▪</dark_gray> <gray>Status</gray> <dark_gray>»</dark_gray> %status%"
+online-admin-player-uuid: "<dark_gray>▪</dark_gray> <gray>UUID</gray> <dark_gray>»</dark_gray> <click:copy_to_clipboard:'%uuid%'><hover:show_text:'<gray>Click to copy'><white>%uuid%</white></hover></click>"
+online-admin-player-first-join: "<dark_gray>▪</dark_gray> <gray>First join</gray> <dark_gray>»</dark_gray> <white>%date%"
+online-admin-player-last-join: "<dark_gray>▪</dark_gray> <gray>Last join</gray> <dark_gray>»</dark_gray> <white>%date%"
+online-admin-player-joins: "<dark_gray>▪</dark_gray> <gray>Joins</gray> <dark_gray>»</dark_gray> <white>%count%"
+online-admin-player-total: "<dark_gray>▪</dark_gray> <gray>Total active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-player-last-session: "<dark_gray>▪</dark_gray> <gray>Last session (active)</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-player-afk-total: "<dark_gray>▪</dark_gray> <gray>Total AFK time</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-admin-player-rank: "<dark_gray>▪</dark_gray> <gray>Rank</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+online-admin-status-active: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <gray>active"
+online-admin-status-afk: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <#facc15>AFK for %time%"
+online-admin-status-network: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <gray>on another server"
+online-admin-status-offline: "<#f87171>Offline"
+online-admin-reset-usage: "<#facc15>/online admin reset <player>"
+online-admin-reset-confirm-title: "<#facc15>⚠</#facc15> <gray>Really reset the playtime of</gray> <white>%player%</white><gray>?"
+online-admin-reset-confirm-time: "<dark_gray>▪</dark_gray> <gray>Active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-reset-confirm-button: "<click:run_command:'/online admin reset %player% confirm'><hover:show_text:'<#f87171>Resets the active playtime to 0'><#f87171>[Confirm reset]</#f87171></hover></click> <dark_gray>·</dark_gray> <gray>cannot be undone"
+online-admin-reset-confirm-hint: "<gray>To confirm</gray> <dark_gray>»</dark_gray> <#facc15>/online admin reset %player% confirm"
+online-admin-reset-success: "<white>%player%</white><gray>'s playtime has been</gray> <gradient:#4ade80:#22d3ee>reset</gradient><gray>."
+
+# =============================================================================
+# Leaderboard (/online top)
+# =============================================================================
+gui-top-title: "<gradient:#38bdf8:#22c55e>Playtime Leaderboard</gradient> <dark_gray>· Page %page%"
+gui-top-loading-name: "<gradient:#38bdf8:#22c55e>Loading leaderboard …"
+gui-top-loading-lore: "<gray>One moment please."
+gui-top-empty-name: "<#f87171>No entries"
+gui-top-empty-lore: "<gray>There are no players on this page yet."
+gui-top-rank-1: "<gradient:#facc15:#f97316>#%rank%</gradient>"
+gui-top-rank-2: "<gradient:#e5e7eb:#94a3b8>#%rank%</gradient>"
+gui-top-rank-3: "<gradient:#fb7185:#f97316>#%rank%</gradient>"
+gui-top-rank-other: "<#38bdf8>#%rank%</#38bdf8>"
+gui-top-entry-name: "%rank% <dark_gray>·</dark_gray> <white>%player%"
+gui-top-entry-time: "<gray>Active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+gui-top-entry-rank: "<gray>Rank</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+gui-top-entry-self: "<gradient:#38bdf8:#22c55e>» That's you!"
+gui-top-self-name: "<gradient:#38bdf8:#22c55e>Your rank"
+gui-top-self-rank: "<gray>Rank</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+gui-top-self-time: "<gray>Active time</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+gui-top-self-unranked: "<gray>You are not on the leaderboard yet."
+gui-top-info-name: "<gradient:#38bdf8:#22c55e>Playtime Leaderboard"
+gui-top-info-page: "<gray>Page</gray> <dark_gray>»</dark_gray> <white>%page%"
+gui-top-info-range: "<gray>Ranks</gray> <dark_gray>»</dark_gray> <white>%from% – %to%"
+gui-top-previous-name: "<gradient:#38bdf8:#22c55e>« Back"
+gui-top-previous-lore: "<gray>To page %page%"
+gui-top-next-name: "<gradient:#22c55e:#38bdf8>Next »"
+gui-top-next-lore: "<gray>To page %page%"
+gui-top-unknown-player: "Unknown player"
+
+# =============================================================================
+# AFK detection
+# =============================================================================
 afktracking:
-  system-enabled: "<green>AFK tracking enabled."
-  system-disabled: "<yellow>AFK tracking is disabled."
+  system-enabled: "<#22c55e>AFK detection enabled."
+  system-disabled: "<#facc15>AFK detection is disabled."

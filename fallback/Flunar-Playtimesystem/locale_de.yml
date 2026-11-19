@@ -1,32 +1,127 @@
-noperms: "<red>Dazu hast du keine Berechtigung."
-no-permission: "<red>Dir fehlt die Permission: <yellow>%permission%"
-only-player: "Nur Spieler können diesen Befehl ausführen."
-commandusemessage: "<red>Benutze: "
-unknownsubcommand: "<red>Unbekannter Unterbefehl."
-db-error: "<red>Fehler bei der Verbindung zur Datenbank."
-online-other-notfound: "<red>Der Spieler <yellow>%player% <red>wurde nicht gefunden."
-flunar-online-help-1: "<gold>------------ Hilfe: /Online ------------"
-flunar-online-help-2: "<yellow>/Online help <gray>- Zeigt diese Hilfeseite an"
-flunar-online-help-3: "<yellow>/Online <gray>- Zeigt deine eigene Spielzeit an"
-flunar-online-help-4: "<yellow>/Online player <spieler> <gray>- Zeigt die Spielzeit eines anderen Spielers an"
-flunar-online-help-5: "<yellow>/Online stats <gray>- Zeigt deine Spielzeit-Statistik an"
-flunar-online-help-6: "<gold>------------ Hilfe: /Online ------------"
-online-self-no-data: "<red>Keine Spielzeitdaten gefunden."
-online-self-time: "<green>Deine Spielzeit: <yellow>%time%"
-online-stats-title: "<gold>Deine Spielzeit-Statistik"
-online-stats-total: "<gray>Gesamtspielzeit: <yellow>%time%"
-online-stats-current-active: "<gray>Aktive Zeit auf diesem Server: <yellow>%time%"
-online-stats-afk-total: "<gray>Erkannte AFK-Zeit gesamt: <yellow>%time%"
-online-stats-last-session: "<gray>Letzte abgeschlossene Sitzung: <yellow>%time%"
-online-stats-sessions: "<gray>Erfasste Sitzungen: <yellow>%count%"
-online-other-no-data: "<red>Für <yellow>%player% <red>wurden keine Spielzeitdaten gefunden."
-online-other-time: "<green>Die Spielzeit von <yellow>%player% <green>beträgt <yellow>%time%"
-online-player-usage: "/online player <spieler>"
-online-registered-total: "<green>Es sind <yellow>%total% <green>Spieler registriert."
-online-admin-usage: "/online admin <subcommand>"
-online-admin-reset-usage: "/online admin reset <Spieler>"
-online-admin-reset-success: "<green>Die Spielzeit von <yellow>%player% <green>wurde auf <yellow>0 <green>gesetzt."
-online-admin-player-usage: "/online admin player <Spieler>"
+# Flunar-Playtimesystem – deutsche Texte (Standard-Fallback)
+#
+# Schlüssel nicht umbenennen, sonst findet der Code den Text nicht.
+# Platzhalter wie %time%, %player%, %count% oder %rank% bitte unverändert lassen.
+# Zeitangaben setzt das Plugin einheitlich aus Tagen, Stunden und Minuten zusammen
+# (z. B. "2 Tage, 5 Stunden, 30 Minuten"); die Einheiten stehen unter "time-unit-*".
+# Farben: aktive Zeit grün (#4ade80), AFK-Zeit rot (#f87171).
+
+# =============================================================================
+# Allgemein
+# =============================================================================
+noperms: "<#f87171>Dazu hast du keine Berechtigung."
+no-permission: "<#f87171>Dir fehlt die Berechtigung <white>%permission%</white><#f87171>."
+only-player: "<#f87171>Nur Spieler können diesen Befehl ausführen."
+commandusemessage: "<#f87171>Benutze <dark_gray>»</dark_gray> "
+unknownsubcommand: "<#f87171>Unbekannter Unterbefehl. <gray>Alle Befehle: <click:run_command:'/online help'><hover:show_text:'<gray>Klicken zum Öffnen'><#7dd3fc>/online help</#7dd3fc></hover></click>"
+db-error: "<#f87171>Die Spielzeitdaten sind gerade nicht erreichbar. Bitte versuche es gleich erneut."
+
+# =============================================================================
+# Zeit- und Datumsformat
+# =============================================================================
+time-unit-day: "Tag"
+time-unit-days: "Tage"
+time-unit-hour: "Stunde"
+time-unit-hours: "Stunden"
+time-unit-minute: "Minute"
+time-unit-minutes: "Minuten"
+date-format: "dd.MM.yyyy HH:mm"
+date-unknown: "unbekannt"
+
+# =============================================================================
+# Hilfe (/online help)
+# =============================================================================
+online-help-header: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Spielzeit</gradient> <dark_gray>·</dark_gray> <gray>Befehle</gray> <dark_gray>«</dark_gray>"
+online-help-1: "<dark_gray>▪</dark_gray> <click:run_command:'/online'><hover:show_text:'<gray>Klicken zum Ausführen'><#7dd3fc>/online</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Deine Spielzeit"
+online-help-2: "<dark_gray>▪</dark_gray> <click:run_command:'/online stats'><hover:show_text:'<gray>Klicken zum Ausführen'><#7dd3fc>/online stats</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Deine Statistik"
+online-help-3: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online player '><hover:show_text:'<gray>Klicken zum Einfügen'><#7dd3fc>/online player <Spieler></#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Spielzeit eines Spielers"
+online-help-4: "<dark_gray>▪</dark_gray> <click:run_command:'/online top'><hover:show_text:'<gray>Klicken zum Ausführen'><#7dd3fc>/online top</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Spielzeit-Topliste"
+online-help-5: "<dark_gray>▪</dark_gray> <click:run_command:'/online registered'><hover:show_text:'<gray>Klicken zum Ausführen'><#7dd3fc>/online registered</#7dd3fc></hover></click> <dark_gray>»</dark_gray> <gray>Registrierte Spieler"
+online-help-admin-1: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online admin player '><hover:show_text:'<gray>Klicken zum Einfügen'><#facc15>/online admin player <Spieler></#facc15></hover></click> <dark_gray>»</dark_gray> <gray>Spielerinfo"
+online-help-admin-2: "<dark_gray>▪</dark_gray> <click:suggest_command:'/online admin reset '><hover:show_text:'<gray>Klicken zum Einfügen'><#facc15>/online admin reset <Spieler></#facc15></hover></click> <dark_gray>»</dark_gray> <gray>Spielzeit zurücksetzen"
+
+# =============================================================================
+# Eigene und fremde Spielzeit
+# =============================================================================
+online-self-title: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Deine Spielzeit</gradient> <dark_gray>«</dark_gray>"
+online-self-active: "<dark_gray>▪</dark_gray> <gray>Aktive Zeit</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-self-afk: "<dark_gray>▪</dark_gray> <gray>AFK-Zeit</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-self-no-data: "<#f87171>Für dich wurden noch keine Spielzeitdaten gefunden."
+online-other-time: "<gray>Aktive Spielzeit von</gray> <white>%player%</white> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-other-no-data: "<#f87171>Für <white>%player%</white> <#f87171>wurden keine Spielzeitdaten gefunden."
+online-other-notfound: "<#f87171>Der Spieler <white>%player%</white> <#f87171>wurde nicht gefunden."
+online-player-usage: "<#7dd3fc>/online player <Spieler>"
+online-registered-total: "<gray>Registrierte Spieler</gray> <dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>%total%</gradient>"
+
+# =============================================================================
+# Statistik (/online stats)
+# =============================================================================
+online-stats-title: "<dark_gray>»</dark_gray> <gradient:#38bdf8:#22c55e>Deine Spielzeit-Statistik</gradient> <dark_gray>«</dark_gray>"
+online-stats-total: "<dark_gray>▪</dark_gray> <gray>Aktive Zeit gesamt</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-current-active: "<dark_gray>▪</dark_gray> <gray>Aktiv auf diesem Server</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-last-session: "<dark_gray>▪</dark_gray> <gray>Letzte Sitzung (aktiv)</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-stats-afk-total: "<dark_gray>▪</dark_gray> <gray>AFK-Zeit gesamt</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-stats-sessions: "<dark_gray>▪</dark_gray> <gray>Sitzungen</gray> <dark_gray>»</dark_gray> <white>%count%"
+
+# =============================================================================
+# Admin (/online admin)
+# =============================================================================
+online-admin-usage: "<#facc15>/online admin <player|reset> <Spieler>"
+online-admin-help-header: "<dark_gray>»</dark_gray> <gradient:#facc15:#f97316>Spielzeit</gradient> <dark_gray>·</dark_gray> <gray>Admin</gray> <dark_gray>«</dark_gray>"
+online-admin-player-usage: "<#facc15>/online admin player <Spieler>"
+online-admin-player-title: "<dark_gray>»</dark_gray> <gradient:#facc15:#f97316>Spielerinfo</gradient> <dark_gray>·</dark_gray> <white>%player%</white> <dark_gray>«</dark_gray>"
+online-admin-player-status: "<dark_gray>▪</dark_gray> <gray>Status</gray> <dark_gray>»</dark_gray> %status%"
+online-admin-player-uuid: "<dark_gray>▪</dark_gray> <gray>UUID</gray> <dark_gray>»</dark_gray> <click:copy_to_clipboard:'%uuid%'><hover:show_text:'<gray>Klicken zum Kopieren'><white>%uuid%</white></hover></click>"
+online-admin-player-first-join: "<dark_gray>▪</dark_gray> <gray>Erster Join</gray> <dark_gray>»</dark_gray> <white>%date%"
+online-admin-player-last-join: "<dark_gray>▪</dark_gray> <gray>Letzter Join</gray> <dark_gray>»</dark_gray> <white>%date%"
+online-admin-player-joins: "<dark_gray>▪</dark_gray> <gray>Joins</gray> <dark_gray>»</dark_gray> <white>%count%"
+online-admin-player-total: "<dark_gray>▪</dark_gray> <gray>Aktive Zeit gesamt</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-player-last-session: "<dark_gray>▪</dark_gray> <gray>Letzte Sitzung (aktiv)</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-player-afk-total: "<dark_gray>▪</dark_gray> <gray>AFK-Zeit gesamt</gray> <dark_gray>»</dark_gray> <#f87171>%time%"
+online-admin-player-rank: "<dark_gray>▪</dark_gray> <gray>Platzierung</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+online-admin-status-active: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <gray>aktiv"
+online-admin-status-afk: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <#facc15>AFK seit %time%"
+online-admin-status-network: "<#22c55e>Online</#22c55e> <dark_gray>·</dark_gray> <gray>auf einem anderen Server"
+online-admin-status-offline: "<#f87171>Offline"
+online-admin-reset-usage: "<#facc15>/online admin reset <Spieler>"
+online-admin-reset-confirm-title: "<#facc15>⚠</#facc15> <gray>Spielzeit von</gray> <white>%player%</white> <gray>wirklich zurücksetzen?"
+online-admin-reset-confirm-time: "<dark_gray>▪</dark_gray> <gray>Aktive Zeit</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+online-admin-reset-confirm-button: "<click:run_command:'/online admin reset %player% confirm'><hover:show_text:'<#f87171>Setzt die aktive Spielzeit auf 0 zurück'><#f87171>[Zurücksetzen bestätigen]</#f87171></hover></click> <dark_gray>·</dark_gray> <gray>nicht umkehrbar"
+online-admin-reset-confirm-hint: "<gray>Zum Bestätigen</gray> <dark_gray>»</dark_gray> <#facc15>/online admin reset %player% confirm"
+online-admin-reset-success: "<gray>Die Spielzeit von</gray> <white>%player%</white> <gray>wurde</gray> <gradient:#4ade80:#22d3ee>zurückgesetzt</gradient><gray>."
+
+# =============================================================================
+# Topliste (/online top)
+# =============================================================================
+gui-top-title: "<gradient:#38bdf8:#22c55e>Spielzeit-Topliste</gradient> <dark_gray>· Seite %page%"
+gui-top-loading-name: "<gradient:#38bdf8:#22c55e>Topliste wird geladen …"
+gui-top-loading-lore: "<gray>Einen Moment bitte."
+gui-top-empty-name: "<#f87171>Keine Einträge"
+gui-top-empty-lore: "<gray>Auf dieser Seite gibt es noch keine Spieler."
+gui-top-rank-1: "<gradient:#facc15:#f97316>#%rank%</gradient>"
+gui-top-rank-2: "<gradient:#e5e7eb:#94a3b8>#%rank%</gradient>"
+gui-top-rank-3: "<gradient:#fb7185:#f97316>#%rank%</gradient>"
+gui-top-rank-other: "<#38bdf8>#%rank%</#38bdf8>"
+gui-top-entry-name: "%rank% <dark_gray>·</dark_gray> <white>%player%"
+gui-top-entry-time: "<gray>Aktive Zeit</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+gui-top-entry-rank: "<gray>Platzierung</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+gui-top-entry-self: "<gradient:#38bdf8:#22c55e>» Das bist du!"
+gui-top-self-name: "<gradient:#38bdf8:#22c55e>Deine Platzierung"
+gui-top-self-rank: "<gray>Platz</gray> <dark_gray>»</dark_gray> <white>#%rank%"
+gui-top-self-time: "<gray>Aktive Zeit</gray> <dark_gray>»</dark_gray> <#4ade80>%time%"
+gui-top-self-unranked: "<gray>Du bist noch nicht in der Topliste."
+gui-top-info-name: "<gradient:#38bdf8:#22c55e>Spielzeit-Topliste"
+gui-top-info-page: "<gray>Seite</gray> <dark_gray>»</dark_gray> <white>%page%"
+gui-top-info-range: "<gray>Plätze</gray> <dark_gray>»</dark_gray> <white>%from% – %to%"
+gui-top-previous-name: "<gradient:#38bdf8:#22c55e>« Zurück"
+gui-top-previous-lore: "<gray>Zu Seite %page%"
+gui-top-next-name: "<gradient:#22c55e:#38bdf8>Weiter »"
+gui-top-next-lore: "<gray>Zu Seite %page%"
+gui-top-unknown-player: "Unbekannter Spieler"
+
+# =============================================================================
+# AFK-Erkennung
+# =============================================================================
 afktracking:
-  system-enabled: "<green>AFK Tracking aktiviert."
-  system-disabled: "<yellow>AFK Tracking ist deaktiviert."
+  system-enabled: "<#22c55e>AFK-Erkennung aktiviert."
+  system-disabled: "<#facc15>AFK-Erkennung ist deaktiviert."
