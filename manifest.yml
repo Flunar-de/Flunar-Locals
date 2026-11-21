@@ -18,11 +18,11 @@ profiles:
       - plugin: Flunar-Shop
         language: de
         path: fallback/Flunar-Shop/locale_de.yml
-        sha256: dfc28e07b623cc27328656dd4571a2f32b86f12adbe7441e0fa00659d5bf9505
+        sha256: 0d0609463587e5deb7f2264bc3f48ea1a011565eda53e9ec3187f3ecedbbcb76
       - plugin: Flunar-Shop
         language: en
         path: fallback/Flunar-Shop/locale_en.yml
-        sha256: 3cff20d656ae0ab643d1410acdb8303c311b2fedb60da3f831e53388a0ab5012
+        sha256: cfc12bfbdd7b4b728f66e50281caff37d82ad12a045c8eea0368fc45cf82a4a1
       - plugin: CoinsAPI
         language: de
         path: fallback/CoinsAPI/locale_de.yml
