@@ -55,6 +55,7 @@ quick-sell-too-diverse: "Please split these different item types across multiple
 quick-sell-confirmation-now-enabled: "<green>Quick-sell confirmation is now enabled.</green>"
 quick-sell-confirmation-now-disabled: "<yellow>Quick-sell confirmation is now disabled.</yellow>"
 item-not-sellable: "This item cannot be sold."
+sale-game-mode-denied: "Sales are only available in Survival or Adventure mode."
 item-not-owned: "You do not have a matching item in your inventory."
 gui-quick-sell-title: "<dark_gray>Quick Sell"
 gui-quick-confirm: "<gradient:#86efac:#16a34a>CONFIRM SALE</gradient>"

@@ -55,6 +55,7 @@ quick-sell-too-diverse: "Bitte verteile diese unterschiedlichen Itemarten auf me
 quick-sell-confirmation-now-enabled: "<green>Die Schnellverkaufsbestätigung ist jetzt aktiviert.</green>"
 quick-sell-confirmation-now-disabled: "<yellow>Die Schnellverkaufsbestätigung ist jetzt deaktiviert.</yellow>"
 item-not-sellable: "Dieses Item ist nicht verkaufbar."
+sale-game-mode-denied: "Verkäufe sind nur im Überlebens- oder Abenteuermodus möglich."
 item-not-owned: "Du hast kein passendes Item im Inventar."
 gui-quick-sell-title: "<dark_gray>Schnellverkauf"
 gui-quick-confirm: "<gradient:#86efac:#16a34a>VERKAUF BESTÄTIGEN</gradient>"
