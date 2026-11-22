@@ -42,11 +42,11 @@ profiles:
       - plugin: Flunar-ClanSystem
         language: de
         path: fallback/Flunar-ClanSystem/locale_de.yml
-        sha256: 465e8bb135cac56e6eef2d65fc93b60be85f78bca90a20d204f6608e06dc8bac
+        sha256: fb5a5bba77c148fc027f26b0580566a1f254b4d619d2c4e2528e4d646314add9
       - plugin: Flunar-ClanSystem
         language: en
         path: fallback/Flunar-ClanSystem/locale_en.yml
-        sha256: 54a205ed7b2d101fcbb6a08fa76bbfc6ea7e29e6284e4b1ba6f207159f68a295
+        sha256: 22e855b68da1a24e59dce9676e775b84aa62eea3a1e157ddcf11052acb7e8b50
       - plugin: Flunar-Wedding
         language: de
         path: fallback/Flunar-Wedding/locale_de.yml
