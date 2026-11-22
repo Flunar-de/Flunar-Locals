@@ -1,5 +1,7 @@
 # Zu Flunar-Locals beitragen
 
+[English version](CONTRIBUTING.en.md)
+
 Vielen Dank, dass du die Übersetzungen der Flunar-Plugins verbessern möchtest. Beiträge sind über Pull Requests willkommen. Zum Übersetzen musst du das jeweilige Plugin nicht programmieren können.
 
 Bitte lies diese Richtlinien vollständig, bevor du Änderungen einreichst.
