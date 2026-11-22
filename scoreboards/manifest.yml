@@ -18,13 +18,13 @@ profiles:
     scoreboards:
       - id: default
         path: profiles/smp/default.yml
-        sha256: 3e8c4e5d1bf4728c6dd308f9e56ba6a3abd9631961563b47cd13b896d0b1aa2c
+        sha256: 15ad3b0227c423210f5a108e39a86e2a127d6c97bf1def58e7cb6d9774c09888
       - id: default_de
         path: profiles/smp/default_de.yml
-        sha256: 3e8c4e5d1bf4728c6dd308f9e56ba6a3abd9631961563b47cd13b896d0b1aa2c
+        sha256: 15ad3b0227c423210f5a108e39a86e2a127d6c97bf1def58e7cb6d9774c09888
       - id: default_en
         path: profiles/smp/default_en.yml
-        sha256: f239d99b1ce3b0c12cea4e9a54fb7b03ffca9f66055000262f20d92e5bff4246
+        sha256: a0fbe9db0b88fc04c658c122e7181d42543b30818f5e5467e4c2919a6834ae6a
 
   bonkandboom:
     extends: fallback
