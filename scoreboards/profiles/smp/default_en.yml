@@ -25,5 +25,5 @@ lines:
   4: "<dark_gray><bold>➥</bold> %clansystem_clan_scoreboard%"
   3: "     "
   2: "<dark_gray><bold>• <white>Players:"
-  1: "<dark_gray><bold>➥</bold> <aqua>%simplecloud_group_SMP_player_count%"
+  1: "<dark_gray><bold>➥</bold> <aqua>%simplecloud_persistent_server_SMP_player_count%<gray>/<aqua>%core_player_count_max%"
   0: "      "
