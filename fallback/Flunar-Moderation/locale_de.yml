@@ -165,6 +165,8 @@ history:
     type-unban: "<green>Entbannung"
     type-report: "<gold>Report"
     type-note: "<aqua>Notiz"
+    type-voice-mute: "<light_purple>Voice-Mute"
+    type-voice-unmute: "<green>Voice-Unmute"
     prev: "<yellow>Zurück"
     prev-lore: "<dark_gray>Zur vorherigen Seite"
     next: "<yellow>Weiter"
@@ -413,6 +415,7 @@ moderation:
 
 voicemute:
   invalid-duration: "<red>Die Voice-Mute-Dauer ist ungültig. Beispiele: <gray>30m, 7d, 2w"
+  not-connected-here: "<yellow>%player% hat hier keine aktive Voice-Verbindung. Die Stummschaltung wird angewendet, sobald der Spieler sich mit dem Voice Chat verbindet."
   success-temp: "<green>%player% <gray>wurde im Voice Chat <green>bis %until%<gray> stummgeschaltet."
   success-permanent: "<green>%player% <gray>wurde im Voice Chat <green>dauerhaft<gray> stummgeschaltet."
   unmute-success: "<green>Die Voice-Chat-Sperre von %player% wurde aufgehoben."
