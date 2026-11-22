@@ -66,11 +66,11 @@ profiles:
       - plugin: Flunar-Moderation
         language: de
         path: fallback/Flunar-Moderation/locale_de.yml
-        sha256: dad4fd36a6a247c1ef76f0ab64b51bcd085f03a1112bedb766305b0f852ddf7e
+        sha256: 7840de9c8b5f821bd34d9b73782eddf3b1ad7a1f077491abc43446a14c891b42
       - plugin: Flunar-Moderation
         language: en
         path: fallback/Flunar-Moderation/locale_en.yml
-        sha256: b0146e5e3313b58eef16a191e2fd8f52a58c9bf0449a6e7922e33b40e9190210
+        sha256: 267efa0f89d458fb78b7d2f321fc27a2ced3cf852b3ed5f4a10638cedaa220a8
       - plugin: Flunar-Piano
         language: de
         path: fallback/Flunar-Piano/locale_de.yml

@@ -7,6 +7,7 @@ common:
   target-protected-report: "<red>Dieser Spieler kann nicht reportet werden."
   target-protected-warn: "<red>Dieser Spieler kann nicht verwarnt werden."
   target-protected-ban: "<red>Dieser Spieler kann nicht gebannt werden."
+  target-protected-voicemute: "<red>Dieser Spieler kann nicht im Voice Chat stummgeschaltet werden."
   voicechat-unavailable: "<red>Simple Voice Chat ist auf diesem Server nicht installiert."
 
 vanish:
@@ -311,6 +312,7 @@ dashboard:
   "yes": "<green>Ja"
   "no": "<green>Nein"
   ban-until: "<red>Ja <gray>(%time%)"
+  mute-until: "<red>Ja <gray>(bis %time%)"
   reports: "<red>Reports"
   reports-lore: "<gray>Offen: <yellow>%open% <dark_gray>| <gray>Geclaimed: <yellow>%claimed%"
   alerts: "<red>AC-Alerts"
