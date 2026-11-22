@@ -7,6 +7,7 @@ common:
   target-protected-report: "<red>Dieser Spieler kann nicht reportet werden."
   target-protected-warn: "<red>Dieser Spieler kann nicht verwarnt werden."
   target-protected-ban: "<red>Dieser Spieler kann nicht gebannt werden."
+  voicechat-unavailable: "<red>Simple Voice Chat ist auf diesem Server nicht installiert."
 
 vanish:
   invisible: "<green>Vanish aktiviert."
@@ -392,12 +393,16 @@ moderation:
     ac: "<gray>/mod alerts ac <on|off> <dark_gray>- <white>AC-Alerts"
     ac-auto: "<gray>/mod alerts ac auto <on|off> <dark_gray>- <white>AC-Alerts Auto-On"
     report-alerts-toggle: "<gray>/mod alerts reports <on|off> <dark_gray>- <white>Report-Alerts"
+    voicemute: "<gray>/mod voicemute <Spieler> [Dauer] <Grund> <dark_gray>- <white>Voice-Chat stummschalten"
+    voiceunmute: "<gray>/mod voiceunmute <Spieler> <dark_gray>- <white>Voice-Chat-Sperre aufheben"
   usage:
     reports: "<red>Verwendung: <gray>/mod reports <dark_gray>oder <gray>/mod reports alerts on|off"
     alerts: "<red>Verwendung: <gray>/mod alerts ac on|off<dark_gray>, <gray>/mod alerts ac auto on|off <dark_gray>oder <gray>/mod alerts reports on|off"
     warn: "<red>Verwendung: <gray>/mod warn <Spieler>"
     ban: "<red>Verwendung: <gray>/mod ban <Spieler> [Dauer] <Grund>"
     unwarn: "<red>Verwendung: <gray>/mod unwarn <ID> <Grund>"
+    voicemute: "<red>Verwendung: <gray>/mod voicemute <Spieler> [Dauer] <Grund>"
+    voiceunmute: "<red>Verwendung: <gray>/mod voiceunmute <Spieler>"
     unban: "<red>Verwendung: <gray>/mod unban <Spieler> [Grund]"
     history: "<red>Verwendung: <gray>/mod history <Spieler>"
     note: "<red>Verwendung: <gray>/mod note <Spieler> [Notiz]"
@@ -405,3 +410,15 @@ moderation:
     ac: "<red>Verwendung: <gray>/mod alerts ac on|off"
     ac-auto: "<red>Verwendung: <gray>/mod alerts ac auto on|off"
     report-alerts: "<red>Verwendung: <gray>/mod alerts reports on|off"
+
+voicemute:
+  invalid-duration: "<red>Die Voice-Mute-Dauer ist ungültig. Beispiele: <gray>30m, 7d, 2w"
+  success-temp: "<green>%player% <gray>wurde im Voice Chat <green>bis %until%<gray> stummgeschaltet."
+  success-permanent: "<green>%player% <gray>wurde im Voice Chat <green>dauerhaft<gray> stummgeschaltet."
+  unmute-success: "<green>Die Voice-Chat-Sperre von %player% wurde aufgehoben."
+  not-muted: "<gray>%player% ist nicht im Voice Chat stummgeschaltet."
+  muted-temp: "<red>Du wurdest von %moderator% im Voice Chat <white>bis %until%</white> stummgeschaltet. Grund: <white>%reason%</white>"
+  muted-permanent: "<red>Du wurdest von %moderator% im Voice Chat <white>dauerhaft</white> stummgeschaltet. Grund: <white>%reason%</white>"
+  join-temp: "<red>Du hast Simple Voice Chat installiert, wurdest hier aber von %moderator% <white>bis %until%</white> stummgeschaltet und darfst den Voice Chat deshalb nicht nutzen. Grund: <white>%reason%</white>"
+  join-permanent: "<red>Du hast Simple Voice Chat installiert, wurdest hier aber von %moderator% <white>dauerhaft</white> stummgeschaltet und darfst den Voice Chat deshalb nicht nutzen. Grund: <white>%reason%</white>"
+  unmuted: "<green>Deine Voice-Chat-Sperre wurde von %moderator% aufgehoben."
