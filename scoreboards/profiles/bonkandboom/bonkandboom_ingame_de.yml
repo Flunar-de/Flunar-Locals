@@ -1,0 +1,28 @@
+title:
+  enabled: true
+  text: "✦ BONK & BOOM ✦"
+  gradient:
+    enabled: true
+    start: "#FFD93D"
+    end: "#FF6B35"
+    bold: true
+  animation-ticks: 6
+
+update-interval: 20
+
+lines:
+  15: " "
+  14: "<dark_gray><bold>• <white><bold>Map:"
+  13: "<dark_gray><bold>➥</bold> <aqua>%bab_map%"
+  12: "  "
+  11: "<dark_gray><bold>• <white><bold>Verbleibend:"
+  10: "<dark_gray><bold>➥</bold> <yellow>%bab_time_left%"
+  9: "   "
+  8: "<dark_gray><bold>• <white><bold>Am Leben:"
+  7: "<dark_gray><bold>➥</bold> <green>%bab_alive_players%"
+  6: "    "
+  5: "<dark_gray><bold>• <white><bold>Bombe:"
+  4: "<dark_gray><bold>➥</bold> <red>%bab_mace_holder%"
+  3: "     "
+  2: "<dark_gray><bold>• <white><bold>Transfers:"
+  1: "<dark_gray><bold>➥</bold> <gold>%bab_kills%"

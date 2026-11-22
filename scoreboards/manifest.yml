@@ -24,3 +24,34 @@ profiles:
   citybuild:
     extends: fallback
     scoreboards: []
+
+  bonkandboom:
+    extends: fallback
+    scoreboards:
+      - id: bonkandboom_waiting
+        path: profiles/bonkandboom/bonkandboom_waiting.yml
+        sha256: a41997c2bbe5a43cbbb307747a24d72fe295dae05eab7b702162e6c279c00dca
+      - id: bonkandboom_waiting_de
+        path: profiles/bonkandboom/bonkandboom_waiting_de.yml
+        sha256: a41997c2bbe5a43cbbb307747a24d72fe295dae05eab7b702162e6c279c00dca
+      - id: bonkandboom_waiting_en
+        path: profiles/bonkandboom/bonkandboom_waiting_en.yml
+        sha256: eb2e2b3b85dc4d0b2d4bbee0b958ec3a282a04df2c62fc2fa4a2b56f6a2f2f11
+      - id: bonkandboom_ingame
+        path: profiles/bonkandboom/bonkandboom_ingame.yml
+        sha256: 98beb51a91712565dd021e366029d02fd6ed94f2cba2283beae7e99bae5c7417
+      - id: bonkandboom_ingame_de
+        path: profiles/bonkandboom/bonkandboom_ingame_de.yml
+        sha256: db7f516b97f625a5e96545821788bc397ee0fb123e279e296b798ef8c091f31d
+      - id: bonkandboom_ingame_en
+        path: profiles/bonkandboom/bonkandboom_ingame_en.yml
+        sha256: f28ef37700e24513c96eb70f06548d9fe2c0e220c0ec697383d19a2c8582a47c
+      - id: bonkandboom_ending
+        path: profiles/bonkandboom/bonkandboom_ending.yml
+        sha256: 304e05504e4302b32c327a880e17e1291652079062c992e302d71a4da15b05f6
+      - id: bonkandboom_ending_de
+        path: profiles/bonkandboom/bonkandboom_ending_de.yml
+        sha256: fdc445c65a765538d24e91338e6f33e69da3e10d6eb4de2948a1384093b2c4b6
+      - id: bonkandboom_ending_en
+        path: profiles/bonkandboom/bonkandboom_ending_en.yml
+        sha256: 58234d60e08d50dc446a7199e890ea02c5df2fd8e9ee5ff537eb054552458c56

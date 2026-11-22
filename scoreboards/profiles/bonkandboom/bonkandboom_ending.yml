@@ -1,0 +1,25 @@
+title:
+  enabled: true
+  text: "✦ BONK & BOOM ✦"
+  gradient:
+    enabled: true
+    start: "#FFD93D"
+    end: "#FF6B35"
+    bold: true
+  animation-ticks: 6
+
+update-interval: 20
+
+lines:
+  12: " "
+  11: "<dark_gray><bold>• <white><bold>Status:"
+  10: "<dark_gray><bold>➥</bold> <red>Runde beendet"
+  9: "  "
+  8: "<dark_gray><bold>• <white><bold>Gewinner:"
+  7: "<dark_gray><bold>➥</bold> <gold>%bab_winner%"
+  6: "   "
+  5: "<dark_gray><bold>• <white><bold>Map:"
+  4: "<dark_gray><bold>➥</bold> <aqua>%bab_map%"
+  3: "    "
+  2: "<dark_gray><bold>• <white><bold>Transfers:"
+  1: "<dark_gray><bold>➥</bold> <green>%bab_kills%"
