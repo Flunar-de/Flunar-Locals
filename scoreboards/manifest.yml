@@ -55,3 +55,34 @@ profiles:
       - id: bonkandboom_ending_en
         path: profiles/bonkandboom/bonkandboom_ending_en.yml
         sha256: 58234d60e08d50dc446a7199e890ea02c5df2fd8e9ee5ff537eb054552458c56
+
+  pillarchaos:
+    extends: fallback
+    scoreboards:
+      - id: pillars_waiting
+        path: profiles/pillarchaos/pillars_waiting.yml
+        sha256: 61d878ca5b432157936c8ec80833018e38b1f997788a75c1bcab4ac145d01376
+      - id: pillars_waiting_de
+        path: profiles/pillarchaos/pillars_waiting_de.yml
+        sha256: 61d878ca5b432157936c8ec80833018e38b1f997788a75c1bcab4ac145d01376
+      - id: pillars_waiting_en
+        path: profiles/pillarchaos/pillars_waiting_en.yml
+        sha256: 3fc4df3e6ec0b9532d978068f503cc65c91f0425a1f786df103f8f4bffb1f82d
+      - id: pillars_ingame
+        path: profiles/pillarchaos/pillars_ingame.yml
+        sha256: 35c185b9da561bfb042289433f097e50ffc78bbcd5563aaa6e3a69292d636ffd
+      - id: pillars_ingame_de
+        path: profiles/pillarchaos/pillars_ingame_de.yml
+        sha256: 35c185b9da561bfb042289433f097e50ffc78bbcd5563aaa6e3a69292d636ffd
+      - id: pillars_ingame_en
+        path: profiles/pillarchaos/pillars_ingame_en.yml
+        sha256: d773aaecc06eef4a2c02ca714cce77ffb45cfd70ea11155519f444d3a7d64104
+      - id: pillars_ending
+        path: profiles/pillarchaos/pillars_ending.yml
+        sha256: ccfbc2610ade8d3dc7c87a61440fe60f1d3cc814effad6b62353434bce8a6c8b
+      - id: pillars_ending_de
+        path: profiles/pillarchaos/pillars_ending_de.yml
+        sha256: ccfbc2610ade8d3dc7c87a61440fe60f1d3cc814effad6b62353434bce8a6c8b
+      - id: pillars_ending_en
+        path: profiles/pillarchaos/pillars_ending_en.yml
+        sha256: 248a1d4d0169515aae35e3a9037c41600450d7f63606d1ca44ba9c17bc673f16

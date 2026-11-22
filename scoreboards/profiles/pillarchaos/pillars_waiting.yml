@@ -1,0 +1,22 @@
+title:
+  enabled: true
+  text: "✦ PILLARS ✦"
+  gradient:
+    enabled: true
+    start: "#FFCC33"
+    end: "#FF6633"
+    bold: true
+  animation-ticks: 6
+
+update-interval: 20
+
+lines:
+  12: " "
+  11: "<dark_gray><bold>• <white><bold>Spieler:"
+  10: "<dark_gray><bold>➥</bold> <green>%pillars_players%<gray>/%pillars_max_players%"
+  9: "  "
+  8: "<dark_gray><bold>• <white><bold>Benötigt:"
+  7: "<dark_gray><bold>➥</bold> <yellow>%pillars_min_players%"
+  6: "   "
+  5: "<dark_gray><bold>• <white><bold>Start:"
+  4: "<dark_gray><bold>➥</bold> <aqua>%pillars_countdown%"

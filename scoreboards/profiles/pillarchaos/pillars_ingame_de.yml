@@ -1,0 +1,28 @@
+title:
+  enabled: true
+  text: "✦ PILLARS ✦"
+  gradient:
+    enabled: true
+    start: "#FFCC33"
+    end: "#FF6633"
+    bold: true
+  animation-ticks: 6
+
+update-interval: 20
+
+lines:
+  15: " "
+  14: "<dark_gray><bold>• <white><bold>Lebend:"
+  13: "<dark_gray><bold>➥</bold> <green>%pillars_alive%"
+  12: "  "
+  11: "<dark_gray><bold>• <white><bold>Kills:"
+  10: "<dark_gray><bold>➥</bold> <gold>%pillars_kills%"
+  9: "   "
+  8: "<dark_gray><bold>• <white><bold>Item in:"
+  7: "<dark_gray><bold>➥</bold> <yellow>%pillars_next_item%s"
+  6: "    "
+  5: "<dark_gray><bold>• <white><bold>Zeit:"
+  4: "<dark_gray><bold>➥</bold> <aqua>%pillars_match_time%"
+  3: "     "
+  2: "<dark_gray><bold>• <white><bold>Arena:"
+  1: "<dark_gray><bold>➥</bold> <gray>%pillars_arena%"
