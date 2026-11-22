@@ -65,6 +65,8 @@ Scoreboards liegen im Ordner `scoreboards/` und werden über `scoreboards/manife
 - Die `id` ist der Name, mit dem ein Scoreboard angezeigt wird (z. B. `default`). Sprachvarianten heißen `<id>_<sprache>`, zum Beispiel `default_de`. Erlaubt sind Kleinbuchstaben, Ziffern, `_` und `-`.
 - Jede Datei braucht einen Eintrag im Manifest mit Pfad und SHA-256-Prüfsumme. Die Prüfsumme ermittelst du mit `sha256sum scoreboards/<pfad>`.
 
+Die `ignore`-Dateien in `scoreboards/profiles/smp/`, `scoreboards/profiles/lobby/`, `scoreboards/profiles/citybuild/` und in den Locale-Ordnern `profiles/smp/` und `profiles/lobby/` sind nur Platzhalter. Git speichert leere Ordner nicht. Sie sorgen dafür, dass die Ordner lokal vorhanden sind und mit ins GitHub-Repository gepusht werden. Sie haben keine Funktion, du kannst sie ignorieren.
+
 Beispiel für ein neues Scoreboard im Profil `smp`:
 
 1. Datei `scoreboards/profiles/smp/sidebar_pvp.yml` anlegen.

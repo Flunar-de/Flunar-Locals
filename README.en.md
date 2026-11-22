@@ -54,6 +54,33 @@ You do not need to create a profile if it has no overrides. The fallback is enou
 
 Do not make changes directly in the original repository. Before merging, maintainers check that the pull request follows the contribution rule, that the translation is complete and appropriate, and that the manifest entries are correct. Changes to additional plugins or profiles will be rejected or must be submitted as separate pull requests.
 
+## Scoreboards
+
+Scoreboards are stored in the `scoreboards/` directory and provided through `scoreboards/manifest.yml`. The Core downloads the manifest and the files from GitHub and caches them locally. If the download fails, the Core uses the last valid version or the files bundled with the Core.
+
+- `scoreboards/fallback/<id>.yml` contains scoreboards that apply on all servers.
+- `scoreboards/profiles/<profile>/<id>.yml` contains scoreboards only for one server profile (for example `smp`, `lobby`, `citybuild`). A profile always extends `fallback`. An entry with the same `id` replaces the fallback entry.
+- Paths in the manifest are relative to `scoreboards/manifest.yml`, for example `fallback/default.yml` or `profiles/smp/sidebar_pvp.yml`.
+- To create a new server profile, add an entry with `extends: fallback` and `scoreboards: []` under `profiles:` in the manifest, and create the folder `scoreboards/profiles/<name>/`. The name may only contain lowercase letters, digits, `_` and `-`. The `Profile` setting in the Core's `scoreboard-settings.yml` determines which profile a server uses.
+- The `id` is the name a scoreboard is shown with (for example `default`). Language variants are named `<id>_<language>`, for example `default_de`. Allowed characters are lowercase letters, digits, `_` and `-`.
+- Every file needs an entry in the manifest with its path and SHA-256 checksum. Calculate the checksum with `sha256sum scoreboards/<path>`.
+
+The `ignore` files in `scoreboards/profiles/smp/`, `scoreboards/profiles/lobby/`, `scoreboards/profiles/citybuild/` and in the locale folders `profiles/smp/` and `profiles/lobby/` are only placeholders. Git does not store empty folders, so they make sure the folders exist locally and are pushed to GitHub. They have no function, so you can ignore them.
+
+Example for a new scoreboard in the `smp` profile:
+
+1. Create the file `scoreboards/profiles/smp/sidebar_pvp.yml`.
+2. Calculate the checksum: `sha256sum scoreboards/profiles/smp/sidebar_pvp.yml`
+3. In the manifest, replace `scoreboards: []` under the profile `smp` with a list, or add the entry to the existing list:
+
+```yaml
+      - id: sidebar_pvp
+        path: profiles/smp/sidebar_pvp.yml
+        sha256: <checksum from step 2>
+```
+
+A pull request with scoreboard changes affects only one profile or the fallback. The same content rules apply as for translations.
+
 ## Before submitting a pull request
 
 - Is all visible text translated, with the original meaning preserved?
