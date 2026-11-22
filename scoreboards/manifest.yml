@@ -1,0 +1,26 @@
+schema-version: 1
+
+profiles:
+  fallback:
+    scoreboards:
+      - id: default
+        path: fallback/default.yml
+        sha256: 58887fd29dff797549d24ec789dd6819a6c410b7721b032d26796c68b1708449
+      - id: default_de
+        path: fallback/default_de.yml
+        sha256: 58887fd29dff797549d24ec789dd6819a6c410b7721b032d26796c68b1708449
+      - id: default_en
+        path: fallback/default_en.yml
+        sha256: c9f1fd3b99c6b94ff1468467afd3cec449bf8e60ebe36bf8ceeb405e5f431e54
+
+  smp:
+    extends: fallback
+    scoreboards: []
+
+  lobby:
+    extends: fallback
+    scoreboards: []
+
+  citybuild:
+    extends: fallback
+    scoreboards: []

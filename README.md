@@ -54,6 +54,31 @@ Ein Profil ohne eigene Abweichungen muss nicht angelegt werden. In diesem Fall r
 
 Bitte ändere das Original-Repository nicht direkt. Die Maintainer prüfen vor dem Merge, ob der Pull Request die Beitragsregel einhält, die Übersetzung vollständig und angemessen ist und die Manifest-Einträge stimmen. Änderungen an weiteren Plugins oder Profilen werden abgelehnt oder müssen als separate Pull Requests eingereicht werden.
 
+## Scoreboards
+
+Scoreboards liegen im Ordner `scoreboards/` und werden über `scoreboards/manifest.yml` bereitgestellt. Die Core lädt das Manifest und die Dateien von GitHub und speichert sie lokal zwischen. Fällt der Download aus, nutzt sie den letzten gültigen Stand oder die Dateien, die in der Core mitgeliefert werden.
+
+- `scoreboards/fallback/<id>.yml` enthält Scoreboards, die auf allen Servern gelten.
+- `scoreboards/profiles/<profil>/<id>.yml` enthält Scoreboards nur für ein Serverprofil (z. B. `smp`, `lobby`, `citybuild`). Ein Profil erweitert immer `fallback`. Ein Eintrag mit gleicher `id` ersetzt den Fallback.
+- Die Pfade im Manifest sind relativ zu `scoreboards/manifest.yml`, also z. B. `fallback/default.yml` oder `profiles/smp/sidebar_pvp.yml`.
+- Ein neues Serverprofil legst du an, indem du im Manifest unter `profiles:` einen Eintrag mit `extends: fallback` und `scoreboards: []` ergänzt und den Ordner `scoreboards/profiles/<name>/` anlegst. Der Name darf nur Kleinbuchstaben, Ziffern, `_` und `-` enthalten. Welches Profil ein Server nutzt, legt `Profile` in `scoreboard-settings.yml` der Core fest.
+- Die `id` ist der Name, mit dem ein Scoreboard angezeigt wird (z. B. `default`). Sprachvarianten heißen `<id>_<sprache>`, zum Beispiel `default_de`. Erlaubt sind Kleinbuchstaben, Ziffern, `_` und `-`.
+- Jede Datei braucht einen Eintrag im Manifest mit Pfad und SHA-256-Prüfsumme. Die Prüfsumme ermittelst du mit `sha256sum scoreboards/<pfad>`.
+
+Beispiel für ein neues Scoreboard im Profil `smp`:
+
+1. Datei `scoreboards/profiles/smp/sidebar_pvp.yml` anlegen.
+2. Prüfsumme ermitteln: `sha256sum scoreboards/profiles/smp/sidebar_pvp.yml`
+3. Im Manifest beim Profil `smp` den Eintrag `scoreboards: []` durch eine Liste ersetzen (oder bei vorhandenen Einträgen ergänzen):
+
+```yaml
+      - id: sidebar_pvp
+        path: profiles/smp/sidebar_pvp.yml
+        sha256: <Prüfsumme aus Schritt 2>
+```
+
+Ein Pull Request mit Scoreboard-Änderungen betrifft nur ein Profil oder den Fallback. Wie bei Übersetzungen gelten dieselben Regeln für Inhalte.
+
 ## Vor dem Pull Request prüfen
 
 - Sind alle sichtbaren Texte übersetzt und ist die Bedeutung erhalten geblieben?
