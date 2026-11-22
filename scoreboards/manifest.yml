@@ -16,9 +16,6 @@ profiles:
   smp:
     extends: fallback
     scoreboards:
-      - id: default
-        path: profiles/smp/default.yml
-        sha256: 15ad3b0227c423210f5a108e39a86e2a127d6c97bf1def58e7cb6d9774c09888
       - id: default_de
         path: profiles/smp/default_de.yml
         sha256: 15ad3b0227c423210f5a108e39a86e2a127d6c97bf1def58e7cb6d9774c09888
