@@ -316,9 +316,9 @@ perks:
     description-1: "<gray>Increases your speed between"
     description-2: "<gray>trees and timber yards."
   lumberjack_forest_vision:
-    name: "Forest Vision"
-    description-1: "<gray>Provides clear vision in dense"
-    description-2: "<gray>forests even at night."
+    name: "Tree Feller"
+    description-1: "<gray>Fells the complete trunk of a tree."
+    description-2: "<gray>Sneak to break only a single block."
   trader_market_speed:
     name: "Market Haste"
     description-1: "<gray>Increases your pace between"

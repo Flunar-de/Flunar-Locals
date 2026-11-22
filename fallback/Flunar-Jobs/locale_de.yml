@@ -316,9 +316,9 @@ perks:
     description-1: "<gray>Erhöht deine Geschwindigkeit"
     description-2: "<gray>zwischen Bäumen und Holzlagern."
   lumberjack_forest_vision:
-    name: "Waldsicht"
-    description-1: "<gray>Sorgt auch nachts für klare"
-    description-2: "<gray>Sicht in dichten Wäldern."
+    name: "Baumfäller"
+    description-1: "<gray>Fällt den vollständigen Stamm eines Baums."
+    description-2: "<gray>Schleichen baut weiterhin nur einen Block ab."
   trader_market_speed:
     name: "Markt-Eile"
     description-1: "<gray>Erhöht dein Tempo zwischen"
