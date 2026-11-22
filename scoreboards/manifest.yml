@@ -15,15 +15,16 @@ profiles:
 
   smp:
     extends: fallback
-    scoreboards: []
-
-  lobby:
-    extends: fallback
-    scoreboards: []
-
-  citybuild:
-    extends: fallback
-    scoreboards: []
+    scoreboards:
+      - id: default
+        path: profiles/smp/default.yml
+        sha256: 58887fd29dff797549d24ec789dd6819a6c410b7721b032d26796c68b1708449
+      - id: default_de
+        path: profiles/smp/default_de.yml
+        sha256: 58887fd29dff797549d24ec789dd6819a6c410b7721b032d26796c68b1708449
+      - id: default_en
+        path: profiles/smp/default_en.yml
+        sha256: c9f1fd3b99c6b94ff1468467afd3cec449bf8e60ebe36bf8ceeb405e5f431e54
 
   bonkandboom:
     extends: fallback
@@ -86,3 +87,4 @@ profiles:
       - id: pillars_ending_en
         path: profiles/pillarchaos/pillars_ending_en.yml
         sha256: 248a1d4d0169515aae35e3a9037c41600450d7f63606d1ca44ba9c17bc673f16
+
