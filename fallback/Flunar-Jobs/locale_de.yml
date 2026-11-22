@@ -242,6 +242,9 @@ perk-token:
   duration-limit: "<gradient:#ff9955:#ff5555>Dieser Perk hat bereits die maximal erlaubte Gesamtlaufzeit. Das Item wurde nicht verbraucht.</gradient>"
   unavailable: "<gradient:#ff9955:#ff5555>Dieser Perk ist nicht mehr konfiguriert.</gradient>"
   error: "<gradient:#ff9955:#ff5555>Das Perk-Item konnte gerade nicht eingelöst werden.</gradient>"
+perk-bossbar:
+  active: "<gradient:#38bdf8:#a855f7>%perk%</gradient> <dark_gray>•</dark_gray> <white>%duration%</white>"
+  active-more: "<gradient:#38bdf8:#a855f7>%perk%</gradient> <dark_gray>•</dark_gray> <white>%duration%</white> <dark_gray>• +%amount% weitere</dark_gray>"
 perk-tiers:
   basic: "Kurz"
   advanced: "Mittel"

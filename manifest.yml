@@ -234,11 +234,11 @@ profiles:
       - plugin: Flunar-Jobs
         language: de
         path: fallback/Flunar-Jobs/locale_de.yml
-        sha256: bf647c479141252d90959cfa59249a5501c94b5e7cfab0ef5f578a0f0a1b0b8a
+        sha256: 66d2f6266bbf3181fa646d3060bca757e1eb383719db643d9b4610aae6c933d5
       - plugin: Flunar-Jobs
         language: en
         path: fallback/Flunar-Jobs/locale_en.yml
-        sha256: 6bc032dc769e5c4683e95c041be43ad1dd205c73ffbf88062e16bc4eb9fdefd4
+        sha256: bead6b189372f2677b43818055290347e9fedf946a12105a18d3233b3589a10e
       - plugin: Flunar-Trade
         language: de
         path: fallback/Flunar-Trade/locale_de.yml

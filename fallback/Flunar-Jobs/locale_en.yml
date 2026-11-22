@@ -242,6 +242,9 @@ perk-token:
   duration-limit: "<gradient:#ff9955:#ff5555>This perk already has the maximum allowed total duration. The item was not consumed.</gradient>"
   unavailable: "<gradient:#ff9955:#ff5555>This perk is no longer configured.</gradient>"
   error: "<gradient:#ff9955:#ff5555>The perk item cannot be redeemed right now.</gradient>"
+perk-bossbar:
+  active: "<gradient:#38bdf8:#a855f7>%perk%</gradient> <dark_gray>•</dark_gray> <white>%duration%</white>"
+  active-more: "<gradient:#38bdf8:#a855f7>%perk%</gradient> <dark_gray>•</dark_gray> <white>%duration%</white> <dark_gray>• +%amount% more</dark_gray>"
 perk-tiers:
   basic: "Short"
   advanced: "Medium"
