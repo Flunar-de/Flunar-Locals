@@ -108,6 +108,7 @@ claims:
   admin-top-summary-page: "<gray>Seite:</gray> <aqua>%page%</aqua> <gray>von</gray> <aqua>%pages%</aqua>"
   admin-top-chunks: "<gray>Chunks:</gray> <gradient:#38bdf8:#22c55e>%count%</gradient>"
   admin-top-open: "<yellow>Klicken: Spieler-Informationen öffnen</yellow>"
+  state-release-cooldown: "<gray>Dieser Chunk wurde nach der Auflösung eines Staates freigegeben und ist bis <gradient:#ffaa00:#ffe08a>%until%</gradient> gesperrt.</gray>"
   admin-top-unknown-player: "Unbekannter Spieler"
   admin-top-previous: "<aqua>← Vorherige Seite</aqua>"
   admin-top-next: "<aqua>Nächste Seite →</aqua>"

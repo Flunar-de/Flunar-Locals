@@ -108,6 +108,7 @@ claims:
   admin-top-summary-page: "<gray>Page:</gray> <aqua>%page%</aqua> <gray>of</gray> <aqua>%pages%</aqua>"
   admin-top-chunks: "<gray>Chunks:</gray> <gradient:#38bdf8:#22c55e>%count%</gradient>"
   admin-top-open: "<yellow>Click: open player information</yellow>"
+  state-release-cooldown: "<gray>This chunk was released after a state was dissolved and is locked until <gradient:#ffaa00:#ffe08a>%until%</gradient>.</gray>"
   admin-top-unknown-player: "Unknown player"
   admin-top-previous: "<aqua>← Previous page</aqua>"
   admin-top-next: "<aqua>Next page →</aqua>"

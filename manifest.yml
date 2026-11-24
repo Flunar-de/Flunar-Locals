@@ -266,11 +266,11 @@ profiles:
       - plugin: Flunar-Claims
         language: de
         path: fallback/Flunar-Claims/locale_de.yml
-        sha256: 97f489cdbe68be0f18aab027db768b4a3d094547839fdf0fac928f94d65b3e52
+        sha256: 7fe86c18210652ca2ba5a997a7a3c5993402b31dc57ade0c18db4c2cc54356ee
       - plugin: Flunar-Claims
         language: en
         path: fallback/Flunar-Claims/locale_en.yml
-        sha256: e103572228dc353420e70257e66ed9aff3c603f7e227cb6588d0ead453774a10
+        sha256: 3a2178f4d72a5c18808aed1c728eb78f9b27d8450b34be21dacf98a751bf0f4b
       - plugin: Flunar-Economy
         language: de
         path: fallback/Flunar-Economy/locale_de.yml
