@@ -229,7 +229,7 @@ perk-token:
   lore-footer: "<dark_gray>╰────────────────────╯"
   duration: "<gray>Laufzeit <dark_gray>• <white>%duration%"
   tier: "<gray>Paket <dark_gray>• <white>%tier%"
-  activate: "<aqua>Rechtsklick: Perk einmalig aktivieren"
+  activate: "<aqua>Linksklick in die Luft: Perk einmalig aktivieren"
   activated: "<gradient:#55ff99:#33bbff>%perk% wurde für %duration% aktiviert.</gradient>"
   flight-expired: "<gradient:#fbbf24:#f97316>Dein Fly-Perk ist abgelaufen.</gradient>"
   flight-landed: "<gradient:#55ff99:#33bbff>Dein Fly-Perk ist abgelaufen. Du bist sicher gelandet.</gradient>"
