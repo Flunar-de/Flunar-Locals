@@ -407,6 +407,35 @@ navigator:
     unavailable: "<red>Dieser Ort ist aktuell nicht verfügbar."
   category:
     empty: "<red>Diese Kategorie ist aktuell leer."
+  bedrock:
+    title: "<bold>Navigator"
+    content: "<gray>Wohin möchtest du?"
+    content-players: "<gray>Spieler in Spielmodi: <white>%players%"
+    players-short: "<dark_gray>%players% Spieler"
+    status:
+      online: "<dark_green>● Online"
+      beta: "<dark_purple>● Beta"
+      offline: "<dark_red>● Offline"
+      maintenance: "<gold>● Wartung"
+      in-development: "<dark_gray>● In Entwicklung"
+    mode:
+      players: "<gray>Spieler: <white>%players%<gray>/<white>%max%"
+      servers: "<gray>Freie Server: <white>%available%"
+    category:
+      content: "<gray>Wähle einen Ort aus."
+    server-list:
+      content: "<gray>Wähle einen Server aus."
+      empty: "<red>Aktuell ist kein Server frei."
+      entry: "<dark_gray>%players%/%max% Spieler"
+    button:
+      join: "Beitreten"
+      join-sub: "<dark_gray>Direkt verbinden"
+      quick-join: "Schnell beitreten"
+      quick-join-sub: "<dark_gray>Bester freier Server"
+      server-list: "Server auswählen"
+      server-list-sub: "<dark_gray>%available% Server frei"
+      refresh: "Aktualisieren"
+      back: "Zurück"
 
 gadgets:
   activated: "<green>%gadget% <gray>aktiviert."
